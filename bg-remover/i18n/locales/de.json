@@ -1,0 +1,369 @@
+{
+  "header": {
+    "brand": "AI BG Remover",
+    "tagline": "Kostenlos online · Läuft lokal · Privatsphäre",
+    "clearCache": "Cache leeren",
+    "clearCacheTitle": "Modell-Cache leeren"
+  },
+  "hero": {
+    "title": "KI-Hintergrundentferner - Bildhintergründe online kostenlos entfernen",
+    "sub1": "Kostenloses Online-KI-Tool zum Entfernen von Bildhintergründen für die Stapelverarbeitung mit hochwertigem PNG-Download.",
+    "sub2Strong": "Die gesamte Verarbeitung läuft vollständig in Ihrem Browser",
+    "sub2": "Ihre Bilder werden nie auf einen Server hochgeladen. Privatsphäre geschützt.",
+    "stat1": "~4 s im Durchschnitt pro Bild",
+    "stat2": "Angetrieben von ONNX Runtime Web",
+    "stat3": "100 % kostenlos, keine Limits"
+  },
+  "tool": {
+    "ariaTool": "KI-Werkzeug zum Entfernen von Bildhintergründen",
+    "footerNote": "AI BG Remover v1.0 · Angetrieben von ONNX Runtime Web · WebGPU-beschleunigt",
+    "uploadedCount": "{count} Bilder hochgeladen",
+    "totalSize": "({size}MB gesamt)",
+    "addMore": "+ Weitere hinzufügen",
+    "downloadAll": "Alle herunterladen ({count} Bilder)",
+    "downloadAllPartial": "Erfolgreiche herunterladen ({count} Bilder)",
+    "stopProcessing": "Stoppen",
+    "reprocess": "Erneut verarbeiten",
+    "batchHint": "{count} Bilder hochgeladen. Mehr Bilder = langsamere Verarbeitung. Empfehlung: max. 6 Bilder pro Durchgang",
+    "summaryDone": "Fertig: {done} erfolgreich",
+    "summaryFail": "Fertig: {done} erfolgreich, {fail} fehlgeschlagen",
+    "summaryAllFail": "Verarbeitung fehlgeschlagen: {count} Bilder konnten nicht verarbeitet werden",
+    "cachedLoading": "Modell zwischengespeichert, Inferenz-Engine wird geladen...",
+    "step1": "Bilder hochladen",
+    "step2": "Modell wählen",
+    "step3": "Verarbeitung starten",
+    "guideTitle": "Schritt 2: Wählen Sie ein KI-Modell",
+    "guideSub": "Verschiedene Modelle eignen sich für verschiedene Bildtypen. Wählen Sie eines und klicken Sie auf „Hintergrund entfernen“.",
+    "loadingModel": "Modell wird geladen {percent}%",
+    "processing": "Verarbeitung ({done}/{total})",
+    "allDone": "Alles fertig ✓",
+    "start": "Hintergrund entfernen",
+    "clearAllTitle": "Alle Bilder löschen",
+    "previewTitle": "Vergleichs-Vorschau",
+    "close": "Schließen ✕",
+    "failedSuffix": "(fehlgeschlagen)",
+    "progressLoading": "KI-Modell wird geladen {step}",
+    "progressProcessing": "Hintergrund wird entfernt ({done}/{total})",
+    "progressError": "Verarbeitung fehlgeschlagen",
+    "progressDone": "Abgeschlossen",
+    "progressSubDone": "{count} Bilder fertig",
+    "progressCurrent": "Bild {current}/{total} wird verarbeitet"
+  },
+  "models": {
+    "bria": {
+      "name": "Pro",
+      "speed": "~4 s/Bild",
+      "desc": "Bestes Allround-Modell, verarbeitet halbtransparente Objekte",
+      "hint": "Am besten für den allgemeinen Gebrauch, mit Transparenz"
+    },
+    "u2net": {
+      "name": "Mini",
+      "speed": "~1 s/Bild",
+      "desc": "Leichtgewichtig und schnell, ideal für einfache Bilder",
+      "hint": "Leichtgewichtig & schnell für einfache Bilder"
+    },
+    "modnet": {
+      "name": "Porträt",
+      "speed": "~1,5 s/Bild",
+      "desc": "Optimiert für Porträts, Ausweisfotos und klare Motive",
+      "hint": "Optimiert für Porträts & Ausweisfotos"
+    },
+    "tags": {
+      "bria": [
+        "Allgemein",
+        "Hohe Präzision"
+      ],
+      "u2net": [
+        "Leichtgewichtig",
+        "Schnell"
+      ],
+      "modnet": [
+        "Porträt",
+        "Ausweisfoto"
+      ]
+    },
+    "allName": "Alle ausführen",
+    "allCompare": "Ergebnisse vergleichen",
+    "allDesc": "Führen Sie alle drei Modelle auf jedem Bild aus und vergleichen Sie die Ergebnisse, um das beste auszuwählen",
+    "allTriggerHint": "Führt alle 3 Modelle zum Vergleich aus",
+    "recommended": "Empfohlen",
+    "maxSize": "Max. {size}px",
+    "inputSize": "{res}×{res} Eingabe"
+  },
+  "download": {
+    "suffix": "entfernt"
+  },
+  "upload": {
+    "ariaLabel": "Klicken oder ziehen Sie Bilder zum Hochladen hierher",
+    "close": "Schließen",
+    "addedCount": "{count} Bilder hinzugefügt",
+    "totalSize": "({size}MB gesamt)",
+    "hasFolders": "Enthält Ordnerinhalte",
+    "addMore": "+ Weitere hinzufügen",
+    "dropTitle": "Bilder hierher ziehen oder",
+    "clickUpload": "zum Hochladen klicken",
+    "supported": "JPG / PNG / WEBP / AVIF / GIF unterstützt, bis zu 50MB pro Bild",
+    "support": "Unterstützt",
+    "paste": "Einfügen",
+    "supportFolder": "Ordner per Drag & Drop",
+    "unlimited": "unbegrenzte Stapelverarbeitung",
+    "pasting": "Einfügen...",
+    "errorUnsupported": "Das Format „{name}“ wird nicht unterstützt",
+    "errorTooLarge": "„{name}“ ist zu groß ({size}MB), das Limit liegt bei {max}MB pro Bild",
+    "warnLarge": "„{name}“ ist groß ({size}MB), die Verarbeitung kann langsamer sein",
+    "errorMaxFiles": "Maximale Bildanzahl erreicht (max. {max})",
+    "errorMaxSize": "Maximale Gesamtgröße erreicht (max. {max}MB)",
+    "errorSummary": "{count} Problem(e): {first} usw."
+  },
+  "preview": {
+    "processing": "Verarbeitung...",
+    "failed": "Verarbeitung fehlgeschlagen",
+    "failShort": "Fehlgeschlagen",
+    "done": "✓ Fertig",
+    "pending": "Ausstehend",
+    "downloadTitle": "Herunterladen",
+    "downloadNow": "Jetzt herunterladen",
+    "showOriginal": "Original",
+    "showResult": "Ergebnis",
+    "previewTitle": "Vergleichs-Vorschau",
+    "removeTitle": "Entfernen",
+    "retry": "Erneut versuchen",
+    "resultAlt": "Ergebnis der Hintergrundentfernung für {name} {mid}"
+  },
+  "splash": {
+    "title": "KI-Modell wird geladen",
+    "modelNote": "Die Modelldatei ist groß – der erste Aufruf lädt etwa {size} herunter, danach ist alles sofort verfügbar",
+    "expected": "Voraussichtlich {time}",
+    "cached": "Im Browser zwischengespeichert",
+    "local": "Lokale Verarbeitung",
+    "connecting": "Verbindung zum Modellserver...",
+    "downloading": "Modelldateien werden heruntergeladen...",
+    "loadingEngine": "Wird in die Inferenz-Engine geladen...",
+    "ready": "Bereit ✓",
+    "readySuffix": "Modell bereit ✓",
+    "initializing": "Wird initialisiert...",
+    "almostDone": "Fast fertig",
+    "est10to30": "10-30 Sek.",
+    "downloadingDots": "Wird heruntergeladen...",
+    "seconds": "ein paar Sekunden",
+    "downloadOnce": "Nur einmal herunterladen - danach nicht mehr nötig. Bitte geduldig warten."
+  },
+  "progress": {
+    "failed": "Fehlgeschlagen"
+  },
+  "compare": {
+    "before": "Original",
+    "after": "Ergebnis",
+    "hint": "Zum Vergleichen ziehen",
+    "beforeAlt": "Originalbild",
+    "afterAlt": "Ergebnis der Hintergrundentfernung"
+  },
+  "how": {
+    "ariaLabel": "So funktioniert es",
+    "title": "Hintergründe in 3 Schritten entfernen",
+    "sub": "Keine Registrierung, keine Installation – öffnen Sie einfach Ihren Browser",
+    "step1Title": "Bilder hochladen",
+    "step1Desc": "Ziehen Sie Bilder in den Upload-Bereich oder klicken Sie, um Dateien auszuwählen. Unterstützt JPG, PNG, WEBP und mehr. Stapel-Upload und Ordner per Drag & Drop möglich.",
+    "step2Title": "Automatische KI-Verarbeitung",
+    "step2Desc": "Wählen Sie ein KI-Modell und klicken Sie auf „Hintergrund entfernen“. Die KI verarbeitet lokal in Ihrem Browser in etwa 1-4 Sekunden, ohne dass Daten hochgeladen werden.",
+    "step3Title": "PNG herunterladen",
+    "step3Desc": "Klicken Sie auf „Herunterladen“, um das PNG mit transparentem Hintergrund in voller Auflösung zu speichern. Laden Sie einzeln oder alle auf einmal herunter."
+  },
+  "faq": {
+    "ariaLabel": "FAQ",
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "q": "Muss ich Bilder auf einen Server hochladen?",
+        "a": "Nein. Die gesamte KI-Hintergrundentfernung läuft vollständig in Ihrem Browser über ONNX Runtime Web – Ihre Bilder verlassen nie Ihr Gerät und werden nie auf einen Server hochgeladen, was Ihre Privatsphäre schützt."
+      },
+      {
+        "q": "Welche Bildformate werden unterstützt? Wie schnell ist es?",
+        "a": "JPG, PNG, WEBP, AVIF, GIF und SVG werden unterstützt. Das Pro-Modell benötigt etwa 4 s/Bild, Porträt etwa 1,5 s/Bild, Mini etwa 1 s/Bild. Das Ergebnis ist ein PNG mit transparentem Hintergrund in voller Auflösung."
+      },
+      {
+        "q": "Wie groß dürfen Bilder sein? Gibt es Batch-Limits?",
+        "a": "Das Pro-Modell unterstützt bis zu 16000×16000 Pixel; Mini und Porträt bis zu 2048×2048. Die Stapelverarbeitung hat keine harten Limits, aber wir empfehlen unter 100 Bilder oder 500MB auf einmal für flüssige Leistung."
+      },
+      {
+        "q": "Ist das wirklich kostenlos?",
+        "a": "Ja, 100 % kostenlos. Keine Registrierung, kein Login, keine versteckten Gebühren. Alle Funktionen – Stapelverarbeitung, HD-Downloads, mehrere KI-Modelle – sind ohne Einschränkungen verfügbar."
+      },
+      {
+        "q": "Welche KI-Modelle werden verwendet? Was ist der Unterschied?",
+        "a": "Drei Modelle: Pro (BRIA RMBG v1.4, 42MB, beste Qualität inklusive halbtransparenter Objekte), Porträt (MODNet, 25MB, für Personen optimiert), Mini (U²-Net, 4.4MB, leichtgewichtig und schnell). Sie können auch alle Modelle ausführen und vergleichen."
+      },
+      {
+        "q": "Kann ich es auf Mobilgeräten oder Tablets verwenden?",
+        "a": "Ja. Das Tool ist vollständig responsiv und funktioniert in Mobil- und Tablet-Browsern ohne App-Installation. Touch-Drag & Drop und Einfügen werden unterstützt."
+      },
+      {
+        "q": "Wie schneidet es im Vergleich zu Tools wie remove.bg ab?",
+        "a": "Unser Pro-Modell (BRIA RMBG) erzielt in den meisten Szenarien Ergebnisse nahe kommerzieller Tools, besonders bei Personen, Produkten und Tieren. Als völlig kostenloses, vollständig lokales Tool hat es klare Vorteile bei Privatsphäre und Preis-Leistung."
+      }
+    ]
+  },
+  "section": {
+    "modelCompare": {
+      "ariaLabel": "KI-Modellvergleich",
+      "title": "Wählen Sie aus mehreren KI-Modellen",
+      "sub": "Wählen Sie das beste Modell für Ihren Bildtyp und Ihre Verarbeitungsanforderungen",
+      "cardProName": "Pro-Modell",
+      "cardProItems": [
+        "BRIA RMBG v1.4 Architektur",
+        "Unterstützt bis zu 16000×16000 Bilder",
+        "Verarbeitet halbtransparente Kanten",
+        "Beste Qualität, Allround-Wahl"
+      ],
+      "cardPortraitName": "Porträt-Modell",
+      "cardPortraitItems": [
+        "MODNet-Architektur",
+        "Optimiert für Porträts & Ausweisfotos",
+        "~1,5 s pro Bild",
+        "Am besten für klare, einzelne Motive"
+      ],
+      "cardMiniName": "Mini-Modell",
+      "cardMiniItems": [
+        "Leichtgewichtige U²-Net-Architektur",
+        "Nur 4.4MB, schnellster Ladevorgang",
+        "~1 s pro Bild",
+        "Am besten für einfache Hintergründe"
+      ],
+      "recommended": "Empfohlen"
+    },
+    "why": {
+      "ariaLabel": "Warum uns wählen",
+      "title": "Warum AI BG Remover wählen?",
+      "b1Title": "Privat & sicher – keine Uploads",
+      "b1Desc": "Die gesamte KI-Verarbeitung erfolgt lokal in Ihrem Browser. Ihre Bilder verlassen nie Ihr Gerät. Laut einer Princeton-Studie ist lokale KI-Inferenz der privateste Weg, Bilder zu verarbeiten.",
+      "b2Title": "WebGPU-beschleunigt & schnell",
+      "b2Desc": "Basierend auf ONNX Runtime Web mit WebGPU- und WebAssembly-SIMD-Beschleunigung. Das Pro-Modell entfernt den Hintergrund in durchschnittlich etwa 4 Sekunden pro Bild.",
+      "b3Title": "Völlig kostenlos, keine Limits",
+      "b3Desc": "Keine Beschränkung bei Anzahl oder Größe der Bilder, keine Registrierung erforderlich. Alle KI-Modelle sind kostenlos, einschließlich Stapelverarbeitung und Full-HD-Downloads.",
+      "b4Title": "IndexedDB-Cache – sofort bei Wiederverwendung",
+      "b4Desc": "KI-Modelle werden automatisch in der IndexedDB Ihres Browsers zwischengespeichert. Der erste Aufruf benötigt etwa 42MB (Pro-Modell); danach ist alles sofort verfügbar."
+    },
+    "stats": {
+      "s1Num": "4 s",
+      "s1Label": "Durchschnittliche Verarbeitungszeit",
+      "s2Num": "42MB",
+      "s2Label": "KI-Modellgröße",
+      "s3Num": "∞",
+      "s3Label": "Unbegrenzte Bilder"
+    },
+    "tech": {
+      "ariaLabel": "Technische Funktionsweise",
+      "title": "Technische Details",
+      "p1": "Dieses Tool führt KI-Modelle direkt in Ihrem Browser mit {eng} aus, sodass die gesamte Inferenz lokal erfolgt, ohne Serverbeteiligung. Drei Architekturen werden verwendet: {bria} (allgemein), {modnet} (Porträts) und {u2net} (leichtgewichtig & schnell).",
+      "p2": "Mit {gpu}- oder {wasm}-Hardwarebeschleunigung erreicht die Inferenz 1-4 Sekunden pro Bild. Modelle werden in IndexedDB zwischengespeichert, sodass spätere Aufrufe keinen erneuten Download benötigen.",
+      "p3": "Laut einer Princeton-Studie aus dem Jahr 2024 (Aggarwal et al.) bietet Browser-KI-Inferenz erhebliche Vorteile bei Privatsphäre und Antwortgeschwindigkeit gegenüber Cloud-Lösungen – Ihre Daten verlassen nie das Gerät, und die Latenz hängt nur von der lokalen Hardware ab."
+    }
+  },
+  "error": {
+    "pageTitle": "Seite nicht gefunden",
+    "genericTitle": "Etwas ist schiefgelaufen",
+    "pageDesc1": "Die gesuchte Seite existiert nicht oder wurde entfernt.",
+    "pageDesc2": "Überprüfen Sie die URL oder kehren Sie zur Startseite zurück, um den KI-Hintergrundentferner zu nutzen.",
+    "genericDesc": "Auf der Seite ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut oder kehren Sie zur Startseite zurück.",
+    "backHome": "Zurück zur Startseite",
+    "metaDesc": "Entschuldigung, die angeforderte Seite existiert nicht. Kehren Sie zur Startseite zurück, um den kostenlosen Online-KI-Hintergrundentferner zu nutzen."
+  },
+  "seo": {
+    "titleSuffix": "KI-Hintergrundentferner – Kostenloses Online-Tool",
+    "title": "Kostenloser KI-Hintergrundentferner – Bildhintergründe online entfernen | Läuft lokal für Privatsphäre",
+    "description": "Kostenloser Online-KI-Hintergrundentferner. Entfernen Sie Bildhintergründe in Stapeln und laden Sie hochwertige transparente PNGs herunter. Alles läuft lokal in Ihrem Browser – Bilder werden nie auf einen Server hochgeladen. Angetrieben von ONNX Runtime Web mit WebGPU-Beschleunigung.",
+    "keywords": "hintergrund entfernen, bild freistellen online, KI hintergrund entfernen, hintergrund transparent, bild hintergrund löschen, kostenloser hintergrundentferner, stapelweise hintergrund entfernen, transparentes PNG, remove.bg alternative",
+    "ogTitle": "Kostenloser KI-Hintergrundentferner – Bildhintergründe online entfernen",
+    "ogDesc": "Kostenloses Online-KI-Tool zum Entfernen von Bildhintergründen in Stapeln. Die gesamte Verarbeitung erfolgt in Ihrem Browser – keine Uploads, Privatsphäre geschützt.",
+    "twitterTitle": "Kostenloser KI-Hintergrundentferner – Bildhintergründe online entfernen",
+    "twitterDesc": "Kostenloses Online-KI-Tool zum Entfernen von Bildhintergründen in Stapeln. Läuft lokal in Ihrem Browser, Privatsphäre geschützt.",
+    "webAppName": "KI-Hintergrundentferner – Kostenloses Online-Tool",
+    "webAppDesc": "Kostenloser Online-KI-Hintergrundentferner für die Stapelverarbeitung von Bildern mit hochwertigem PNG-Download. Die gesamte Verarbeitung läuft lokal im Browser, keine Uploads.",
+    "orgName": "AI BG Remover",
+    "orgDesc": "Kostenloses Online-KI-Tool zum Entfernen von Bildhintergründen, angetrieben von ONNX Runtime Web, vollständig im Browser laufend.",
+    "faqQ1": "Muss ich Bilder auf einen Server hochladen?",
+    "faqA1": "Nein. Die gesamte KI-Hintergrundentfernung läuft vollständig in Ihrem Browser über ONNX Runtime Web. Bilder werden nie auf einen Server hochgeladen, sodass Ihre Fotos privat bleiben.",
+    "faqQ2": "Welche Bildformate werden unterstützt?",
+    "faqA2": "JPG, PNG, WEBP, AVIF, GIF, SVG und andere gängige Formate werden unterstützt. Das Ergebnis ist ein PNG mit transparentem Hintergrund in voller Auflösung.",
+    "faqQ3": "Wie lange dauert die Verarbeitung eines Bildes?",
+    "faqA3": "Das Pro-Modell (BRIA RMBG) benötigt etwa 4 Sekunden pro Bild, Porträt (MODNet) etwa 1,5 Sekunden, Mini (U²-Net) etwa 1 Sekunde. Die Geschwindigkeit hängt vom Modell und der Bildgröße ab.",
+    "faqQ4": "Wie groß dürfen die Bilder sein?",
+    "faqA4": "Das Pro-Modell unterstützt bis zu 16000×16000 Pixel. Mini und Porträt unterstützen bis zu 2048×2048. Die KI skaliert jedes Bild automatisch auf die richtige Inferenzgröße und erhält dabei die Qualität.",
+    "faqQ5": "Gibt es Limits bei der Stapelverarbeitung?",
+    "faqA5": "Keine Limits bei Anzahl oder Größe – das Tool ist völlig kostenlos. Wir empfehlen unter 100 Bilder oder 500MB insgesamt pro Stapel für flüssige Browser-Leistung.",
+    "faqQ6": "Ist dieser KI-Hintergrundentferner kostenlos?",
+    "faqA6": "Völlig kostenlos. Keine Registrierung, kein Login, keine versteckten Gebühren. Alle Funktionen sind unbegrenzt, einschließlich Stapelverarbeitung, HD-Downloads und mehrerer KI-Modelle.",
+    "faqQ7": "Welche KI-Modelle werden verwendet?",
+    "faqA7": "Drei Modelle sind verfügbar: Pro (BRIA RMBG v1.4, 42MB, verarbeitet halbtransparente Objekte), Porträt (MODNet, 25MB, für Personen optimiert), Mini (U²-Net, 4.4MB, leichtgewichtig & schnell). Führen Sie alle Modelle aus, um die Ergebnisse zu vergleichen.",
+    "faqQ8": "Kann ich es auf dem Handy verwenden?",
+    "faqA8": "Ja. Das Tool ist responsiv und funktioniert über den Browser auf Telefonen und Tablets, ohne App-Installation. Touch-Drag & Drop-Upload und Einfügen werden unterstützt.",
+    "howToName": "So entfernen Sie Bildhintergründe mit dem KI-Hintergrundentferner",
+    "howToDesc": "Entfernen Sie Bildhintergründe in 3 Schritten: Hochladen, Verarbeiten, Herunterladen.",
+    "howToStep1Name": "Bilder hochladen",
+    "howToStep1Text": "Ziehen Sie Bilddateien in den Upload-Bereich oder klicken Sie auf die Upload-Schaltfläche, um Dateien auszuwählen. JPG, PNG, WEBP, AVIF und mehr werden unterstützt, einschließlich Stapel-Upload und Ordner per Drag & Drop.",
+    "howToStep2Name": "Ein Modell wählen und verarbeiten",
+    "howToStep2Text": "Wählen Sie ein KI-Modell (Pro/Porträt/Mini) und klicken Sie auf die Schaltfläche „Hintergrund entfernen“. Die KI verarbeitet lokal in Ihrem Browser in etwa 1-4 Sekunden pro Bild.",
+    "howToStep3Name": "Transparentes PNG herunterladen",
+    "howToStep3Text": "Wenn fertig, klicken Sie unter jedem Bild auf die Download-Schaltfläche, um ein PNG mit transparentem Hintergrund zu speichern. Der Stapel-Download aller Bilder wird ebenfalls unterstützt.",
+    "crumbHome": "Startseite",
+    "crumbTool": "KI-Hintergrundentferner"
+  },
+  "bg": {
+    "net": "Modell-Download fehlgeschlagen. Bitte überprüfen Sie Ihre Netzwerkverbindung und versuchen Sie es erneut.",
+    "webgpu": "WebGPU-Beschleunigung nicht verfügbar – auf WASM-Modus umgestellt (kann langsamer sein).",
+    "memory": "Browser-Arbeitsspeicher erschöpft. Versuchen Sie es mit weniger oder kleineren Bildern.",
+    "wasm": "WASM-Runtime konnte nicht geladen werden. Bitte aktualisieren Sie Ihren Browser.",
+    "onnx": "KI-Modell konnte nicht geladen werden. Bitte aktualisieren Sie die Seite und versuchen Sie es erneut.",
+    "decode": "Bilddekodierung fehlgeschlagen. Bitte stellen Sie sicher, dass die Bilddatei vollständig und nicht beschädigt ist.",
+    "modelNotLoaded": "Modell nicht geladen",
+    "modelNotLoadedFull": "Modell nicht geladen. Bitte wählen Sie ein Modell und klicken Sie auf „Hintergrund entfernen“.",
+    "modelLoadFailed": "Modell laden fehlgeschlagen",
+    "modelLoadFailedRefresh": "Modell laden fehlgeschlagen. Bitte aktualisieren Sie die Seite und versuchen Sie es erneut.",
+    "imgProcessFailed": "Bildverarbeitung fehlgeschlagen",
+    "initFailed": "ONNX-Runtime-Initialisierung fehlgeschlagen: {msg}",
+    "httpFailed": "Download der Modelldatei fehlgeschlagen (HTTP {status})",
+    "maxpool": "Die GPU dieses Browsers unterstützt die Pooling-Operation dieses Modells nicht – automatisch in den Kompatibilitätsmodus gewechselt (etwas langsamer)",
+    "fallbackWasm": "In den Kompatibilitätsmodus gewechselt (etwas langsamer)",
+    "timeout": "Zeitüberschreitung bei der Verarbeitung (über {seconds} s) – Bild übersprungen",
+    "ready": "Modell bereit ✓",
+    "loadingEngine": "Modell wird in die Inferenz-Engine geladen...",
+    "sessionInfoLoaded": "Modell geladen",
+    "sessionInfoNotLoaded": "Modell nicht geladen",
+    "canvasBlobFailed": "Canvas-zu-Blob-Konvertierung fehlgeschlagen"
+  },
+  "loader": {
+    "stepChecking": "Cache wird geprüft...",
+    "stepCached": "Cache-Treffer ✓",
+    "stepDownload": "Modell wird heruntergeladen ({size})...",
+    "stepDownloading": "Download {loaded}MB / {total}MB",
+    "stepCache": "Modell wird lokal zwischengespeichert...",
+    "stepReady": "Modell bereit ✓",
+    "errGeneric": "Modell laden fehlgeschlagen",
+    "errDownload": "Download fehlgeschlagen: HTTP {status} {statusText}",
+    "errTimeout": "Verbindungstimeout (keine Daten für {seconds} s), Wechsel zum Backup-Mirror",
+    "errShard": "Shard-Download fehlgeschlagen",
+    "errIncomplete": "Modelldatei unvollständig (erwartet {expected} Bytes, erhalten {actual} Bytes)",
+    "errAllFailed": "Modell-Download fehlgeschlagen"
+  },
+  "bookmark": {
+    "title": "Website speichern",
+    "descDesktop": "Drücken Sie Strg+D / Cmd+D, um diese Website zu speichern",
+    "descMobile": "Tippen Sie im Browser-Menü auf „Zum Home-Bildschirm hinzufügen\"",
+    "close": "Verstanden"
+  },
+  "edit": {
+    "title": "Bild bearbeiten",
+    "eraser": "Radierer",
+    "restore": "Wiederherstellen",
+    "brushSize": "Pinselgröße",
+    "undo": "Rückgängig",
+    "redo": "Wiederholen",
+    "save": "Speichern",
+    "close": "Schließen",
+    "tipEraser": "Über Bereiche malen, um sie zu löschen",
+    "tipRestore": "Über Bereiche malen, um sie wiederherzustellen",
+    "saved": "Gespeichert",
+    "prev": "Zurück",
+    "next": "Weiter"
+  }
+}

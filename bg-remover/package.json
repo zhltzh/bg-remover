@@ -1,0 +1,29 @@
+{
+  "name": "bg-remover",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxi dev",
+    "prebuild": "node scripts/download-models.mjs",
+    "build": "nuxi build",
+    "pregenerate": "node scripts/download-models.mjs",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.13.2",
+    "fflate": "^0.8.3",
+    "nuxt": "^3.19.3",
+    "onnxruntime-web": "^1.21.0",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/schema": "^3.19.3",
+    "@nuxtjs/i18n": "^9.5.2",
+    "@nuxtjs/sitemap": "^6.1.5",
+    "sharp": "^0.35.3",
+    "typescript": "^5.9.3",
+    "vue-tsc": "^2.2.12"
+  }
+}

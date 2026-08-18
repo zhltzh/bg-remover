@@ -1,0 +1,43 @@
+# AI BG Remover - Visão geral do site
+> Removedor de fundo de imagens gratuito com IA online. Todo o processamento é executado localmente no seu navegador.
+
+## Brand
+- Nome: AI BG Remover
+- Descrição: Removedor de fundo de imagens gratuito com IA online para processamento em lote com download de PNG transparente de alta qualidade. Tudo é executado localmente no navegador — as imagens nunca são enviadas para um servidor.
+- Idioma: Português (pt-PT)
+
+## Core Capabilities
+- Remoção automática do fundo das imagens
+- Processamento em lote de várias imagens
+- Suporta JPG/PNG/WEBP/AVIF/GIF/SVG
+- Vários modelos de IA disponíveis (BRIA RMBG/MODNet/U²-Net)
+- Executa localmente no navegador, sem necessidade de upload
+
+## Tech Stack
+- Motor de IA: ONNX Runtime Web
+- Aceleração: WebGPU, WebAssembly SIMD
+- Modelos: BRIA RMBG v1.4, MODNet, U²-Net
+- Frontend: Vue 3, Nuxt 3, Tailwind CSS
+
+## Pages
+- Início: https://ai-bg-remover.vercel.app/pt
+  - Descrição: Removedor de fundo gratuito com IA online — remova o fundo das imagens instantaneamente
+- 404: https://ai-bg-remover.vercel.app/pt/404
+
+## Key Facts
+- Todo o processamento é executado inteiramente no navegador; as imagens nunca saem do seu dispositivo
+- Processamento em lote suportado sem limites de quantidade ou tamanho
+- 100% gratuito, sem registo ou login
+- O primeiro uso transfere o modelo de IA (~42 MB); os usos seguintes são instantâneos graças ao cache IndexedDB
+
+## Alternate Languages
+- 中文: https://ai-bg-remover.vercel.app/llms.txt
+- English: https://ai-bg-remover.vercel.app/llms-en.txt
+- 日本語: https://ai-bg-remover.vercel.app/llms-ja.txt
+- 한국어: https://ai-bg-remover.vercel.app/llms-ko.txt
+- Français: https://ai-bg-remover.vercel.app/llms-fr.txt
+- Deutsch: https://ai-bg-remover.vercel.app/llms-de.txt
+- Español: https://ai-bg-remover.vercel.app/llms-es.txt
+- Русский: https://ai-bg-remover.vercel.app/llms-ru.txt
+- Português: https://ai-bg-remover.vercel.app/llms-pt.txt
+- العربية: https://ai-bg-remover.vercel.app/llms-ar.txt

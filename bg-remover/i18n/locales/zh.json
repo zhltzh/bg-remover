@@ -1,0 +1,369 @@
+{
+  "header": {
+    "brand": "AI抠图",
+    "tagline": "在线免费 · 本地运行 · 保护隐私",
+    "clearCache": "清除缓存",
+    "clearCacheTitle": "清除模型缓存"
+  },
+  "hero": {
+    "title": "AI 抠图 - 在线免费批量去除图片背景",
+    "sub1": "免费在线 AI 抠图工具，批量去除图片背景，支持高清 PNG 下载。",
+    "sub2Strong": "所有处理完全在浏览器本地运行",
+    "sub2": "图片不上传服务器，保护你的隐私安全。",
+    "stat1": "平均 4 秒处理一张",
+    "stat2": "基于 ONNX Runtime Web",
+    "stat3": "完全免费无限制"
+  },
+  "tool": {
+    "ariaTool": "AI 抠图工具",
+    "footerNote": "AI抠图 v1.0 · 基于 ONNX Runtime Web · 支持 WebGPU 加速",
+    "uploadedCount": "已上传 {count} 张",
+    "totalSize": "（共 {size}MB）",
+    "addMore": "+ 添加更多",
+    "downloadAll": "全部下载 ({count} 张)",
+    "downloadAllPartial": "下载成功图片 ({count} 张)",
+    "stopProcessing": "停止处理",
+    "reprocess": "重新处理",
+    "batchHint": "已上传 {count} 张，图片越多处理越慢，建议分批不超过 6 张",
+    "summaryDone": "处理完成：成功 {done} 张",
+    "summaryFail": "处理完成：成功 {done} 张，失败 {fail} 张",
+    "summaryAllFail": "处理失败：{count} 张图片均未能处理",
+    "cachedLoading": "模型已缓存，正在加载推理引擎...",
+    "step1": "上传图片",
+    "step2": "选择模型",
+    "step3": "开始处理",
+    "guideTitle": "第二步：请选择 AI 模型",
+    "guideSub": "不同模型适合不同图片类型，选好后点击「开始抠图」",
+    "loadingModel": "模型加载中 {percent}%",
+    "processing": "处理中 ({done}/{total})",
+    "allDone": "全部完成 ✓",
+    "start": "开始抠图",
+    "clearAllTitle": "清空所有图片",
+    "previewTitle": "对比预览",
+    "close": "关闭 ✕",
+    "failedSuffix": "（失败）",
+    "progressLoading": "加载AI模型 {step}",
+    "progressProcessing": "抠图处理中 ({done}/{total})",
+    "progressError": "处理出错",
+    "progressDone": "处理完成",
+    "progressSubDone": "已完成 {count} 张",
+    "progressCurrent": "正在处理第 {current}/{total} 张"
+  },
+  "models": {
+    "bria": {
+      "name": "Pro",
+      "speed": "~4s/张",
+      "desc": "适用范围广，支持半透明物体，效果最佳",
+      "hint": "通用首选，支持半透明物体"
+    },
+    "u2net": {
+      "name": "Mini",
+      "speed": "~1s/张",
+      "desc": "轻量快速，适合简单图片",
+      "hint": "轻量快速，适合简单图片"
+    },
+    "modnet": {
+      "name": "肖像",
+      "speed": "~1.5s/张",
+      "desc": "适合人像、证件照或主体明显的图片",
+      "hint": "人像/证件照优化"
+    },
+    "tags": {
+      "bria": [
+        "通用",
+        "高精度"
+      ],
+      "u2net": [
+        "轻量",
+        "快速"
+      ],
+      "modnet": [
+        "人像",
+        "证件照"
+      ]
+    },
+    "allName": "运行全部",
+    "allCompare": "对比效果",
+    "allDesc": "同时使用三种模型分别抠图，方便对比效果选择最佳结果",
+    "allTriggerHint": "三种模型同时运行对比效果",
+    "recommended": "推荐",
+    "maxSize": "最大 {size}px",
+    "inputSize": "{res}×{res} 输入"
+  },
+  "download": {
+    "suffix": "抠图"
+  },
+  "upload": {
+    "ariaLabel": "点击或拖拽上传图片",
+    "close": "关闭",
+    "addedCount": "已添加 {count} 张图片",
+    "totalSize": "（共 {size}MB）",
+    "hasFolders": "包含文件夹内容",
+    "addMore": "+ 添加更多",
+    "dropTitle": "拖拽图片到此处，或",
+    "clickUpload": "点击上传",
+    "supported": "支持 JPG / PNG / WEBP / AVIF / GIF，单张最大 50MB",
+    "support": "支持",
+    "paste": "粘贴",
+    "supportFolder": "支持拖拽文件夹",
+    "unlimited": "批量不限数量",
+    "pasting": "粘贴中...",
+    "errorUnsupported": "\"{name}\" 格式不支持",
+    "errorTooLarge": "\"{name}\" 过大 ({size}MB)，单张限制 {max}MB",
+    "warnLarge": "\"{name}\" 体积较大 ({size}MB)，处理可能较慢",
+    "errorMaxFiles": "图片数量已达上限 (最多 {max} 张)",
+    "errorMaxSize": "图片总大小已达上限 (最多 {max}MB)",
+    "errorSummary": "有 {count} 个问题：{first} 等"
+  },
+  "preview": {
+    "processing": "处理中...",
+    "failed": "处理失败",
+    "failShort": "失败",
+    "done": "✓ 完成",
+    "pending": "待处理",
+    "downloadTitle": "下载",
+    "downloadNow": "立即下载",
+    "showOriginal": "原图",
+    "showResult": "结果",
+    "previewTitle": "对比预览",
+    "removeTitle": "移除",
+    "retry": "重试",
+    "resultAlt": "{name} {mid} 抠图结果"
+  },
+  "splash": {
+    "title": "正在加载 AI 模型",
+    "modelNote": "模型文件较大，首次加载需要下载约 {size}，后续使用秒开",
+    "expected": "预计 {time}",
+    "cached": "缓存到浏览器",
+    "local": "本地处理",
+    "connecting": "连接模型服务器...",
+    "downloading": "下载模型文件中...",
+    "loadingEngine": "加载到推理引擎...",
+    "ready": "准备就绪 ✓",
+    "readySuffix": "模型就绪 ✓",
+    "initializing": "初始化中...",
+    "almostDone": "即将完成",
+    "est10to30": "10-30 秒",
+    "downloadingDots": "下载中...",
+    "seconds": "几秒钟",
+    "downloadOnce": "只需下载一次，后续无需下载，请耐心等待"
+  },
+  "progress": {
+    "failed": "失败"
+  },
+  "compare": {
+    "before": "原图",
+    "after": "效果",
+    "hint": "拖拽滑块对比",
+    "beforeAlt": "原图",
+    "afterAlt": "抠图结果"
+  },
+  "how": {
+    "ariaLabel": "使用步骤",
+    "title": "三步完成抠图",
+    "sub": "无需注册，无需安装，打开浏览器即可使用",
+    "step1Title": "上传图片",
+    "step1Desc": "拖拽图片到上传区域，或点击选择文件。支持 JPG、PNG、WEBP 等格式，可批量上传和拖拽文件夹。",
+    "step2Title": "AI 自动处理",
+    "step2Desc": "选择 AI 模型后点击\"开始抠图\"。AI 在浏览器本地处理，约 1-4 秒完成，不上传任何数据到服务器。",
+    "step3Title": "下载 PNG",
+    "step3Desc": "处理完成后点击下载，保存透明背景的 PNG 高清原图。支持单张下载或批量全部下载。"
+  },
+  "faq": {
+    "ariaLabel": "常见问题",
+    "title": "常见问题",
+    "items": [
+      {
+        "q": "抠图需要上传图片到服务器吗？",
+        "a": "不需要。所有 AI 抠图处理完全在您的浏览器本地运行，图片不会上传到任何服务器。这是通过 ONNX Runtime Web 技术在浏览器中直接运行 AI 模型实现的，可以保护您的图片隐私安全。"
+      },
+      {
+        "q": "支持哪些图片格式？处理速度如何？",
+        "a": "支持 JPG、PNG、WEBP、AVIF、GIF、SVG 等格式。Pro 模型约 4 秒/张，肖像模型约 1.5 秒/张，Mini 模型约 1 秒/张。处理后输出为透明背景的 PNG 高清原图。"
+      },
+      {
+        "q": "能处理多大尺寸的图片？批量有限制吗？",
+        "a": "Pro 模型支持最大 16000×16000 像素的超大图片，Mini 和肖像模型支持 2048×2048 像素。批量处理没有数量和大小限制，建议单次不超过 100 张或 500MB 以保证浏览器流畅。"
+      },
+      {
+        "q": "AI 抠图完全免费吗？",
+        "a": "完全免费，无需注册、无需登录、没有任何隐藏收费。所有功能包括批量处理、高清下载、多种 AI 模型选择均可无限制使用。"
+      },
+      {
+        "q": "使用什么 AI 模型？有什么区别？",
+        "a": "提供三种模型：Pro（BRIA RMBG v1.4，42MB，支持半透明物体效果最佳）、肖像（MODNet，25MB，人像优化）、Mini（U²-Net，4.4MB，轻量快速）。您也可以同时运行全部模型对比选择最佳结果。"
+      },
+      {
+        "q": "手机或平板可以使用吗？",
+        "a": "可以。工具采用响应式设计，支持手机和平板浏览器访问，无需安装应用。支持触屏拖拽上传和粘贴图片。"
+      },
+      {
+        "q": "和 remove.bg 等工具相比效果如何？",
+        "a": "我们的 Pro 模型（BRIA RMBG）在大多数场景下能达到接近商业工具的效果，特别擅长处理人物、商品、动物等主体。作为完全免费且本地运行的工具，在隐私保护和性价比方面具有明显优势。"
+      }
+    ]
+  },
+  "section": {
+    "modelCompare": {
+      "ariaLabel": "AI 模型对比",
+      "title": "多种 AI 模型可选，按需选择",
+      "sub": "根据图片类型和处理需求，选择最适合的 AI 模型",
+      "cardProName": "Pro 模型",
+      "cardProItems": [
+        "BRIA RMBG v1.4 架构",
+        "支持 16000×16000 超大图片",
+        "半透明物体边缘处理",
+        "效果最佳，通用首选"
+      ],
+      "cardPortraitName": "肖像模型",
+      "cardPortraitItems": [
+        "MODNet 架构",
+        "人像拍摄和证件照优化",
+        "处理速度 1.5 秒/张",
+        "适合主体明显的图片"
+      ],
+      "cardMiniName": "Mini 模型",
+      "cardMiniItems": [
+        "U²-Net 轻量架构",
+        "仅 4.4MB，加载最快",
+        "处理速度约 1 秒/张",
+        "适合简单背景图片"
+      ],
+      "recommended": "推荐"
+    },
+    "why": {
+      "ariaLabel": "为什么选择我们",
+      "title": "为什么选择 AI 抠图工具？",
+      "b1Title": "隐私安全，不上传服务器",
+      "b1Desc": "所有 AI 处理在浏览器本地完成。您的图片不会离开设备，无需担心隐私泄露问题。根据 Princeton 大学研究，本地 AI 推理是最安全的图片处理方式。",
+      "b2Title": "WebGPU 加速，处理速度快",
+      "b2Desc": "基于 ONNX Runtime Web，支持 WebGPU 和 WebAssembly SIMD 双后端加速。Pro 模型平均 4 秒即可完成一张图片的背景去除。",
+      "b3Title": "完全免费，无任何限制",
+      "b3Desc": "不限制处理数量、不限制图片大小、无需注册登录。所有 AI 模型均可免费使用，包括批量处理和全高清下载。",
+      "b4Title": "IndexedDB 缓存，二次加载秒开",
+      "b4Desc": "AI 模型下载后自动缓存到浏览器的 IndexedDB 中。首次加载约需 42MB（Pro 模型），之后再次使用无需等待。"
+    },
+    "stats": {
+      "s1Num": "4s",
+      "s1Label": "平均处理速度",
+      "s2Num": "42MB",
+      "s2Label": "AI 模型大小",
+      "s3Num": "∞",
+      "s3Label": "数量无限制"
+    },
+    "tech": {
+      "ariaLabel": "技术原理",
+      "title": "技术原理",
+      "p1": "本工具基于 {eng} 在浏览器中直接运行 AI 模型，所有推理计算在本地完成，无需服务器参与。AI 模型使用 {bria}（通用场景）、{modnet}（人像优化）和 {u2net}（轻量快速）三种架构。",
+      "p2": "通过 {gpu} 或 {wasm} 硬件加速，推理速度可达 1-4 秒/张。模型文件通过 IndexedDB 缓存，首次加载后后续使用无需重新下载。",
+      "p3": "据 Princeton 大学 2024 年研究（Aggarwal et al.），浏览器端 AI 推理在隐私保护和响应速度方面相比云端方案具有显著优势 —— 用户数据不会离开设备，处理延迟仅取决于本地硬件性能。"
+    }
+  },
+  "error": {
+    "pageTitle": "页面未找到",
+    "genericTitle": "出错了",
+    "pageDesc1": "你访问的页面不存在或已被移除。",
+    "pageDesc2": "请检查网址是否正确，或返回首页使用 AI 抠图工具。",
+    "genericDesc": "页面加载出现了一些问题，请稍后重试或返回首页。",
+    "backHome": "返回首页",
+    "metaDesc": "抱歉，您访问的页面不存在。返回首页使用 AI 在线免费抠图工具。"
+  },
+  "seo": {
+    "titleSuffix": "AI抠图 - 在线免费背景去除工具",
+    "title": "AI抠图 - 在线免费批量抠图工具 | 本地运行保护隐私",
+    "description": "免费在线AI抠图工具，批量去除图片背景，支持高清PNG下载。完全在浏览器本地运行，图片不上传服务器，保护你的隐私。基于ONNX Runtime Web，支持WebGPU加速。",
+    "keywords": "抠图,AI抠图,在线抠图,去除背景,图片背景去除,免费抠图,批量抠图,透明PNG,remove background,AI background removal,在线工具",
+    "ogTitle": "AI抠图 - 在线免费批量图片背景去除工具",
+    "ogDesc": "免费在线AI抠图工具，批量去除图片背景。所有处理在浏览器本地完成，不上传服务器，保护隐私。",
+    "twitterTitle": "AI抠图 - 在线免费批量图片背景去除工具",
+    "twitterDesc": "免费在线AI抠图工具，批量去除图片背景。浏览器本地运行，保护隐私。",
+    "webAppName": "AI抠图 - 在线免费图片背景去除工具",
+    "webAppDesc": "免费在线AI抠图工具，批量去除图片背景，支持高清PNG下载。所有处理在浏览器本地运行，不上传服务器。",
+    "orgName": "AI抠图",
+    "orgDesc": "免费在线 AI 抠图工具，基于 ONNX Runtime Web 在浏览器本地运行。",
+    "faqQ1": "抠图需要上传图片到服务器吗？",
+    "faqA1": "不需要。所有 AI 抠图处理完全在您的浏览器本地运行，图片不会上传到任何服务器。这是通过 ONNX Runtime Web 技术在浏览器中直接运行 AI 模型实现的，可以保护您的图片隐私安全。",
+    "faqQ2": "支持哪些图片格式？",
+    "faqA2": "支持 JPG、PNG、WEBP、AVIF、GIF、SVG 等常见图片格式。处理后输出为透明背景的 PNG 格式，支持高清原图下载。",
+    "faqQ3": "处理一张图片需要多久？",
+    "faqA3": "使用 Pro 模型（BRIA RMBG）大约需要 4 秒/张，肖像模型（MODNet）约 1.5 秒/张，Mini 模型（U²-Net）约 1 秒/张。处理速度取决于您选择的模型和图片大小。",
+    "faqQ4": "能处理多大尺寸的图片？",
+    "faqA4": "Pro 模型支持最大 16000×16000 像素的超大图片。Mini 和肖像模型支持最大 2048×2048 像素。无论原图多大，AI 模型会自动缩放到合适的推理尺寸，确保处理效果。",
+    "faqQ5": "批量处理有限制吗？",
+    "faqA5": "没有数量和大小限制。我们的工具完全免费，不限制处理图片的数量或文件大小。建议单次不超过 100 张或总大小不超过 500MB，以保证浏览器运行流畅。",
+    "faqQ6": "AI 抠图免费吗？",
+    "faqA6": "完全免费。无需注册、无需登录、没有任何隐藏收费。所有功能均可无限制使用，包括批量处理、高清下载、多种 AI 模型选择等。",
+    "faqQ7": "使用什么 AI 模型？",
+    "faqA7": "提供三种 AI 模型可选：Pro（BRIA RMBG v1.4，42MB，支持半透明物体）、肖像（MODNet，25MB，人像优化）、Mini（U²-Net，4.4MB，轻量快速）。可运行全部模型对比效果。",
+    "faqQ8": "手机可以使用吗？",
+    "faqA8": "可以。工具响应式设计，支持在手机和平板上使用。可以通过浏览器直接访问，无需安装任何应用。支持触屏拖拽上传和粘贴图片。",
+    "howToName": "如何使用 AI 抠图工具去除图片背景",
+    "howToDesc": "三步即可完成图片背景去除：上传、处理、下载。",
+    "howToStep1Name": "上传图片",
+    "howToStep1Text": "将图片文件拖拽到上传区域，或点击上传按钮选择文件。支持 JPG、PNG、WEBP、AVIF 等格式。支持批量上传和文件夹拖拽。",
+    "howToStep2Name": "选择模型并处理",
+    "howToStep2Text": "根据需要选择 AI 模型（Pro/肖像/Mini），点击\"开始抠图\"按钮。AI 将在浏览器本地自动处理，处理速度约 1-4 秒/张。",
+    "howToStep3Name": "下载透明 PNG",
+    "howToStep3Text": "处理完成后，点击图片下方的下载按钮即可保存透明背景的 PNG 图片。支持批量全部下载。",
+    "crumbHome": "首页",
+    "crumbTool": "AI 抠图工具"
+  },
+  "bg": {
+    "net": "模型下载失败，请检查网络连接后重试",
+    "webgpu": "WebGPU 加速不可用，已回退到 WASM 模式（速度可能稍慢）",
+    "memory": "浏览器内存不足，请尝试减少图片数量或使用更小的图片",
+    "wasm": "WASM 运行时加载失败，请尝试更新浏览器",
+    "onnx": "AI 模型加载异常，请刷新页面重试",
+    "decode": "图片解码失败，请确保图片文件完整未损坏",
+    "modelNotLoaded": "模型未加载",
+    "modelNotLoadedFull": "模型未加载，请先选择模型并点击\"开始抠图\"",
+    "modelLoadFailed": "模型加载失败",
+    "modelLoadFailedRefresh": "模型加载失败，请刷新页面重试",
+    "imgProcessFailed": "图片处理失败",
+    "initFailed": "ONNX Runtime 初始化失败: {msg}",
+    "httpFailed": "模型文件下载失败 (HTTP {status})",
+    "maxpool": "当前浏览器 GPU 不支持此模型的池化运算，已自动切换到兼容模式（速度稍慢）",
+    "fallbackWasm": "已切换到兼容模式（速度稍慢）",
+    "timeout": "处理超时（超过 {seconds} 秒），已跳过该图片",
+    "ready": "模型就绪 ✓",
+    "loadingEngine": "加载模型到推理引擎...",
+    "sessionInfoLoaded": "模型已加载",
+    "sessionInfoNotLoaded": "模型未加载",
+    "canvasBlobFailed": "Canvas 转 Blob 失败"
+  },
+  "loader": {
+    "stepChecking": "检查缓存...",
+    "stepCached": "缓存命中 ✓",
+    "stepDownload": "下载模型 ({size})...",
+    "stepDownloading": "下载中 {loaded}MB / {total}MB",
+    "stepCache": "缓存模型到本地...",
+    "stepReady": "模型准备就绪 ✓",
+    "errGeneric": "模型加载失败",
+    "errDownload": "下载失败: HTTP {status} {statusText}",
+    "errTimeout": "连接超时（{seconds} 秒无数据流动），已切换备用地址",
+    "errShard": "分片下载失败",
+    "errIncomplete": "模型文件不完整（期望 {expected} 字节，实际 {actual} 字节）",
+    "errAllFailed": "模型下载失败"
+  },
+  "bookmark": {
+    "title": "收藏本站",
+    "descDesktop": "按 Ctrl+D / Cmd+D 收藏本站，下次用更方便",
+    "descMobile": "点击浏览器菜单「添加到主屏幕」，随时使用",
+    "close": "知道了"
+  },
+  "edit": {
+    "title": "编辑图片",
+    "eraser": "橡皮擦",
+    "restore": "复原",
+    "brushSize": "画笔大小",
+    "undo": "撤销",
+    "redo": "重做",
+    "save": "保存",
+    "close": "关闭",
+    "tipEraser": "涂抹要擦除的区域",
+    "tipRestore": "涂抹要恢复的区域",
+    "saved": "已保存",
+    "prev": "上一张",
+    "next": "下一张"
+  }
+}

@@ -1,0 +1,43 @@
+# AI BG Remover - サイト概要
+> 無料のオンラインAI背景除去ツール。すべての処理はブラウザ内で完結します。
+
+## Brand
+- 名前: AI BG Remover
+- 説明: 画像の背景を無料で自動除去するオンラインAIツール。複数画像の一括処理に対応し、高品質な透過PNGをダウンロードできます。すべての処理はブラウザ内で完結し、画像がサーバーにアップロードされることはありません。
+- 言語: 日本語 (ja-JP)
+
+## Core Capabilities
+- 画像背景の自動除去
+- 複数画像の一括処理
+- JPG/PNG/WEBP/AVIF/GIF/SVG に対応
+- 複数のAIモデルを利用可能（BRIA RMBG/MODNet/U²-Net）
+- ブラウザ内で完結、アップロード不要
+
+## Tech Stack
+- AIエンジン: ONNX Runtime Web
+- 高速化: WebGPU, WebAssembly SIMD
+- モデル: BRIA RMBG v1.4, MODNet, U²-Net
+- フロントエンド: Vue 3, Nuxt 3, Tailwind CSS
+
+## Pages
+- ホーム: https://ai-bg-remover.vercel.app/ja
+  - 説明: 無料のオンラインAI背景除去ツール - 画像の背景を瞬時に除去
+- 404: https://ai-bg-remover.vercel.app/ja/404
+
+## Key Facts
+- すべての処理はブラウザ内で完結し、画像が端末から送信されることはありません
+- 一括処理に対応、枚数・サイズの制限なし
+- 完全無料、登録・ログイン不要
+- 初回利用時にAIモデル（約42MB）をダウンロード。2回目以降は IndexedDB キャッシュにより即時利用可能
+
+## Alternate Languages
+- 中文: https://ai-bg-remover.vercel.app/llms.txt
+- English: https://ai-bg-remover.vercel.app/llms-en.txt
+- 日本語: https://ai-bg-remover.vercel.app/llms-ja.txt
+- 한국어: https://ai-bg-remover.vercel.app/llms-ko.txt
+- Français: https://ai-bg-remover.vercel.app/llms-fr.txt
+- Deutsch: https://ai-bg-remover.vercel.app/llms-de.txt
+- Español: https://ai-bg-remover.vercel.app/llms-es.txt
+- Русский: https://ai-bg-remover.vercel.app/llms-ru.txt
+- Português: https://ai-bg-remover.vercel.app/llms-pt.txt
+- العربية: https://ai-bg-remover.vercel.app/llms-ar.txt

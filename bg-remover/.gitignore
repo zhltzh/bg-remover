@@ -1,0 +1,37 @@
+# Nuxt dev/build outputs
+.output/
+.data/
+.nuxt/
+nitro/
+dist/
+
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Editor directories
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Generated files (self-hosted models + wasm, 由 scripts/download-models.sh 生成)
+public/models/
+public/wasm/
+
+# Test artifacts
+test-screenshots/

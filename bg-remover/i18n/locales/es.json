@@ -1,0 +1,369 @@
+{
+  "header": {
+    "brand": "AI BG Remover",
+    "tagline": "Gratis en línea · Se ejecuta localmente · Privado",
+    "clearCache": "Vaciar caché",
+    "clearCacheTitle": "Vaciar caché de modelos"
+  },
+  "hero": {
+    "title": "Quitar Fondo de Imagen con IA - Elimina Fondos de Fotos Online Gratis",
+    "sub1": "Herramienta gratuita de eliminación de fondo con IA para procesar imágenes por lotes y descargar PNG de alta calidad.",
+    "sub2Strong": "Todo el procesamiento se ejecuta por completo en tu navegador",
+    "sub2": "Tus imágenes nunca se suben a ningún servidor. Tu privacidad está protegida.",
+    "stat1": "~4 s por imagen de media",
+    "stat2": "Desarrollado con ONNX Runtime Web",
+    "stat3": "100% gratis, sin límites"
+  },
+  "tool": {
+    "ariaTool": "Herramienta de eliminación de fondo con IA",
+    "footerNote": "AI BG Remover v1.0 · Desarrollado con ONNX Runtime Web · Acelerado con WebGPU",
+    "uploadedCount": "{count} imágenes subidas",
+    "totalSize": "({size} MB en total)",
+    "addMore": "+ Añadir más",
+    "downloadAll": "Descargar todo ({count} imágenes)",
+    "downloadAllPartial": "Descargar las exitosas ({count} imágenes)",
+    "stopProcessing": "Detener",
+    "reprocess": "Reprocesar",
+    "batchHint": "{count} imágenes subidas. Cuantas más imágenes, más lento es el procesamiento. Recomendamos lotes de 6 o menos",
+    "summaryDone": "Completado: {done} exitosas",
+    "summaryFail": "Completado: {done} exitosas, {fail} fallidas",
+    "summaryAllFail": "Error de procesamiento: no se pudieron procesar {count} imágenes",
+    "cachedLoading": "Modelo en caché, cargando motor de inferencia...",
+    "step1": "Subir imágenes",
+    "step2": "Elegir modelo",
+    "step3": "Empezar a procesar",
+    "guideTitle": "Paso 2: Selecciona un modelo de IA",
+    "guideSub": "Cada modelo se adapta mejor a un tipo de imagen. Elige uno y pulsa \"Quitar fondo\".",
+    "loadingModel": "Cargando modelo {percent}%",
+    "processing": "Procesando ({done}/{total})",
+    "allDone": "Todo listo ✓",
+    "start": "Quitar fondo",
+    "clearAllTitle": "Vaciar todas las imágenes",
+    "previewTitle": "Comparar vista previa",
+    "close": "Cerrar ✕",
+    "failedSuffix": "(fallo)",
+    "progressLoading": "Cargando modelo de IA {step}",
+    "progressProcessing": "Quitando el fondo ({done}/{total})",
+    "progressError": "Error al procesar",
+    "progressDone": "Completado",
+    "progressSubDone": "{count} imágenes listas",
+    "progressCurrent": "Procesando imagen {current}/{total}"
+  },
+  "models": {
+    "bria": {
+      "name": "Pro",
+      "speed": "~4 s/img",
+      "desc": "El mejor modelo de uso general; maneja objetos semitransparentes",
+      "hint": "Ideal para uso general; maneja transparencias"
+    },
+    "u2net": {
+      "name": "Mini",
+      "speed": "~1 s/img",
+      "desc": "Ligero y rápido, perfecto para imágenes simples",
+      "hint": "Ligero y rápido para imágenes simples"
+    },
+    "modnet": {
+      "name": "Retrato",
+      "speed": "~1.5 s/img",
+      "desc": "Optimizado para retratos, fotos de documento y sujetos nítidos",
+      "hint": "Optimizado para retratos y fotos de documento"
+    },
+    "tags": {
+      "bria": [
+        "General",
+        "Alta precisión"
+      ],
+      "u2net": [
+        "Ligero",
+        "Rápido"
+      ],
+      "modnet": [
+        "Retrato",
+        "Foto de documento"
+      ]
+    },
+    "allName": "Ejecutar todo",
+    "allCompare": "Comparar resultados",
+    "allDesc": "Ejecuta los tres modelos en cada imagen y compara los resultados para elegir el mejor",
+    "allTriggerHint": "Ejecuta los 3 modelos para comparar",
+    "recommended": "Recomendado",
+    "maxSize": "Máx. {size} px",
+    "inputSize": "Entrada de {res}×{res}"
+  },
+  "download": {
+    "suffix": "sin-fondo"
+  },
+  "upload": {
+    "ariaLabel": "Haz clic o arrastra para subir imágenes",
+    "close": "Cerrar",
+    "addedCount": "{count} imágenes añadidas",
+    "totalSize": "({size} MB en total)",
+    "hasFolders": "Contiene contenido de carpetas",
+    "addMore": "+ Añadir más",
+    "dropTitle": "Arrastra las imágenes aquí, o",
+    "clickUpload": "haz clic para subir",
+    "supported": "Se admiten JPG / PNG / WEBP / AVIF / GIF, hasta 50 MB cada una",
+    "support": "Admite",
+    "paste": "pegar",
+    "supportFolder": "arrastrar y soltar carpetas",
+    "unlimited": "lote sin límite",
+    "pasting": "Pegando...",
+    "errorUnsupported": "El formato de \"{name}\" no es compatible",
+    "errorTooLarge": "\"{name}\" es demasiado grande ({size} MB); el límite es {max} MB por imagen",
+    "warnLarge": "\"{name}\" es grande ({size} MB), el procesamiento puede ser más lento",
+    "errorMaxFiles": "Se alcanzó el número máximo de imágenes (máx. {max})",
+    "errorMaxSize": "Se alcanzó el tamaño total máximo (máx. {max} MB)",
+    "errorSummary": "{count} problema(s): {first}, etc."
+  },
+  "preview": {
+    "processing": "Procesando...",
+    "failed": "Error al procesar",
+    "failShort": "Error",
+    "done": "✓ Hecho",
+    "pending": "Pendiente",
+    "downloadTitle": "Descargar",
+    "downloadNow": "Descargar ahora",
+    "showOriginal": "Original",
+    "showResult": "Resultado",
+    "previewTitle": "Comparar vista previa",
+    "removeTitle": "Eliminar",
+    "retry": "Reintentar",
+    "resultAlt": "Resultado de quitar fondo a {name} {mid}"
+  },
+  "splash": {
+    "title": "Cargando modelo de IA",
+    "modelNote": "El archivo del modelo es grande: la primera carga descarga unos {size}; los usos posteriores son instantáneos",
+    "expected": "Tiempo estimado: {time}",
+    "cached": "En caché del navegador",
+    "local": "Procesamiento local",
+    "connecting": "Conectando con el servidor de modelos...",
+    "downloading": "Descargando archivos del modelo...",
+    "loadingEngine": "Cargando en el motor de inferencia...",
+    "ready": "Listo ✓",
+    "readySuffix": "Modelo listo ✓",
+    "initializing": "Inicializando...",
+    "almostDone": "Casi listo",
+    "est10to30": "10-30 s",
+    "downloadingDots": "Descargando...",
+    "seconds": "unos segundos",
+    "downloadOnce": "Descarga única - ya no hará falta después. Por favor, espere con paciencia."
+  },
+  "progress": {
+    "failed": "Error"
+  },
+  "compare": {
+    "before": "Original",
+    "after": "Resultado",
+    "hint": "Arrastra para comparar",
+    "beforeAlt": "Imagen original",
+    "afterAlt": "Resultado de quitar el fondo"
+  },
+  "how": {
+    "ariaLabel": "Cómo funciona",
+    "title": "Quita fondos en 3 pasos",
+    "sub": "Sin registro ni instalación: solo abre tu navegador",
+    "step1Title": "Sube imágenes",
+    "step1Desc": "Arrastra las imágenes a la zona de subida o haz clic para elegir archivos. Admite JPG, PNG, WEBP y más. Se admiten subidas por lotes y arrastrar carpetas.",
+    "step2Title": "Procesamiento automático con IA",
+    "step2Desc": "Selecciona un modelo de IA y haz clic en \"Quitar fondo\". La IA procesa de forma local en tu navegador en unos 1-4 segundos, sin subir datos.",
+    "step3Title": "Descarga el PNG",
+    "step3Desc": "Haz clic en descargar para guardar el PNG con fondo transparente a resolución completa. Descarga una a una o todas a la vez."
+  },
+  "faq": {
+    "ariaLabel": "Preguntas frecuentes",
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Necesito subir imágenes a un servidor?",
+        "a": "No. Toda la eliminación de fondo con IA se ejecuta por completo en tu navegador mediante ONNX Runtime Web: tus imágenes nunca salen de tu dispositivo y nunca se suben a ningún servidor, lo que protege tu privacidad."
+      },
+      {
+        "q": "¿Qué formatos de imagen se admiten? ¿Qué tan rápido es?",
+        "a": "Se admiten JPG, PNG, WEBP, AVIF, GIF y SVG. El modelo Pro tarda unos 4 s por imagen, Retrato unos 1.5 s y Mini unos 1 s. El resultado es un PNG con fondo transparente a resolución completa."
+      },
+      {
+        "q": "¿Qué tamaño pueden tener las imágenes? ¿Hay límites de lote?",
+        "a": "El modelo Pro admite hasta 16000×16000 píxeles; Mini y Retrato admiten hasta 2048×2048. El procesamiento por lotes no tiene límites estrictos, pero recomendamos menos de 100 imágenes o 500 MB de una vez para un rendimiento fluido."
+      },
+      {
+        "q": "¿Es totalmente gratis?",
+        "a": "Sí, 100% gratis. Sin registro, sin inicio de sesión ni cargos ocultos. Todas las funciones (procesamiento por lotes, descargas HD y múltiples modelos de IA) están disponibles sin límites."
+      },
+      {
+        "q": "¿Qué modelos de IA se utilizan? ¿Cuál es la diferencia?",
+        "a": "Hay tres modelos: Pro (BRIA RMBG v1.4, 42 MB, mejor calidad, incluye objetos semitransparentes), Retrato (MODNet, 25 MB, optimizado para personas) y Mini (U²-Net, 4.4 MB, ligero y rápido). También puedes ejecutar todos los modelos y comparar."
+      },
+      {
+        "q": "¿Puedo usarlo en el móvil o en una tableta?",
+        "a": "Sí. La herramienta es totalmente responsive y funciona en los navegadores de móvil y tableta sin instalar ninguna aplicación. Se admiten arrastrar y soltar táctil y pegar imágenes."
+      },
+      {
+        "q": "¿Cómo se compara con herramientas como remove.bg?",
+        "a": "Nuestro modelo Pro (BRIA RMBG) consigue resultados cercanos a las herramientas comerciales en la mayoría de los casos, especialmente con personas, productos y animales. Al ser una herramienta gratuita y 100% local, tiene una clara ventaja en privacidad y valor."
+      }
+    ]
+  },
+  "section": {
+    "modelCompare": {
+      "ariaLabel": "Comparación de modelos de IA",
+      "title": "Elige entre varios modelos de IA",
+      "sub": "Elige el mejor modelo según el tipo de imagen y tus necesidades de procesamiento",
+      "cardProName": "Modelo Pro",
+      "cardProItems": [
+        "Arquitectura BRIA RMBG v1.4",
+        "Admite imágenes de hasta 16000×16000",
+        "Maneja bordes semitransparentes",
+        "Mejor calidad, opción de uso general"
+      ],
+      "cardPortraitName": "Modelo Retrato",
+      "cardPortraitItems": [
+        "Arquitectura MODNet",
+        "Optimizado para retratos y fotos de documento",
+        "~1.5 s por imagen",
+        "Ideal para sujetos nítidos y únicos"
+      ],
+      "cardMiniName": "Modelo Mini",
+      "cardMiniItems": [
+        "Arquitectura ligera U²-Net",
+        "Solo 4.4 MB, el que más rápido carga",
+        "~1 s por imagen",
+        "Ideal para fondos simples"
+      ],
+      "recommended": "Recomendado"
+    },
+    "why": {
+      "ariaLabel": "Por qué elegirnos",
+      "title": "¿Por qué elegir AI BG Remover?",
+      "b1Title": "Privado y seguro: sin subidas",
+      "b1Desc": "Todo el procesamiento de IA ocurre localmente en tu navegador. Tus imágenes nunca salen de tu dispositivo. Según investigaciones de Princeton, la inferencia de IA local es la forma más privada de procesar imágenes.",
+      "b2Title": "Acelerado con WebGPU y rápido",
+      "b2Desc": "Construido sobre ONNX Runtime Web con aceleración WebGPU y WebAssembly SIMD. El modelo Pro elimina el fondo de una imagen en unos 4 segundos de media.",
+      "b3Title": "Completamente gratis, sin límites",
+      "b3Desc": "Sin límites de cantidad ni tamaño, sin necesidad de registro. Todos los modelos de IA son gratuitos, incluidos el procesamiento por lotes y las descargas en alta resolución.",
+      "b4Title": "Caché IndexedDB: instantáneo al reutilizar",
+      "b4Desc": "Los modelos de IA se guardan automáticamente en la IndexedDB de tu navegador. La primera carga necesita unos 42 MB (modelo Pro); los usos posteriores son instantáneos."
+    },
+    "stats": {
+      "s1Num": "4 s",
+      "s1Label": "Tiempo medio de procesamiento",
+      "s2Num": "42 MB",
+      "s2Label": "Tamaño del modelo de IA",
+      "s3Num": "∞",
+      "s3Label": "Imágenes ilimitadas"
+    },
+    "tech": {
+      "ariaLabel": "Cómo funciona técnicamente",
+      "title": "Detalles técnicos",
+      "p1": "Esta herramienta ejecuta los modelos de IA directamente en tu navegador con {eng}, por lo que toda la inferencia ocurre localmente sin intervención de servidores. Se utilizan tres arquitecturas: {bria} (general), {modnet} (retratos) y {u2net} (ligera y rápida).",
+      "p2": "Con aceleración por hardware {gpu} o {wasm}, la inferencia alcanza 1-4 segundos por imagen. Los modelos se guardan en caché en IndexedDB, por lo que las cargas posteriores no requieren volver a descargarlos.",
+      "p3": "Según un estudio de Princeton de 2024 (Aggarwal et al.), la inferencia de IA en el navegador ofrece ventajas significativas en privacidad y velocidad de respuesta frente a las soluciones en la nube: tus datos nunca salen del dispositivo y la latencia depende solo del hardware local."
+    }
+  },
+  "error": {
+    "pageTitle": "Página no encontrada",
+    "genericTitle": "Algo salió mal",
+    "pageDesc1": "La página que buscas no existe o se ha eliminado.",
+    "pageDesc2": "Comprueba la URL o vuelve al inicio para usar el eliminador de fondos con IA.",
+    "genericDesc": "La página encontró un error. Inténtalo de nuevo más tarde o vuelve al inicio.",
+    "backHome": "Volver al inicio",
+    "metaDesc": "Lo sentimos, la página que solicitaste no existe. Vuelve al inicio para usar el eliminador de fondos con IA gratuito en línea."
+  },
+  "seo": {
+    "titleSuffix": "Quitar Fondo de Imagen - Herramienta Gratuita en Línea",
+    "title": "Quitar Fondo de Imagen Gratis - Elimina Fondos de Fotos en Línea | Se ejecuta localmente para tu privacidad",
+    "description": "Eliminador de fondos con IA gratuito en línea. Elimina fondos de imágenes por lotes y descarga PNG transparentes de alta calidad. Todo se ejecuta localmente en tu navegador: las imágenes nunca se suben a un servidor. Desarrollado con ONNX Runtime Web y aceleración WebGPU.",
+    "keywords": "quitar fondo de imagen,eliminar fondo foto online,recortar imagen fondo,eliminador de fondos con IA,PNG transparente,fondo transparente,quitar fondo gratis",
+    "ogTitle": "Quitar Fondo de Imagen Gratis - Elimina Fondos de Fotos en Línea",
+    "ogDesc": "Herramienta de IA gratuita en línea para eliminar fondos de imágenes por lotes. Todo el procesamiento ocurre en tu navegador: sin subidas y con privacidad protegida.",
+    "twitterTitle": "Quitar Fondo de Imagen Gratis - Elimina Fondos de Fotos en Línea",
+    "twitterDesc": "Herramienta de IA gratuita en línea para eliminar fondos de imágenes por lotes. Se ejecuta localmente en tu navegador y protege tu privacidad.",
+    "webAppName": "Quitar Fondo de Imagen - Herramienta Gratuita en Línea",
+    "webAppDesc": "Eliminador de fondos con IA gratuito en línea para procesar imágenes por lotes y descargar PNG de alta calidad. Todo el procesamiento se ejecuta localmente en el navegador, sin subidas.",
+    "orgName": "AI BG Remover",
+    "orgDesc": "Herramienta gratuita en línea para eliminar fondos con IA, impulsada por ONNX Runtime Web y que se ejecuta por completo en el navegador.",
+    "faqQ1": "¿Necesito subir imágenes a un servidor?",
+    "faqA1": "No. Toda la eliminación de fondo con IA se ejecuta por completo en tu navegador mediante ONNX Runtime Web. Las imágenes nunca se suben a ningún servidor, por lo que tus fotos permanecen privadas.",
+    "faqQ2": "¿Qué formatos de imagen se admiten?",
+    "faqA2": "Se admiten JPG, PNG, WEBP, AVIF, GIF, SVG y otros formatos comunes. El resultado es un PNG con fondo transparente a resolución completa.",
+    "faqQ3": "¿Cuánto tarda en procesarse una imagen?",
+    "faqA3": "El modelo Pro (BRIA RMBG) tarda unos 4 segundos por imagen, Retrato (MODNet) unos 1.5 segundos y Mini (U²-Net) aproximadamente 1 segundo. La velocidad depende del modelo y del tamaño de la imagen.",
+    "faqQ4": "¿Qué tamaño pueden tener las imágenes?",
+    "faqA4": "El modelo Pro admite hasta 16000×16000 píxeles. Mini y Retrato admiten hasta 2048×2048. La IA ajusta automáticamente cualquier imagen al tamaño de inferencia adecuado manteniendo la calidad.",
+    "faqQ5": "¿Hay límites de procesamiento por lotes?",
+    "faqA5": "No hay límites de cantidad ni de tamaño: la herramienta es completamente gratuita. Recomendamos menos de 100 imágenes o 500 MB en total por lote para un rendimiento fluido del navegador.",
+    "faqQ6": "¿Este eliminador de fondos con IA es gratis?",
+    "faqA6": "Completamente gratis. Sin registro, sin inicio de sesión y sin cargos ocultos. Todas las funciones son ilimitadas, incluidos el procesamiento por lotes, las descargas HD y múltiples modelos de IA.",
+    "faqQ7": "¿Qué modelos de IA se utilizan?",
+    "faqA7": "Hay tres modelos disponibles: Pro (BRIA RMBG v1.4, 42 MB, maneja objetos semitransparentes), Retrato (MODNet, 25 MB, optimizado para personas) y Mini (U²-Net, 4.4 MB, ligero y rápido). Ejecuta todos los modelos para comparar resultados.",
+    "faqQ8": "¿Puedo usarlo en el móvil?",
+    "faqA8": "Sí. La herramienta es responsive y funciona en teléfonos y tabletas desde el navegador, sin instalar ninguna aplicación. Se admiten subidas por arrastrar y soltar táctil y pegar imágenes.",
+    "howToName": "Cómo quitar el fondo de las imágenes con el eliminador de fondos con IA",
+    "howToDesc": "Quita el fondo de las imágenes en 3 pasos: subir, procesar y descargar.",
+    "howToStep1Name": "Subir imágenes",
+    "howToStep1Text": "Arrastra los archivos de imagen a la zona de subida o haz clic en el botón de subir para seleccionar archivos. Se admiten JPG, PNG, WEBP, AVIF y más, incluida la subida por lotes y el arrastre de carpetas.",
+    "howToStep2Name": "Elegir un modelo y procesar",
+    "howToStep2Text": "Selecciona un modelo de IA (Pro/Retrato/Mini) y haz clic en el botón \"Quitar fondo\". La IA procesa de forma local en tu navegador en unos 1-4 segundos por imagen.",
+    "howToStep3Name": "Descargar PNG transparente",
+    "howToStep3Text": "Al terminar, haz clic en el botón de descarga bajo cada imagen para guardar un PNG con fondo transparente. También se admite la descarga por lotes.",
+    "crumbHome": "Inicio",
+    "crumbTool": "Eliminador de fondos con IA"
+  },
+  "bg": {
+    "net": "Error al descargar el modelo. Comprueba tu conexión de red e inténtalo de nuevo.",
+    "webgpu": "La aceleración WebGPU no está disponible; se usó el modo WASM (puede ser más lento).",
+    "memory": "El navegador se quedó sin memoria. Prueba con menos imágenes o tamaños más pequeños.",
+    "wasm": "No se pudo cargar el runtime de WASM. Prueba a actualizar tu navegador.",
+    "onnx": "Error al cargar el modelo de IA. Actualiza la página e inténtalo de nuevo.",
+    "decode": "Error al decodificar la imagen. Asegúrate de que el archivo esté completo y no esté dañado.",
+    "modelNotLoaded": "Modelo no cargado",
+    "modelNotLoadedFull": "Modelo no cargado. Selecciona un modelo y haz clic en \"Quitar fondo\".",
+    "modelLoadFailed": "Error al cargar el modelo",
+    "modelLoadFailedRefresh": "Error al cargar el modelo. Actualiza la página e inténtalo de nuevo.",
+    "imgProcessFailed": "Error al procesar la imagen",
+    "initFailed": "Error al inicializar ONNX Runtime: {msg}",
+    "httpFailed": "Error al descargar el archivo del modelo (HTTP {status})",
+    "maxpool": "La GPU de este navegador no admite la operación de agrupación de este modelo; se cambió automáticamente al modo de compatibilidad (algo más lento)",
+    "fallbackWasm": "Cambiado al modo de compatibilidad (algo más lento)",
+    "timeout": "Se agotó el tiempo de procesamiento (más de {seconds} s); se omitió esta imagen",
+    "ready": "Modelo listo ✓",
+    "loadingEngine": "Cargando el modelo en el motor de inferencia...",
+    "sessionInfoLoaded": "Modelo cargado",
+    "sessionInfoNotLoaded": "Modelo no cargado",
+    "canvasBlobFailed": "Error al convertir Canvas a Blob"
+  },
+  "loader": {
+    "stepChecking": "Comprobando caché...",
+    "stepCached": "Caché encontrada ✓",
+    "stepDownload": "Descargando modelo ({size})...",
+    "stepDownloading": "Descargando {loaded} MB / {total} MB",
+    "stepCache": "Guardando el modelo en caché local...",
+    "stepReady": "Modelo listo ✓",
+    "errGeneric": "Error al cargar el modelo",
+    "errDownload": "Error de descarga: HTTP {status} {statusText}",
+    "errTimeout": "Tiempo de conexión agotado (sin datos durante {seconds} s); se cambió al espejo de respaldo",
+    "errShard": "Error al descargar la partición",
+    "errIncomplete": "Archivo del modelo incompleto (se esperaban {expected} bytes, se obtuvieron {actual})",
+    "errAllFailed": "Error al descargar el modelo"
+  },
+  "bookmark": {
+    "title": "Marcar este sitio",
+    "descDesktop": "Pulse Ctrl+D / Cmd+D para marcar este sitio como favorito",
+    "descMobile": "Pulse «Añadir a pantalla de inicio» en el menú del navegador",
+    "close": "Entendido"
+  },
+  "edit": {
+    "title": "Editar imagen",
+    "eraser": "Borrador",
+    "restore": "Restaurar",
+    "brushSize": "Tamaño del pincel",
+    "undo": "Deshacer",
+    "redo": "Rehacer",
+    "save": "Guardar",
+    "close": "Cerrar",
+    "tipEraser": "Pinte sobre las zonas a borrar",
+    "tipRestore": "Pinte sobre las zonas a restaurar",
+    "saved": "Guardado",
+    "prev": "Anterior",
+    "next": "Siguiente"
+  }
+}

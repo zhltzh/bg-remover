@@ -1,0 +1,25 @@
+# 允许所有搜索引擎爬取
+User-agent: *
+Allow: /
+
+# 显式允许 AI 爬虫（GEO 必需）
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap
+Sitemap: https://ai-bg-remover.vercel.app/sitemap.xml

@@ -1,0 +1,43 @@
+# AI BG Remover - نظرة عامة على الموقع
+> أداة مجانية عبر الإنترنت لإزالة خلفية الصور بالذكاء الاصطناعي. تتم جميع المعالجة محلياً في متصفحك.
+
+## Brand
+- الاسم: AI BG Remover
+- الوصف: أداة مجانية عبر الإنترنت لإزالة خلفية الصور بالذكاء الاصطناعي مع معالجة دفعات متعددة وتنزيل صور PNG شفافة عالية الجودة. كل شيء يعمل محلياً في المتصفح - لا يتم رفع الصور إلى أي خادم إطلاقاً.
+- اللغة: العربية (ar-SA)
+
+## Core Capabilities
+- إزالة خلفية الصور تلقائياً
+- معالجة دفعات متعددة من الصور
+- يدعم JPG/PNG/WEBP/AVIF/GIF/SVG
+- نماذج ذكاء اصطناعي متعددة متاحة (BRIA RMBG/MODNet/U²-Net)
+- يعمل محلياً في المتصفح دون الحاجة إلى رفع الملفات
+
+## Tech Stack
+- محرك الذكاء الاصطناعي: ONNX Runtime Web
+- التسريع: WebGPU, WebAssembly SIMD
+- النماذج: BRIA RMBG v1.4, MODNet, U²-Net
+- الواجهة الأمامية: Vue 3, Nuxt 3, Tailwind CSS
+
+## Pages
+- الرئيسية: https://ai-bg-remover.vercel.app/ar
+  - الوصف: أداة مجانية عبر الإنترنت لإزالة خلفية الصور بالذكاء الاصطناعي - أزل خلفية الصور فوراً
+- 404: https://ai-bg-remover.vercel.app/ar/404
+
+## Key Facts
+- تتم جميع المعالجة بالكامل داخل المتصفح؛ لا تغادر الصور جهازك أبداً
+- دعم معالجة الدفعات دون أي حدود على العدد أو الحجم
+- مجاني 100% دون الحاجة إلى تسجيل أو تسجيل دخول
+- الاستخدام الأول ينزّل نموذج الذكاء الاصطناعي (~42MB)؛ الاستخدامات اللاحقة فورية بفضل التخزين المؤقت IndexedDB
+
+## Alternate Languages
+- 中文: https://ai-bg-remover.vercel.app/llms.txt
+- English: https://ai-bg-remover.vercel.app/llms-en.txt
+- 日本語: https://ai-bg-remover.vercel.app/llms-ja.txt
+- 한국어: https://ai-bg-remover.vercel.app/llms-ko.txt
+- Français: https://ai-bg-remover.vercel.app/llms-fr.txt
+- Deutsch: https://ai-bg-remover.vercel.app/llms-de.txt
+- Español: https://ai-bg-remover.vercel.app/llms-es.txt
+- Русский: https://ai-bg-remover.vercel.app/llms-ru.txt
+- Português: https://ai-bg-remover.vercel.app/llms-pt.txt
+- العربية: https://ai-bg-remover.vercel.app/llms-ar.txt

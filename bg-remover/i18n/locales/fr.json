@@ -1,0 +1,369 @@
+{
+  "header": {
+    "brand": "AI BG Remover",
+    "tagline": "Gratuit en ligne · Traitement local · Confidentialité",
+    "clearCache": "Vider le cache",
+    "clearCacheTitle": "Vider le cache du modèle"
+  },
+  "hero": {
+    "title": "Suppresseur d'arrière-plan IA - Supprimer le fond d'une image en ligne gratuitement",
+    "sub1": "Outil gratuit en ligne de suppression d'arrière-plan par IA pour le traitement par lot d'images avec téléchargement de PNG haute qualité.",
+    "sub2Strong": "Tout le traitement s'exécute entièrement dans votre navigateur",
+    "sub2": "Vos images ne sont jamais envoyées sur un serveur. Confidentialité protégée.",
+    "stat1": "~4 s en moyenne par image",
+    "stat2": "Propulsé par ONNX Runtime Web",
+    "stat3": "100 % gratuit, sans limite"
+  },
+  "tool": {
+    "ariaTool": "Outil de suppression d'arrière-plan par IA",
+    "footerNote": "AI BG Remover v1.0 · Propulsé par ONNX Runtime Web · Accélération WebGPU",
+    "uploadedCount": "{count} images téléchargées",
+    "totalSize": "({size}Mo au total)",
+    "addMore": "+ Ajouter",
+    "downloadAll": "Tout télécharger ({count} images)",
+    "downloadAllPartial": "Télécharger les réussies ({count} images)",
+    "stopProcessing": "Arrêter",
+    "reprocess": "Retraiter",
+    "batchHint": "{count} images téléchargées. Plus il y a d'images, plus le traitement est lent. Recommandation : par lots de 6 maximum",
+    "summaryDone": "Terminé : {done} réussies",
+    "summaryFail": "Terminé : {done} réussies, {fail} échecs",
+    "summaryAllFail": "Échec du traitement : {count} images n'ont pas pu être traitées",
+    "cachedLoading": "Modèle en cache, chargement du moteur d'inférence...",
+    "step1": "Télécharger les images",
+    "step2": "Choisir le modèle",
+    "step3": "Démarrer le traitement",
+    "guideTitle": "Étape 2 : Sélectionnez un modèle IA",
+    "guideSub": "Chaque modèle convient à un type d'image différent. Choisissez-en un et cliquez sur « Supprimer l'arrière-plan ».",
+    "loadingModel": "Chargement du modèle {percent}%",
+    "processing": "Traitement ({done}/{total})",
+    "allDone": "Tout terminé ✓",
+    "start": "Supprimer l'arrière-plan",
+    "clearAllTitle": "Effacer toutes les images",
+    "previewTitle": "Aperçu comparatif",
+    "close": "Fermer ✕",
+    "failedSuffix": "(échec)",
+    "progressLoading": "Chargement du modèle IA {step}",
+    "progressProcessing": "Suppression de l'arrière-plan ({done}/{total})",
+    "progressError": "Échec du traitement",
+    "progressDone": "Terminé",
+    "progressSubDone": "{count} images terminées",
+    "progressCurrent": "Traitement de l'image {current}/{total}"
+  },
+  "models": {
+    "bria": {
+      "name": "Pro",
+      "speed": "~4 s/img",
+      "desc": "Meilleur modèle polyvalent, gère les objets semi-transparents",
+      "hint": "Idéal pour un usage général, gère la transparence"
+    },
+    "u2net": {
+      "name": "Mini",
+      "speed": "~1 s/img",
+      "desc": "Léger et rapide, parfait pour les images simples",
+      "hint": "Léger et rapide pour les images simples"
+    },
+    "modnet": {
+      "name": "Portrait",
+      "speed": "~1,5 s/img",
+      "desc": "Optimisé pour les portraits, photos d'identité et sujets nets",
+      "hint": "Optimisé pour les portraits et photos d'identité"
+    },
+    "tags": {
+      "bria": [
+        "Général",
+        "Haute précision"
+      ],
+      "u2net": [
+        "Léger",
+        "Rapide"
+      ],
+      "modnet": [
+        "Portrait",
+        "Photo d'identité"
+      ]
+    },
+    "allName": "Tout exécuter",
+    "allCompare": "Comparer les résultats",
+    "allDesc": "Exécutez les trois modèles sur chaque image et comparez les résultats pour choisir le meilleur",
+    "allTriggerHint": "Exécute les 3 modèles pour comparer",
+    "recommended": "Recommandé",
+    "maxSize": "Max {size}px",
+    "inputSize": "Entrée {res}×{res}"
+  },
+  "download": {
+    "suffix": "sans-fond"
+  },
+  "upload": {
+    "ariaLabel": "Cliquez ou faites glisser pour télécharger des images",
+    "close": "Fermer",
+    "addedCount": "{count} images ajoutées",
+    "totalSize": "({size}Mo au total)",
+    "hasFolders": "Contient le contenu des dossiers",
+    "addMore": "+ Ajouter",
+    "dropTitle": "Faites glisser vos images ici, ou",
+    "clickUpload": "cliquez pour télécharger",
+    "supported": "JPG / PNG / WEBP / AVIF / GIF pris en charge, jusqu'à 50 Mo par image",
+    "support": "Formats pris en charge",
+    "paste": "coller",
+    "supportFolder": "glisser-déposer de dossier",
+    "unlimited": "traitement par lot illimité",
+    "pasting": "Collage en cours...",
+    "errorUnsupported": "Le format « {name} » n'est pas pris en charge",
+    "errorTooLarge": "« {name} » est trop volumineux ({size}Mo), la limite est de {max}Mo par image",
+    "warnLarge": "« {name} » est volumineux ({size}Mo), le traitement peut être plus lent",
+    "errorMaxFiles": "Nombre maximal d'images atteint (max {max})",
+    "errorMaxSize": "Taille totale maximale atteinte (max {max}Mo)",
+    "errorSummary": "{count} problème(s) : {first}, etc."
+  },
+  "preview": {
+    "processing": "Traitement...",
+    "failed": "Échec du traitement",
+    "failShort": "Échec",
+    "done": "✓ Terminé",
+    "pending": "En attente",
+    "downloadTitle": "Télécharger",
+    "downloadNow": "Télécharger maintenant",
+    "showOriginal": "Original",
+    "showResult": "Résultat",
+    "previewTitle": "Aperçu comparatif",
+    "removeTitle": "Supprimer",
+    "retry": "Réessayer",
+    "resultAlt": "Résultat de la suppression d'arrière-plan de {name} {mid}"
+  },
+  "splash": {
+    "title": "Chargement du modèle IA",
+    "modelNote": "Le fichier du modèle est volumineux - le premier chargement télécharge environ {size}, les utilisations suivantes sont instantanées",
+    "expected": "Délai estimé {time}",
+    "cached": "Mis en cache dans le navigateur",
+    "local": "Traitement local",
+    "connecting": "Connexion au serveur de modèles...",
+    "downloading": "Téléchargement des fichiers du modèle...",
+    "loadingEngine": "Chargement dans le moteur d'inférence...",
+    "ready": "Prêt ✓",
+    "readySuffix": "Modèle prêt ✓",
+    "initializing": "Initialisation...",
+    "almostDone": "Presque terminé",
+    "est10to30": "10-30 s",
+    "downloadingDots": "Téléchargement...",
+    "seconds": "quelques secondes",
+    "downloadOnce": "Téléchargement unique - plus nécessaire ensuite. Merci de patienter."
+  },
+  "progress": {
+    "failed": "Échec"
+  },
+  "compare": {
+    "before": "Original",
+    "after": "Résultat",
+    "hint": "Faites glisser pour comparer",
+    "beforeAlt": "Image originale",
+    "afterAlt": "Résultat de la suppression d'arrière-plan"
+  },
+  "how": {
+    "ariaLabel": "Comment ça marche",
+    "title": "Supprimez les arrière-plans en 3 étapes",
+    "sub": "Pas d'inscription, pas d'installation - ouvrez simplement votre navigateur",
+    "step1Title": "Téléchargez les images",
+    "step1Desc": "Faites glisser les images dans la zone de téléchargement ou cliquez pour choisir des fichiers. Prend en charge JPG, PNG, WEBP et plus. Téléchargement par lot et glisser-déposer de dossiers pris en charge.",
+    "step2Title": "Traitement automatique par IA",
+    "step2Desc": "Sélectionnez un modèle IA et cliquez sur « Supprimer l'arrière-plan ». L'IA traite localement dans votre navigateur en environ 1 à 4 secondes, sans aucune donnée envoyée sur un serveur.",
+    "step3Title": "Téléchargez le PNG",
+    "step3Desc": "Cliquez sur télécharger pour enregistrer le PNG à fond transparent en pleine résolution. Téléchargez un par un ou tous à la fois."
+  },
+  "faq": {
+    "ariaLabel": "FAQ",
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Dois-je télécharger mes images sur un serveur ?",
+        "a": "Non. Toute la suppression d'arrière-plan par IA s'exécute entièrement dans votre navigateur via ONNX Runtime Web - vos images ne quittent jamais votre appareil et ne sont jamais envoyées sur un serveur, ce qui protège votre vie privée."
+      },
+      {
+        "q": "Quels formats d'image sont pris en charge ? Quelle est la vitesse ?",
+        "a": "JPG, PNG, WEBP, AVIF, GIF et SVG sont pris en charge. Le modèle Pro traite environ 4 s/image, Portrait environ 1,5 s/image, Mini environ 1 s/image. Le résultat est un PNG à fond transparent en pleine résolution."
+      },
+      {
+        "q": "Quelle taille d'image puis-je traiter ? Y a-t-il des limites par lot ?",
+        "a": "Le modèle Pro prend en charge jusqu'à 16000×16000 pixels ; Mini et Portrait jusqu'à 2048×2048. Le traitement par lot n'a pas de limite stricte, mais nous recommandons moins de 100 images ou 500 Mo à la fois pour des performances fluides."
+      },
+      {
+        "q": "Est-ce vraiment gratuit ?",
+        "a": "Oui, 100 % gratuit. Pas d'inscription, pas de connexion, pas de frais cachés. Toutes les fonctionnalités - traitement par lot, téléchargements HD, plusieurs modèles IA - sont disponibles sans limite."
+      },
+      {
+        "q": "Quels modèles IA sont utilisés ? Quelle est la différence ?",
+        "a": "Trois modèles : Pro (BRIA RMBG v1.4, 42 Mo, meilleure qualité incluant les objets semi-transparents), Portrait (MODNet, 25 Mo, optimisé pour les personnes), Mini (U²-Net, 4,4 Mo, léger et rapide). Vous pouvez aussi exécuter tous les modèles et comparer."
+      },
+      {
+        "q": "Puis-je l'utiliser sur mobile ou tablette ?",
+        "a": "Oui. L'outil est entièrement responsive et fonctionne dans les navigateurs mobiles et tablettes sans installation d'application. Le glisser-déposer tactile et le collage sont pris en charge."
+      },
+      {
+        "q": "Comment se compare-t-il à des outils comme remove.bg ?",
+        "a": "Notre modèle Pro (BRIA RMBG) atteint des résultats proches des outils commerciaux dans la plupart des scénarios, en particulier pour les personnes, les produits et les animaux. En tant qu'outil gratuit et entièrement local, il présente un net avantage en matière de confidentialité et de rapport qualité-prix."
+      }
+    ]
+  },
+  "section": {
+    "modelCompare": {
+      "ariaLabel": "Comparaison des modèles IA",
+      "title": "Choisissez parmi plusieurs modèles IA",
+      "sub": "Choisissez le meilleur modèle selon votre type d'image et vos besoins",
+      "cardProName": "Modèle Pro",
+      "cardProItems": [
+        "Architecture BRIA RMBG v1.4",
+        "Prend en charge jusqu'à 16000×16000 pixels",
+        "Gère les bords semi-transparents",
+        "Meilleure qualité, choix polyvalent"
+      ],
+      "cardPortraitName": "Modèle Portrait",
+      "cardPortraitItems": [
+        "Architecture MODNet",
+        "Optimisé pour les portraits et photos d'identité",
+        "~1,5 s par image",
+        "Idéal pour les sujets nets et uniques"
+      ],
+      "cardMiniName": "Modèle Mini",
+      "cardMiniItems": [
+        "Architecture légère U²-Net",
+        "Seulement 4,4 Mo, chargement le plus rapide",
+        "~1 s par image",
+        "Idéal pour les arrière-plans simples"
+      ],
+      "recommended": "Recommandé"
+    },
+    "why": {
+      "ariaLabel": "Pourquoi nous choisir",
+      "title": "Pourquoi choisir AI BG Remover ?",
+      "b1Title": "Confidentiel et sécurisé - aucun envoi",
+      "b1Desc": "Tout le traitement IA s'effectue localement dans votre navigateur. Vos images ne quittent jamais votre appareil. Selon une recherche de Princeton, l'inférence IA locale est le moyen le plus confidentiel de traiter des images.",
+      "b2Title": "Accélération WebGPU et rapidité",
+      "b2Desc": "Basé sur ONNX Runtime Web avec accélération WebGPU et WebAssembly SIMD. Le modèle Pro supprime l'arrière-plan en environ 4 secondes par image en moyenne.",
+      "b3Title": "Entièrement gratuit, sans limites",
+      "b3Desc": "Aucune limite de nombre ou de taille d'image, pas d'inscription requise. Tous les modèles IA sont gratuits, y compris le traitement par lot et les téléchargements en pleine HD.",
+      "b4Title": "Cache IndexedDB - instantané à la réutilisation",
+      "b4Desc": "Les modèles IA sont automatiquement mis en cache dans l'IndexedDB de votre navigateur. Le premier chargement nécessite environ 42 Mo (modèle Pro) ; les utilisations suivantes sont instantanées."
+    },
+    "stats": {
+      "s1Num": "4 s",
+      "s1Label": "Temps de traitement moyen",
+      "s2Num": "42 Mo",
+      "s2Label": "Taille du modèle IA",
+      "s3Num": "∞",
+      "s3Label": "Images illimitées"
+    },
+    "tech": {
+      "ariaLabel": "Comment ça fonctionne techniquement",
+      "title": "Détails techniques",
+      "p1": "Cet outil exécute les modèles IA directement dans votre navigateur avec {eng}, si bien que toute l'inférence se fait localement, sans intervention de serveur. Trois architectures sont utilisées : {bria} (général), {modnet} (portraits) et {u2net} (léger et rapide).",
+      "p2": "Grâce à l'accélération matérielle {gpu} ou {wasm}, l'inférence atteint 1 à 4 secondes par image. Les modèles sont mis en cache dans IndexedDB, donc les chargements suivants ne nécessitent aucun nouveau téléchargement.",
+      "p3": "Selon une étude de 2024 de Princeton (Aggarwal et al.), l'inférence IA dans le navigateur offre des avantages significatifs en matière de confidentialité et de rapidité par rapport aux solutions cloud - vos données ne quittent jamais l'appareil et la latence ne dépend que du matériel local."
+    }
+  },
+  "error": {
+    "pageTitle": "Page introuvable",
+    "genericTitle": "Une erreur s'est produite",
+    "pageDesc1": "La page que vous recherchez n'existe pas ou a été supprimée.",
+    "pageDesc2": "Vérifiez l'URL ou revenez à l'accueil pour utiliser le suppresseur d'arrière-plan IA.",
+    "genericDesc": "Une erreur est survenue sur la page. Veuillez réessayer plus tard ou revenir à l'accueil.",
+    "backHome": "Retour à l'accueil",
+    "metaDesc": "Désolé, la page demandée n'existe pas. Revenez à l'accueil pour utiliser le suppresseur d'arrière-plan IA gratuit en ligne."
+  },
+  "seo": {
+    "titleSuffix": "Suppresseur d'arrière-plan IA - Outil gratuit en ligne",
+    "title": "Suppresseur d'arrière-plan IA gratuit - Supprimer le fond d'une image en ligne | Exécution locale pour la confidentialité",
+    "description": "Suppresseur d'arrière-plan IA gratuit en ligne. Supprimez le fond d'images par lot et téléchargez des PNG transparents de haute qualité. Tout s'exécute localement dans votre navigateur - les images ne sont jamais envoyées sur un serveur. Propulsé par ONNX Runtime Web avec accélération WebGPU.",
+    "keywords": "supprimer fond image, détourer image en ligne, suppression arrière-plan IA, détourage photo gratuit, enlever fond photo, PNG transparent, détourage par lot, alternative remove.bg, suppresseur d'arrière-plan gratuit",
+    "ogTitle": "Suppresseur d'arrière-plan IA gratuit - Supprimer le fond d'une image en ligne",
+    "ogDesc": "Outil IA gratuit en ligne pour supprimer le fond d'images par lot. Tout le traitement se fait dans votre navigateur - aucun envoi, confidentialité protégée.",
+    "twitterTitle": "Suppresseur d'arrière-plan IA gratuit - Supprimer le fond d'une image en ligne",
+    "twitterDesc": "Outil IA gratuit en ligne pour supprimer le fond d'images par lot. S'exécute localement dans votre navigateur, confidentialité protégée.",
+    "webAppName": "Suppresseur d'arrière-plan IA - Outil gratuit en ligne",
+    "webAppDesc": "Suppresseur d'arrière-plan IA gratuit en ligne pour le traitement par lot d'images avec téléchargement de PNG haute qualité. Tout le traitement s'exécute localement dans le navigateur, sans envoi.",
+    "orgName": "AI BG Remover",
+    "orgDesc": "Outil gratuit en ligne de suppression d'arrière-plan par IA propulsé par ONNX Runtime Web, s'exécutant entièrement dans le navigateur.",
+    "faqQ1": "Dois-je télécharger mes images sur un serveur ?",
+    "faqA1": "Non. Toute la suppression d'arrière-plan par IA s'exécute entièrement dans votre navigateur via ONNX Runtime Web. Les images ne sont jamais envoyées sur un serveur, ce qui préserve la confidentialité de vos photos.",
+    "faqQ2": "Quels formats d'image sont pris en charge ?",
+    "faqA2": "JPG, PNG, WEBP, AVIF, GIF, SVG et d'autres formats courants sont pris en charge. Le résultat est un PNG à fond transparent en pleine résolution.",
+    "faqQ3": "Combien de temps faut-il pour traiter une image ?",
+    "faqA3": "Le modèle Pro (BRIA RMBG) prend environ 4 secondes par image, Portrait (MODNet) environ 1,5 seconde, Mini (U²-Net) environ 1 seconde. La vitesse dépend du modèle et de la taille de l'image.",
+    "faqQ4": "Quelle taille d'image puis-je traiter ?",
+    "faqA4": "Le modèle Pro prend en charge jusqu'à 16000×16000 pixels. Mini et Portrait jusqu'à 2048×2048. L'IA redimensionne automatiquement toute image à la bonne taille d'inférence tout en préservant la qualité.",
+    "faqQ5": "Y a-t-il des limites pour le traitement par lot ?",
+    "faqA5": "Aucune limite de nombre ou de taille - l'outil est entièrement gratuit. Nous recommandons moins de 100 images ou 500 Mo au total par lot pour des performances fluides dans le navigateur.",
+    "faqQ6": "Ce suppresseur d'arrière-plan IA est-il gratuit ?",
+    "faqA6": "Entièrement gratuit. Pas d'inscription, pas de connexion, pas de frais cachés. Toutes les fonctionnalités sont illimitées, y compris le traitement par lot, les téléchargements HD et plusieurs modèles IA.",
+    "faqQ7": "Quels modèles IA sont utilisés ?",
+    "faqA7": "Trois modèles sont disponibles : Pro (BRIA RMBG v1.4, 42 Mo, gère les objets semi-transparents), Portrait (MODNet, 25 Mo, optimisé pour les personnes), Mini (U²-Net, 4,4 Mo, léger et rapide). Exécutez tous les modèles pour comparer les résultats.",
+    "faqQ8": "Puis-je l'utiliser sur mobile ?",
+    "faqA8": "Oui. L'outil est responsive et fonctionne sur les téléphones et tablettes via le navigateur, sans installation d'application. Le glisser-déposer tactile et le collage sont pris en charge.",
+    "howToName": "Comment supprimer le fond d'une image avec le suppresseur d'arrière-plan IA",
+    "howToDesc": "Supprimez le fond d'une image en 3 étapes : téléchargez, traitez, téléchargez le résultat.",
+    "howToStep1Name": "Téléchargez les images",
+    "howToStep1Text": "Faites glisser les fichiers image dans la zone de téléchargement ou cliquez sur le bouton de téléchargement pour sélectionner des fichiers. JPG, PNG, WEBP, AVIF et plus sont pris en charge, avec téléchargement par lot et glisser-déposer de dossiers.",
+    "howToStep2Name": "Choisissez un modèle et traitez",
+    "howToStep2Text": "Sélectionnez un modèle IA (Pro/Portrait/Mini) et cliquez sur le bouton « Supprimer l'arrière-plan ». L'IA traite localement dans votre navigateur en environ 1 à 4 secondes par image.",
+    "howToStep3Name": "Téléchargez le PNG transparent",
+    "howToStep3Text": "Une fois terminé, cliquez sur le bouton de téléchargement sous chaque image pour enregistrer un PNG à fond transparent. Le téléchargement par lot est également pris en charge.",
+    "crumbHome": "Accueil",
+    "crumbTool": "Suppresseur d'arrière-plan IA"
+  },
+  "bg": {
+    "net": "Échec du téléchargement du modèle. Vérifiez votre connexion réseau et réessayez.",
+    "webgpu": "Accélération WebGPU indisponible - bascule en mode WASM (peut être plus lent).",
+    "memory": "Mémoire du navigateur insuffisante. Essayez avec moins d'images ou des images plus petites.",
+    "wasm": "Échec du chargement du runtime WASM. Veuillez essayer de mettre à jour votre navigateur.",
+    "onnx": "Échec du chargement du modèle IA. Veuillez actualiser la page et réessayer.",
+    "decode": "Échec du décodage de l'image. Vérifiez que le fichier image est complet et non corrompu.",
+    "modelNotLoaded": "Modèle non chargé",
+    "modelNotLoadedFull": "Modèle non chargé. Veuillez sélectionner un modèle et cliquer sur « Supprimer l'arrière-plan ».",
+    "modelLoadFailed": "Échec du chargement du modèle",
+    "modelLoadFailedRefresh": "Échec du chargement du modèle. Veuillez actualiser la page et réessayer.",
+    "imgProcessFailed": "Échec du traitement de l'image",
+    "initFailed": "Échec de l'initialisation d'ONNX Runtime : {msg}",
+    "httpFailed": "Échec du téléchargement du fichier du modèle (HTTP {status})",
+    "maxpool": "Le GPU de ce navigateur ne prend pas en charge l'opération de pooling de ce modèle – bascule automatique en mode de compatibilité (légèrement plus lent)",
+    "fallbackWasm": "Bascule en mode de compatibilité (légèrement plus lent)",
+    "timeout": "Délai de traitement dépassé (plus de {seconds} s) – image ignorée",
+    "ready": "Modèle prêt ✓",
+    "loadingEngine": "Chargement du modèle dans le moteur d'inférence...",
+    "sessionInfoLoaded": "Modèle chargé",
+    "sessionInfoNotLoaded": "Modèle non chargé",
+    "canvasBlobFailed": "Échec de la conversion Canvas vers Blob"
+  },
+  "loader": {
+    "stepChecking": "Vérification du cache...",
+    "stepCached": "Cache atteint ✓",
+    "stepDownload": "Téléchargement du modèle ({size})...",
+    "stepDownloading": "Téléchargement {loaded}Mo / {total}Mo",
+    "stepCache": "Mise en cache locale du modèle...",
+    "stepReady": "Modèle prêt ✓",
+    "errGeneric": "Échec du chargement du modèle",
+    "errDownload": "Échec du téléchargement : HTTP {status} {statusText}",
+    "errTimeout": "Délai de connexion dépassé (aucune donnée pendant {seconds} s), bascule vers un miroir de secours",
+    "errShard": "Échec du téléchargement du fragment",
+    "errIncomplete": "Fichier du modèle incomplet ({expected} octets attendus, {actual} reçus)",
+    "errAllFailed": "Échec du téléchargement du modèle"
+  },
+  "bookmark": {
+    "title": "Mettre en favori",
+    "descDesktop": "Appuyez sur Ctrl+D / Cmd+D pour mettre ce site en favori",
+    "descMobile": "Appuyez sur « Ajouter à l’écran d’accueil » dans le menu du navigateur",
+    "close": "Compris"
+  },
+  "edit": {
+    "title": "Modifier l’image",
+    "eraser": "Gomme",
+    "restore": "Restaurer",
+    "brushSize": "Taille du pinceau",
+    "undo": "Annuler",
+    "redo": "Rétablir",
+    "save": "Enregistrer",
+    "close": "Fermer",
+    "tipEraser": "Peignez les zones à effacer",
+    "tipRestore": "Peignez les zones à restaurer",
+    "saved": "Enregistré",
+    "prev": "Précédent",
+    "next": "Suivant"
+  }
+}

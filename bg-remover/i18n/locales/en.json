@@ -1,0 +1,369 @@
+{
+  "header": {
+    "brand": "AI BG Remover",
+    "tagline": "Free online · Runs locally · Private",
+    "clearCache": "Clear cache",
+    "clearCacheTitle": "Clear model cache"
+  },
+  "hero": {
+    "title": "AI Background Remover - Remove Image Backgrounds Online Free",
+    "sub1": "Free online AI background removal tool for batch image processing with high-quality PNG download.",
+    "sub2Strong": "All processing runs entirely in your browser",
+    "sub2": "Your images are never uploaded to any server. Privacy protected.",
+    "stat1": "~4s average per image",
+    "stat2": "Powered by ONNX Runtime Web",
+    "stat3": "100% free, no limits"
+  },
+  "tool": {
+    "ariaTool": "AI background removal tool",
+    "footerNote": "AI BG Remover v1.0 · Powered by ONNX Runtime Web · WebGPU accelerated",
+    "uploadedCount": "{count} images uploaded",
+    "totalSize": "({size}MB total)",
+    "addMore": "+ Add more",
+    "downloadAll": "Download all ({count} images)",
+    "downloadAllPartial": "Download successful ({count} images)",
+    "stopProcessing": "Stop",
+    "reprocess": "Reprocess",
+    "batchHint": "{count} images uploaded. More images means slower processing - we recommend batches of 6 or fewer",
+    "summaryDone": "Done: {done} succeeded",
+    "summaryFail": "Done: {done} succeeded, {fail} failed",
+    "summaryAllFail": "Processing failed: {count} images could not be processed",
+    "cachedLoading": "Model cached, loading inference engine...",
+    "step1": "Upload images",
+    "step2": "Choose model",
+    "step3": "Start processing",
+    "guideTitle": "Step 2: Select an AI model",
+    "guideSub": "Different models suit different image types. Pick one and click \"Start\".",
+    "loadingModel": "Loading model {percent}%",
+    "processing": "Processing ({done}/{total})",
+    "allDone": "All done ✓",
+    "start": "Remove Background",
+    "clearAllTitle": "Clear all images",
+    "previewTitle": "Compare preview",
+    "close": "Close ✕",
+    "failedSuffix": "(failed)",
+    "progressLoading": "Loading AI model {step}",
+    "progressProcessing": "Removing background ({done}/{total})",
+    "progressError": "Processing failed",
+    "progressDone": "Complete",
+    "progressSubDone": "{count} images done",
+    "progressCurrent": "Processing image {current}/{total}"
+  },
+  "models": {
+    "bria": {
+      "name": "Pro",
+      "speed": "~4s/img",
+      "desc": "Best general-purpose model, handles semi-transparent objects",
+      "hint": "Best for general use, handles transparency"
+    },
+    "u2net": {
+      "name": "Mini",
+      "speed": "~1s/img",
+      "desc": "Lightweight and fast, great for simple images",
+      "hint": "Lightweight & fast for simple images"
+    },
+    "modnet": {
+      "name": "Portrait",
+      "speed": "~1.5s/img",
+      "desc": "Optimized for portraits, ID photos and clear subjects",
+      "hint": "Optimized for portraits & ID photos"
+    },
+    "tags": {
+      "bria": [
+        "General",
+        "High precision"
+      ],
+      "u2net": [
+        "Lightweight",
+        "Fast"
+      ],
+      "modnet": [
+        "Portrait",
+        "ID photo"
+      ]
+    },
+    "allName": "Run all",
+    "allCompare": "Compare results",
+    "allDesc": "Run all three models on each image and compare results to pick the best one",
+    "allTriggerHint": "Runs all 3 models for comparison",
+    "recommended": "Recommended",
+    "maxSize": "Max {size}px",
+    "inputSize": "{res}×{res} input"
+  },
+  "download": {
+    "suffix": "bgremoved"
+  },
+  "upload": {
+    "ariaLabel": "Click or drag to upload images",
+    "close": "Close",
+    "addedCount": "{count} images added",
+    "totalSize": "({size}MB total)",
+    "hasFolders": "Contains folder contents",
+    "addMore": "+ Add more",
+    "dropTitle": "Drag images here, or",
+    "clickUpload": "click to upload",
+    "supported": "JPG / PNG / WEBP / AVIF / GIF supported, up to 50MB each",
+    "support": "Supports",
+    "paste": "paste",
+    "supportFolder": "folder drag & drop",
+    "unlimited": "unlimited batch",
+    "pasting": "Pasting...",
+    "errorUnsupported": "\"{name}\" format is not supported",
+    "errorTooLarge": "\"{name}\" is too large ({size}MB), limit is {max}MB per image",
+    "warnLarge": "\"{name}\" is large ({size}MB), processing may be slower",
+    "errorMaxFiles": "Maximum image count reached (max {max})",
+    "errorMaxSize": "Maximum total size reached (max {max}MB)",
+    "errorSummary": "{count} issue(s): {first} etc."
+  },
+  "preview": {
+    "processing": "Processing...",
+    "failed": "Processing failed",
+    "failShort": "Failed",
+    "done": "✓ Done",
+    "pending": "Pending",
+    "downloadTitle": "Download",
+    "downloadNow": "Download Now",
+    "showOriginal": "Original",
+    "showResult": "Result",
+    "previewTitle": "Compare preview",
+    "removeTitle": "Remove",
+    "retry": "Retry",
+    "resultAlt": "{name} {mid} background removal result"
+  },
+  "splash": {
+    "title": "Loading AI Model",
+    "modelNote": "The model file is large - first load downloads about {size}, subsequent uses are instant",
+    "expected": "ETA {time}",
+    "cached": "Cached in browser",
+    "local": "Local processing",
+    "connecting": "Connecting to model server...",
+    "downloading": "Downloading model files...",
+    "loadingEngine": "Loading into inference engine...",
+    "ready": "Ready ✓",
+    "readySuffix": "Model ready ✓",
+    "initializing": "Initializing...",
+    "almostDone": "Almost done",
+    "est10to30": "10-30 sec",
+    "downloadingDots": "Downloading...",
+    "seconds": "a few seconds",
+    "downloadOnce": "Download only once - no download needed later. Please wait patiently."
+  },
+  "progress": {
+    "failed": "Failed"
+  },
+  "compare": {
+    "before": "Original",
+    "after": "Result",
+    "hint": "Drag to compare",
+    "beforeAlt": "Original image",
+    "afterAlt": "Background removal result"
+  },
+  "how": {
+    "ariaLabel": "How it works",
+    "title": "Remove Backgrounds in 3 Steps",
+    "sub": "No registration, no installation - just open your browser",
+    "step1Title": "Upload Images",
+    "step1Desc": "Drag images to the upload area or click to choose files. Supports JPG, PNG, WEBP and more. Batch upload and folder drag & drop supported.",
+    "step2Title": "AI Auto Processing",
+    "step2Desc": "Select an AI model and click \"Remove Background\". The AI processes locally in your browser in about 1-4 seconds, with no data uploaded.",
+    "step3Title": "Download PNG",
+    "step3Desc": "Click download to save the transparent-background PNG at full resolution. Download one by one or all at once."
+  },
+  "faq": {
+    "ariaLabel": "FAQ",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Do I need to upload images to a server?",
+        "a": "No. All AI background removal runs entirely in your browser via ONNX Runtime Web - your images never leave your device and are never uploaded to any server, protecting your privacy."
+      },
+      {
+        "q": "Which image formats are supported? How fast is it?",
+        "a": "JPG, PNG, WEBP, AVIF, GIF and SVG are supported. Pro model takes about 4s/image, Portrait about 1.5s/image, Mini about 1s/image. Output is a transparent-background PNG at full resolution."
+      },
+      {
+        "q": "How large can images be? Any batch limits?",
+        "a": "The Pro model supports up to 16000×16000 pixels; Mini and Portrait support up to 2048×2048. Batch processing has no hard limits, but we recommend under 100 images or 500MB at once for smooth performance."
+      },
+      {
+        "q": "Is this completely free?",
+        "a": "Yes, 100% free. No registration, no login, no hidden fees. All features - batch processing, HD downloads, multiple AI models - are available without limits."
+      },
+      {
+        "q": "Which AI models are used? What's the difference?",
+        "a": "Three models: Pro (BRIA RMBG v1.4, 42MB, best quality including semi-transparent objects), Portrait (MODNet, 25MB, optimized for people), Mini (U²-Net, 4.4MB, lightweight and fast). You can also run all models and compare."
+      },
+      {
+        "q": "Can I use it on mobile or tablet?",
+        "a": "Yes. The tool is fully responsive and works in mobile and tablet browsers with no app installation. Touch drag-and-drop and paste are supported."
+      },
+      {
+        "q": "How does it compare to tools like remove.bg?",
+        "a": "Our Pro model (BRIA RMBG) achieves results close to commercial tools in most scenarios, especially for people, products and animals. As a free, fully local tool, it has a clear advantage in privacy and value."
+      }
+    ]
+  },
+  "section": {
+    "modelCompare": {
+      "ariaLabel": "AI model comparison",
+      "title": "Choose from Multiple AI Models",
+      "sub": "Pick the best model for your image type and processing needs",
+      "cardProName": "Pro Model",
+      "cardProItems": [
+        "BRIA RMBG v1.4 architecture",
+        "Supports up to 16000×16000 images",
+        "Handles semi-transparent edges",
+        "Best quality, general-purpose choice"
+      ],
+      "cardPortraitName": "Portrait Model",
+      "cardPortraitItems": [
+        "MODNet architecture",
+        "Optimized for portraits & ID photos",
+        "~1.5s per image",
+        "Best for clear, single subjects"
+      ],
+      "cardMiniName": "Mini Model",
+      "cardMiniItems": [
+        "U²-Net lightweight architecture",
+        "Only 4.4MB, fastest to load",
+        "~1s per image",
+        "Best for simple backgrounds"
+      ],
+      "recommended": "Recommended"
+    },
+    "why": {
+      "ariaLabel": "Why choose us",
+      "title": "Why Choose AI BG Remover?",
+      "b1Title": "Private & Secure - No Uploads",
+      "b1Desc": "All AI processing happens locally in your browser. Your images never leave your device. According to Princeton research, local AI inference is the most private way to process images.",
+      "b2Title": "WebGPU Accelerated & Fast",
+      "b2Desc": "Built on ONNX Runtime Web with WebGPU and WebAssembly SIMD acceleration. The Pro model removes backgrounds in about 4 seconds per image on average.",
+      "b3Title": "Completely Free, No Limits",
+      "b3Desc": "No limits on image count or size, no registration required. All AI models are free, including batch processing and full-HD downloads.",
+      "b4Title": "IndexedDB Cache - Instant on Reuse",
+      "b4Desc": "AI models are auto-cached in your browser's IndexedDB. First load needs about 42MB (Pro model); subsequent uses are instant."
+    },
+    "stats": {
+      "s1Num": "4s",
+      "s1Label": "Avg processing time",
+      "s2Num": "42MB",
+      "s2Label": "AI model size",
+      "s3Num": "∞",
+      "s3Label": "Unlimited images"
+    },
+    "tech": {
+      "ariaLabel": "How it works technically",
+      "title": "Technical Details",
+      "p1": "This tool runs AI models directly in your browser with {eng}, so all inference happens locally with no server involvement. Three architectures are used: {bria} (general), {modnet} (portraits) and {u2net} (lightweight & fast).",
+      "p2": "With {gpu} or {wasm} hardware acceleration, inference reaches 1-4 seconds per image. Models are cached in IndexedDB, so subsequent loads need no re-download.",
+      "p3": "According to a 2024 Princeton study (Aggarwal et al.), in-browser AI inference offers significant advantages in privacy and response speed over cloud solutions - your data never leaves the device, and latency depends only on local hardware."
+    }
+  },
+  "error": {
+    "pageTitle": "Page Not Found",
+    "genericTitle": "Something Went Wrong",
+    "pageDesc1": "The page you're looking for doesn't exist or has been removed.",
+    "pageDesc2": "Check the URL, or return home to use the AI background remover.",
+    "genericDesc": "The page ran into an error. Please try again later or return home.",
+    "backHome": "Back to Home",
+    "metaDesc": "Sorry, the page you requested doesn't exist. Return home to use the free online AI background remover."
+  },
+  "seo": {
+    "titleSuffix": "AI Background Remover - Free Online Tool",
+    "title": "Free AI Background Remover - Remove Image Backgrounds Online | Runs Locally for Privacy",
+    "description": "Free online AI background remover. Batch remove image backgrounds and download high-quality transparent PNGs. Everything runs locally in your browser - images never upload to a server. Powered by ONNX Runtime Web with WebGPU acceleration.",
+    "keywords": "background remover,remove background,AI background removal,remove image background,free background remover,batch background removal,transparent PNG,cut out image,remove.bg alternative,online background remover,AI抠图,在线抠图",
+    "ogTitle": "Free AI Background Remover - Remove Image Backgrounds Online",
+    "ogDesc": "Free online AI tool to remove image backgrounds in batch. All processing happens in your browser - no uploads, privacy protected.",
+    "twitterTitle": "Free AI Background Remover - Remove Image Backgrounds Online",
+    "twitterDesc": "Free online AI tool to remove image backgrounds in batch. Runs locally in your browser, privacy protected.",
+    "webAppName": "AI Background Remover - Free Online Tool",
+    "webAppDesc": "Free online AI background remover for batch image processing with high-quality PNG download. All processing runs in the browser locally, no uploads.",
+    "orgName": "AI BG Remover",
+    "orgDesc": "Free online AI background removal tool powered by ONNX Runtime Web, running entirely in the browser.",
+    "faqQ1": "Do I need to upload images to a server?",
+    "faqA1": "No. All AI background removal runs entirely in your browser via ONNX Runtime Web. Images are never uploaded to any server, keeping your photos private.",
+    "faqQ2": "Which image formats are supported?",
+    "faqA2": "JPG, PNG, WEBP, AVIF, GIF, SVG and other common formats are supported. Output is a transparent-background PNG at full resolution.",
+    "faqQ3": "How long does it take to process one image?",
+    "faqA3": "The Pro model (BRIA RMBG) takes about 4 seconds per image, Portrait (MODNet) about 1.5 seconds, Mini (U²-Net) about 1 second. Speed depends on the model and image size.",
+    "faqQ4": "How large can the images be?",
+    "faqA4": "The Pro model supports up to 16000×16000 pixels. Mini and Portrait support up to 2048×2048. The AI auto-scales any image to the right inference size while keeping quality.",
+    "faqQ5": "Are there batch processing limits?",
+    "faqA5": "No limits on count or size - the tool is completely free. We recommend under 100 images or 500MB total per batch for smooth browser performance.",
+    "faqQ6": "Is this AI background remover free?",
+    "faqA6": "Completely free. No registration, no login, no hidden charges. All features are unlimited, including batch processing, HD downloads and multiple AI models.",
+    "faqQ7": "Which AI models are used?",
+    "faqA7": "Three models are available: Pro (BRIA RMBG v1.4, 42MB, handles semi-transparent objects), Portrait (MODNet, 25MB, optimized for people), Mini (U²-Net, 4.4MB, lightweight & fast). Run all models to compare results.",
+    "faqQ8": "Can I use it on mobile?",
+    "faqA8": "Yes. The tool is responsive and works on phones and tablets via the browser with no app installation. Touch drag-and-drop upload and paste are supported.",
+    "howToName": "How to remove image backgrounds with the AI background remover",
+    "howToDesc": "Remove image backgrounds in 3 steps: upload, process, download.",
+    "howToStep1Name": "Upload images",
+    "howToStep1Text": "Drag image files to the upload area or click the upload button to select files. JPG, PNG, WEBP, AVIF and more are supported, including batch uploads and folder drag & drop.",
+    "howToStep2Name": "Choose a model and process",
+    "howToStep2Text": "Select an AI model (Pro/Portrait/Mini) and click the \"Remove Background\" button. The AI processes locally in your browser at about 1-4 seconds per image.",
+    "howToStep3Name": "Download transparent PNG",
+    "howToStep3Text": "When done, click the download button below each image to save a transparent-background PNG. Batch download all is also supported.",
+    "crumbHome": "Home",
+    "crumbTool": "AI Background Remover"
+  },
+  "bg": {
+    "net": "Model download failed. Please check your network connection and try again.",
+    "webgpu": "WebGPU acceleration unavailable - fell back to WASM mode (may be slower).",
+    "memory": "Browser out of memory. Try fewer images or smaller image sizes.",
+    "wasm": "WASM runtime failed to load. Please try updating your browser.",
+    "onnx": "AI model loading failed. Please refresh the page and try again.",
+    "decode": "Image decoding failed. Please make sure the image file is complete and not corrupted.",
+    "modelNotLoaded": "Model not loaded",
+    "modelNotLoadedFull": "Model not loaded. Please select a model and click \"Remove Background\".",
+    "modelLoadFailed": "Model load failed",
+    "modelLoadFailedRefresh": "Model load failed. Please refresh the page and try again.",
+    "imgProcessFailed": "Image processing failed",
+    "initFailed": "ONNX Runtime initialization failed: {msg}",
+    "httpFailed": "Model file download failed (HTTP {status})",
+    "maxpool": "Your browser's GPU doesn't support this model's pooling operation - automatically switched to compatibility mode (slightly slower)",
+    "fallbackWasm": "Switched to compatibility mode (slightly slower)",
+    "timeout": "Processing timed out (over {seconds}s) - skipped this image",
+    "ready": "Model ready ✓",
+    "loadingEngine": "Loading model into inference engine...",
+    "sessionInfoLoaded": "Model loaded",
+    "sessionInfoNotLoaded": "Model not loaded",
+    "canvasBlobFailed": "Canvas to Blob conversion failed"
+  },
+  "loader": {
+    "stepChecking": "Checking cache...",
+    "stepCached": "Cache hit ✓",
+    "stepDownload": "Downloading model ({size})...",
+    "stepDownloading": "Downloading {loaded}MB / {total}MB",
+    "stepCache": "Caching model locally...",
+    "stepReady": "Model ready ✓",
+    "errGeneric": "Model load failed",
+    "errDownload": "Download failed: HTTP {status} {statusText}",
+    "errTimeout": "Connection timed out (no data for {seconds}s), switching to backup mirror",
+    "errShard": "Shard download failed",
+    "errIncomplete": "Model file incomplete (expected {expected} bytes, got {actual} bytes)",
+    "errAllFailed": "Model download failed"
+  },
+  "bookmark": {
+    "title": "Bookmark this site",
+    "descDesktop": "Press Ctrl+D / Cmd+D to bookmark this site for next time",
+    "descMobile": "Tap \"Add to Home Screen\" in your browser menu to use anytime",
+    "close": "Got it"
+  },
+  "edit": {
+    "title": "Edit image",
+    "eraser": "Eraser",
+    "restore": "Restore",
+    "brushSize": "Brush size",
+    "undo": "Undo",
+    "redo": "Redo",
+    "save": "Save",
+    "close": "Close",
+    "tipEraser": "Paint over areas to erase",
+    "tipRestore": "Paint over areas to restore",
+    "saved": "Saved",
+    "prev": "Previous",
+    "next": "Next"
+  }
+}

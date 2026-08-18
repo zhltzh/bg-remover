@@ -1,0 +1,43 @@
+# AI BG Remover - Обзор сайта
+> Бесплатный онлайн-инструмент для удаления фона с помощью ИИ. Вся обработка выполняется локально в вашем браузере.
+
+## Brand
+- Название: AI BG Remover
+- Описание: Бесплатный онлайн-инструмент на основе ИИ для удаления фона изображений с пакетной обработкой и скачиванием качественных PNG с прозрачным фоном. Всё работает локально в браузере — изображения никогда не загружаются на сервер.
+- Язык: Русский (ru-RU)
+
+## Core Capabilities
+- Автоматическое удаление фона изображений
+- Пакетная обработка нескольких изображений
+- Поддержка JPG/PNG/WEBP/AVIF/GIF/SVG
+- Несколько доступных ИИ-моделей (BRIA RMBG/MODNet/U²-Net)
+- Работает локально в браузере, загрузка не требуется
+
+## Tech Stack
+- ИИ-движок: ONNX Runtime Web
+- Ускорение: WebGPU, WebAssembly SIMD
+- Модели: BRIA RMBG v1.4, MODNet, U²-Net
+- Фронтенд: Vue 3, Nuxt 3, Tailwind CSS
+
+## Pages
+- Главная: https://ai-bg-remover.vercel.app/ru
+  - Описание: Бесплатный онлайн-инструмент для удаления фона с помощью ИИ — удаляйте фон изображений мгновенно
+- 404: https://ai-bg-remover.vercel.app/ru/404
+
+## Key Facts
+- Вся обработка выполняется полностью в браузере; изображения никогда не покидают ваше устройство
+- Пакетная обработка поддерживается без ограничений по количеству и размеру
+- 100% бесплатно, регистрация и вход не требуются
+- При первом использовании загружается ИИ-модель (~42 МБ); при последующих использованиях всё мгновенно благодаря кэшированию IndexedDB
+
+## Alternate Languages
+- 中文: https://ai-bg-remover.vercel.app/llms.txt
+- English: https://ai-bg-remover.vercel.app/llms-en.txt
+- 日本語: https://ai-bg-remover.vercel.app/llms-ja.txt
+- 한국어: https://ai-bg-remover.vercel.app/llms-ko.txt
+- Français: https://ai-bg-remover.vercel.app/llms-fr.txt
+- Deutsch: https://ai-bg-remover.vercel.app/llms-de.txt
+- Español: https://ai-bg-remover.vercel.app/llms-es.txt
+- Русский: https://ai-bg-remover.vercel.app/llms-ru.txt
+- Português: https://ai-bg-remover.vercel.app/llms-pt.txt
+- العربية: https://ai-bg-remover.vercel.app/llms-ar.txt

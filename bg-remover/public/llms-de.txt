@@ -1,0 +1,43 @@
+# AI BG Remover - Seitenübersicht
+> Kostenloser Online-KI-Hintergrundentferner. Die gesamte Verarbeitung läuft lokal in Ihrem Browser.
+
+## Brand
+- Name: AI BG Remover
+- Beschreibung: Kostenloser Online-KI-Hintergrundentferner für die Stapelverarbeitung von Bildern mit hochwertigem transparentem PNG-Download. Alles läuft lokal im Browser - Bilder werden niemals auf einen Server hochgeladen.
+- Sprache: Deutsch (de-DE)
+
+## Core Capabilities
+- Automatische Entfernung des Bildhintergrunds
+- Stapelverarbeitung mehrerer Bilder
+- Unterstützt JPG/PNG/WEBP/AVIF/GIF/SVG
+- Mehrere KI-Modelle verfügbar (BRIA RMBG/MODNet/U²-Net)
+- Läuft lokal im Browser, kein Upload erforderlich
+
+## Tech Stack
+- KI-Engine: ONNX Runtime Web
+- Beschleunigung: WebGPU, WebAssembly SIMD
+- Modelle: BRIA RMBG v1.4, MODNet, U²-Net
+- Frontend: Vue 3, Nuxt 3, Tailwind CSS
+
+## Pages
+- Startseite: https://ai-bg-remover.vercel.app/de
+  - Beschreibung: Kostenloser Online-KI-Hintergrundentferner - entfernen Sie Bildhintergründe sofort
+- 404: https://ai-bg-remover.vercel.app/de/404
+
+## Key Facts
+- Die gesamte Verarbeitung läuft vollständig im Browser; Bilder verlassen niemals Ihr Gerät
+- Stapelverarbeitung ohne Begrenzung von Anzahl oder Größe
+- 100 % kostenlos, keine Registrierung oder Anmeldung erforderlich
+- Die erste Nutzung lädt das KI-Modell herunter (~42 MB); spätere Nutzungen sind dank IndexedDB-Caching sofort verfügbar
+
+## Alternate Languages
+- 中文: https://ai-bg-remover.vercel.app/llms.txt
+- English: https://ai-bg-remover.vercel.app/llms-en.txt
+- 日本語: https://ai-bg-remover.vercel.app/llms-ja.txt
+- 한국어: https://ai-bg-remover.vercel.app/llms-ko.txt
+- Français: https://ai-bg-remover.vercel.app/llms-fr.txt
+- Deutsch: https://ai-bg-remover.vercel.app/llms-de.txt
+- Español: https://ai-bg-remover.vercel.app/llms-es.txt
+- Русский: https://ai-bg-remover.vercel.app/llms-ru.txt
+- Português: https://ai-bg-remover.vercel.app/llms-pt.txt
+- العربية: https://ai-bg-remover.vercel.app/llms-ar.txt
