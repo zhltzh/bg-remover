@@ -20,9 +20,9 @@
 - 프론트엔드: Vue 3, Nuxt 3, Tailwind CSS
 
 ## Pages
-- 홈: https://ai-bg-remover.vercel.app/ko
+- 홈: https://bg.aixuno.com/ko
   - 설명: 무료 온라인 AI 배경 제거 도구 - 이미지 배경을 즉시 제거
-- 404: https://ai-bg-remover.vercel.app/ko/404
+- 404: https://bg.aixuno.com/ko/404
 
 ## Key Facts
 - 모든 처리는 브라우저에서 완료되며 이미지가 기기 밖으로 전송되지 않습니다
@@ -31,13 +31,13 @@
 - 첫 사용 시 AI 모델(약 42MB)을 다운로드. 이후에는 IndexedDB 캐시로 즉시 사용 가능
 
 ## Alternate Languages
-- 中文: https://ai-bg-remover.vercel.app/llms.txt
-- English: https://ai-bg-remover.vercel.app/llms-en.txt
-- 日本語: https://ai-bg-remover.vercel.app/llms-ja.txt
-- 한국어: https://ai-bg-remover.vercel.app/llms-ko.txt
-- Français: https://ai-bg-remover.vercel.app/llms-fr.txt
-- Deutsch: https://ai-bg-remover.vercel.app/llms-de.txt
-- Español: https://ai-bg-remover.vercel.app/llms-es.txt
-- Русский: https://ai-bg-remover.vercel.app/llms-ru.txt
-- Português: https://ai-bg-remover.vercel.app/llms-pt.txt
-- العربية: https://ai-bg-remover.vercel.app/llms-ar.txt
+- 中文: https://bg.aixuno.com/llms.txt
+- English: https://bg.aixuno.com/llms-en.txt
+- 日本語: https://bg.aixuno.com/llms-ja.txt
+- 한국어: https://bg.aixuno.com/llms-ko.txt
+- Français: https://bg.aixuno.com/llms-fr.txt
+- Deutsch: https://bg.aixuno.com/llms-de.txt
+- Español: https://bg.aixuno.com/llms-es.txt
+- Русский: https://bg.aixuno.com/llms-ru.txt
+- Português: https://bg.aixuno.com/llms-pt.txt
+- العربية: https://bg.aixuno.com/llms-ar.txt

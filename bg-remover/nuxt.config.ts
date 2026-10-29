@@ -44,7 +44,7 @@ export default defineNuxtConfig({
   i18n: {
     strategy: 'prefix_except_default',
     defaultLocale: 'zh',
-    baseUrl: 'https://ai-bg-remover.vercel.app',
+    baseUrl: 'https://bg.aixuno.com',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
@@ -68,7 +68,7 @@ export default defineNuxtConfig({
 
   // ===== SEO: Site Config（用于 sitemap 等） =====
   site: {
-    url: 'https://ai-bg-remover.vercel.app',
+    url: 'https://bg.aixuno.com',
   },
 
   // ===== SEO: Sitemap =====
@@ -101,7 +101,7 @@ export default defineNuxtConfig({
       // ONNX Runtime WASM 文件地址（自托管相对路径，构建时由 scripts/download-models.sh 准备）
       wasmBaseUrl: '/wasm/',
       // 站点 URL
-      siteUrl: 'https://ai-bg-remover.vercel.app',
+      siteUrl: 'https://bg.aixuno.com',
     },
   },
 

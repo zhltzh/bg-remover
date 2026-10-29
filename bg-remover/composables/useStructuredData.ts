@@ -5,7 +5,7 @@
 export function useStructuredData() {
   const config = useRuntimeConfig()
   const { t } = useI18n()
-  const siteUrl = config.public.siteUrl || 'https://ai-bg-remover.vercel.app'
+  const siteUrl = config.public.siteUrl || 'https://bg.aixuno.com'
 
   // 注入 JSON-LD 到页面 head
   function injectSchemas() {

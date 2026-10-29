@@ -20,9 +20,9 @@
 - Frontend: Vue 3, Nuxt 3, Tailwind CSS
 
 ## Pages
-- Home: https://ai-bg-remover.vercel.app/en
+- Home: https://bg.aixuno.com/en
   - Description: Free online AI background remover - remove image backgrounds instantly
-- 404: https://ai-bg-remover.vercel.app/en/404
+- 404: https://bg.aixuno.com/en/404
 
 ## Key Facts
 - All processing runs entirely in the browser; images never leave your device
@@ -31,4 +31,4 @@
 - First use downloads the AI model (~42MB); subsequent uses are instant thanks to IndexedDB caching
 
 ## Alternate Languages
-- 中文: https://ai-bg-remover.vercel.app/llms.txt
+- 中文: https://bg.aixuno.com/llms.txt

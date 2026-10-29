@@ -20,9 +20,9 @@
 - الواجهة الأمامية: Vue 3, Nuxt 3, Tailwind CSS
 
 ## Pages
-- الرئيسية: https://ai-bg-remover.vercel.app/ar
+- الرئيسية: https://bg.aixuno.com/ar
   - الوصف: أداة مجانية عبر الإنترنت لإزالة خلفية الصور بالذكاء الاصطناعي - أزل خلفية الصور فوراً
-- 404: https://ai-bg-remover.vercel.app/ar/404
+- 404: https://bg.aixuno.com/ar/404
 
 ## Key Facts
 - تتم جميع المعالجة بالكامل داخل المتصفح؛ لا تغادر الصور جهازك أبداً
@@ -31,13 +31,13 @@
 - الاستخدام الأول ينزّل نموذج الذكاء الاصطناعي (~42MB)؛ الاستخدامات اللاحقة فورية بفضل التخزين المؤقت IndexedDB
 
 ## Alternate Languages
-- 中文: https://ai-bg-remover.vercel.app/llms.txt
-- English: https://ai-bg-remover.vercel.app/llms-en.txt
-- 日本語: https://ai-bg-remover.vercel.app/llms-ja.txt
-- 한국어: https://ai-bg-remover.vercel.app/llms-ko.txt
-- Français: https://ai-bg-remover.vercel.app/llms-fr.txt
-- Deutsch: https://ai-bg-remover.vercel.app/llms-de.txt
-- Español: https://ai-bg-remover.vercel.app/llms-es.txt
-- Русский: https://ai-bg-remover.vercel.app/llms-ru.txt
-- Português: https://ai-bg-remover.vercel.app/llms-pt.txt
-- العربية: https://ai-bg-remover.vercel.app/llms-ar.txt
+- 中文: https://bg.aixuno.com/llms.txt
+- English: https://bg.aixuno.com/llms-en.txt
+- 日本語: https://bg.aixuno.com/llms-ja.txt
+- 한국어: https://bg.aixuno.com/llms-ko.txt
+- Français: https://bg.aixuno.com/llms-fr.txt
+- Deutsch: https://bg.aixuno.com/llms-de.txt
+- Español: https://bg.aixuno.com/llms-es.txt
+- Русский: https://bg.aixuno.com/llms-ru.txt
+- Português: https://bg.aixuno.com/llms-pt.txt
+- العربية: https://bg.aixuno.com/llms-ar.txt

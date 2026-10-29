@@ -20,9 +20,9 @@
 - Frontend: Vue 3, Nuxt 3, Tailwind CSS
 
 ## Pages
-- Início: https://ai-bg-remover.vercel.app/pt
+- Início: https://bg.aixuno.com/pt
   - Descrição: Removedor de fundo gratuito com IA online — remova o fundo das imagens instantaneamente
-- 404: https://ai-bg-remover.vercel.app/pt/404
+- 404: https://bg.aixuno.com/pt/404
 
 ## Key Facts
 - Todo o processamento é executado inteiramente no navegador; as imagens nunca saem do seu dispositivo
@@ -31,13 +31,13 @@
 - O primeiro uso transfere o modelo de IA (~42 MB); os usos seguintes são instantâneos graças ao cache IndexedDB
 
 ## Alternate Languages
-- 中文: https://ai-bg-remover.vercel.app/llms.txt
-- English: https://ai-bg-remover.vercel.app/llms-en.txt
-- 日本語: https://ai-bg-remover.vercel.app/llms-ja.txt
-- 한국어: https://ai-bg-remover.vercel.app/llms-ko.txt
-- Français: https://ai-bg-remover.vercel.app/llms-fr.txt
-- Deutsch: https://ai-bg-remover.vercel.app/llms-de.txt
-- Español: https://ai-bg-remover.vercel.app/llms-es.txt
-- Русский: https://ai-bg-remover.vercel.app/llms-ru.txt
-- Português: https://ai-bg-remover.vercel.app/llms-pt.txt
-- العربية: https://ai-bg-remover.vercel.app/llms-ar.txt
+- 中文: https://bg.aixuno.com/llms.txt
+- English: https://bg.aixuno.com/llms-en.txt
+- 日本語: https://bg.aixuno.com/llms-ja.txt
+- 한국어: https://bg.aixuno.com/llms-ko.txt
+- Français: https://bg.aixuno.com/llms-fr.txt
+- Deutsch: https://bg.aixuno.com/llms-de.txt
+- Español: https://bg.aixuno.com/llms-es.txt
+- Русский: https://bg.aixuno.com/llms-ru.txt
+- Português: https://bg.aixuno.com/llms-pt.txt
+- العربية: https://bg.aixuno.com/llms-ar.txt

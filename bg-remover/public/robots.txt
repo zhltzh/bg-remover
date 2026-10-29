@@ -22,4 +22,4 @@ User-agent: Google-Extended
 Allow: /
 
 # Sitemap
-Sitemap: https://ai-bg-remover.vercel.app/sitemap.xml
+Sitemap: https://bg.aixuno.com/sitemap.xml

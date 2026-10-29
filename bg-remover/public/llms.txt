@@ -20,7 +20,7 @@
 - 前端: Vue 3, Nuxt 3, Tailwind CSS
 
 ## 页面
-- 首页: https://ai-bg-remover.vercel.app/
+- 首页: https://bg.aixuno.com/
   - 描述: 在线 AI 抠图工具 - 免费去除图片背景
 
 ## 关键信息
@@ -30,4 +30,4 @@
 - 首次需加载 AI 模型（~42MB），之后秒开
 
 ## 其他语言
-- English: https://ai-bg-remover.vercel.app/llms-en.txt
+- English: https://bg.aixuno.com/llms-en.txt

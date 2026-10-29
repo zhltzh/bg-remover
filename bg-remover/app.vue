@@ -8,7 +8,7 @@
 // ===== 全局 SEO（按 locale 输出） =====
 const { t } = useI18n()
 const config = useRuntimeConfig()
-const siteUrl = config.public.siteUrl || 'https://ai-bg-remover.vercel.app'
+const siteUrl = config.public.siteUrl || 'https://bg.aixuno.com'
 const i18nHead = useLocaleHead()
 
 useHead(() => {
