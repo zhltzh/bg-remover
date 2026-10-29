@@ -125,14 +125,33 @@ const WASM_NEEDED = [
 ]
 
 async function isCompilableWasm(buf) {
-  if (buf.byteLength < 8) return false
-  if (buf[0] !== 0x00 || buf[1] !== 0x61 || buf[2] !== 0x73 || buf[3] !== 0x6d) return false
+  if (!isWasmMagic(buf)) return false
   try {
     new WebAssembly.Module(buf)
     return true
   } catch {
     return false
   }
+}
+
+function isWasmMagic(buf) {
+  if (buf.byteLength < 8) return false
+  return buf[0] === 0x00 && buf[1] === 0x61 && buf[2] === 0x73 && buf[3] === 0x6d
+}
+
+// JSPI 是实验性提案，Node 默认无法实例化编译，但浏览器按需启用。
+// 这类文件只校验文件头与体积，避免把合法下载当成损坏文件。
+function isJspiVariant(name) {
+  return name.includes('.jspi.')
+}
+
+async function isValidWasmFile(name, path) {
+  const size = await fileSize(path)
+  if (size <= 0) return false
+  const buf = await readFile(path)
+  if (!isWasmMagic(buf)) return false
+  if (await isCompilableWasm(buf)) return true
+  return isJspiVariant(name) && buf.byteLength > 1024 * 1024
 }
 
 async function copyWasm() {
@@ -153,20 +172,24 @@ async function copyWasm() {
       } catch {
         // 本地缺失则从 CDN 补
       }
-    } else if ((await fileSize(out)) > 0 && await isCompilableWasm(await readFile(out))) {
+    } else if (await isValidWasmFile(f, out)) {
       console.log(`  \u2713 ${f} (已存在且校验通过, ${await fileSize(out)} bytes)`)
       continue
     }
     const ok = await fetchFile(`onnxruntime-web@1.27.0/dist/${f}`, out)
     if (!ok) process.exit(1)
     if (isWasm) {
-      const buf = await readFile(out)
-      if (!(await isCompilableWasm(buf))) {
-        console.error(`  \u2717 ${f} 下载后编译校验失败`)
+      if (!(await isValidWasmFile(f, out))) {
+        console.error(`  \u2717 ${f} 下载后校验失败`)
         await import('node:fs/promises').then(m => m.rm(out, { force: true }))
         process.exit(1)
       }
-      console.log(`  \u2714 ${f} 编译校验通过 (${buf.byteLength} bytes)`)
+      const size = await fileSize(out)
+      if (isJspiVariant(f) && !(await isCompilableWasm(await readFile(out)))) {
+        console.log(`  \u2714 ${f} 文件头校验通过（JSPI 需浏览器开启后才能编译, ${size} bytes）`)
+      } else {
+        console.log(`  \u2714 ${f} 编译校验通过 (${size} bytes)`)
+      }
     }
   }
 }
