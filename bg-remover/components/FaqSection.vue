@@ -16,7 +16,7 @@
           class="w-full flex items-center justify-between gap-4 px-5 py-4 text-start hover:bg-gray-50 transition-colors"
         >
           <h3 class="text-sm sm:text-base font-medium text-gray-800 pe-4">
-            {{ text(faq.q) }}
+            {{ faq.q }}
           </h3>
           <svg
             class="w-5 h-5 shrink-0 text-gray-400 transition-transform duration-200"
@@ -34,7 +34,7 @@
           v-show="openIndex === i"
           class="px-5 pb-4 text-sm text-gray-600 leading-relaxed"
         >
-          {{ text(faq.a) }}
+          {{ faq.a }}
         </div>
       </div>
     </div>
@@ -42,15 +42,17 @@
 </template>
 
 <script setup lang="ts">
-const { tm, rt } = useI18n()
+const { t, tm } = useI18n()
 const openIndex = ref<number | null>(0) // default open first
 
 function toggle(i: number) {
   openIndex.value = openIndex.value === i ? null : i
 }
 
-// vue-i18n compiles messages to AST nodes, so tm() values must be resolved with rt()
-const text = (message: unknown) => (typeof message === 'string' ? message : rt(message as never))
-
-const faqs = computed(() => tm('faq.items') as { q: string; a: string }[])
+// vue-i18n hands back compiled message nodes from tm(), so read each field by
+// its index key instead of rendering the node itself.
+const faqs = computed(() => (tm('faq.items') as unknown[]).map((_, i) => ({
+  q: t(`faq.items.${i}.q`),
+  a: t(`faq.items.${i}.a`),
+})))
 </script>

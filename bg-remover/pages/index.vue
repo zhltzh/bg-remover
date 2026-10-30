@@ -409,10 +409,10 @@ const WandIcon = () => h('svg', { class: 'w-4 h-4', viewBox: '0 0 24 24', fill: 
 ])
 
 // ===== 模型对比卡片数据 =====
-const { t, tm, rt } = useI18n()
-// vue-i18n compiles messages to AST nodes, so tm() values must be resolved with rt()
-const messageText = (message: unknown) => (typeof message === 'string' ? message : rt(message as never))
-const messageList = (key: string) => ((tm(key) as unknown[]) || []).map(messageText)
+const { t, tm } = useI18n()
+// vue-i18n hands back compiled message nodes from tm(), so read each entry by
+// its index key instead of rendering the node itself.
+const messageList = (key: string) => ((tm(key) as unknown[]) || []).map((_, i) => t(`${key}.${i}`))
 const modelCards = computed(() => [
   {
     id: 'bria',
