@@ -134,7 +134,7 @@
 <script setup lang="ts">
 import { MODELS } from '~/types'
 
-const { t, tm } = useI18n()
+const { t, tm, rt } = useI18n()
 
 const modelList = computed(() => Object.values(MODELS))
 
@@ -174,8 +174,9 @@ function modelTags(id: string): { label: string; cls: string }[] {
     u2net: ['bg-emerald-100 text-emerald-600', 'bg-green-100 text-green-600'],
     modnet: ['bg-amber-100 text-amber-600', 'bg-orange-100 text-orange-600'],
   }
-  const labels = tm(`models.tags.${id}`) as string[]
-  return (labels || []).map((label, i) => ({
+  // vue-i18n compiles messages to AST nodes, so tm() values must be resolved with rt()
+  const labels = (tm(`models.tags.${id}`) as unknown[] || []).map((label) => (typeof label === 'string' ? label : rt(label as never)))
+  return labels.map((label, i) => ({
     label,
     cls: (tagCls[id] || [])[i] || 'bg-gray-100 text-gray-500',
   }))

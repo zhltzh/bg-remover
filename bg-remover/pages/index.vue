@@ -409,25 +409,28 @@ const WandIcon = () => h('svg', { class: 'w-4 h-4', viewBox: '0 0 24 24', fill: 
 ])
 
 // ===== 模型对比卡片数据 =====
-const { t, tm } = useI18n()
+const { t, tm, rt } = useI18n()
+// vue-i18n compiles messages to AST nodes, so tm() values must be resolved with rt()
+const messageText = (message: unknown) => (typeof message === 'string' ? message : rt(message as never))
+const messageList = (key: string) => ((tm(key) as unknown[]) || []).map(messageText)
 const modelCards = computed(() => [
   {
     id: 'bria',
     name: t('section.modelCompare.cardProName'),
     recommended: true,
-    items: tm('section.modelCompare.cardProItems') as unknown as string[],
+    items: messageList('section.modelCompare.cardProItems'),
   },
   {
     id: 'modnet',
     name: t('section.modelCompare.cardPortraitName'),
     recommended: false,
-    items: tm('section.modelCompare.cardPortraitItems') as unknown as string[],
+    items: messageList('section.modelCompare.cardPortraitItems'),
   },
   {
     id: 'u2net',
     name: t('section.modelCompare.cardMiniName'),
     recommended: false,
-    items: tm('section.modelCompare.cardMiniItems') as unknown as string[],
+    items: messageList('section.modelCompare.cardMiniItems'),
   },
 ])
 
