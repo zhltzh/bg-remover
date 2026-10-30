@@ -382,6 +382,9 @@
 
       <!-- ===== FAQ（H2）- GEO 关键 ===== -->
       <FaqSection />
+
+      <!-- ===== 跨站入口 ===== -->
+      <SiteNetwork />
     </main>
   </div>
 </template>
