@@ -22,4 +22,4 @@ User-agent: Google-Extended
 Allow: /
 
 # Sitemap
-Sitemap: https://bg.aixuno.com/sitemap.xml
+Sitemap: https://bg.aixuno.com/sitemap_index.xml
