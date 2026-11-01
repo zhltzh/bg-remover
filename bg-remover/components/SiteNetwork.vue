@@ -18,6 +18,9 @@
         </a>
       </li>
     </ul>
+    <div class="mt-5">
+      <ShareLinks />
+    </div>
     <p class="mt-3 text-center text-xs text-gray-400">
       <a
         href="https://github.com/zhltzh/bg-remover/issues/new"
