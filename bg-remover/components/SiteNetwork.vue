@@ -28,6 +28,8 @@
         rel="noopener noreferrer"
         class="underline-offset-2 hover:text-gray-700 hover:underline"
       >意见反馈</a>
+      <span class="mx-1.5">·</span>
+      <NuxtLink to="/privacy" class="underline-offset-2 hover:text-gray-700 hover:underline">隐私说明</NuxtLink>
     </p>
   </nav>
 </template>

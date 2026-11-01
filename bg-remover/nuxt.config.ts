@@ -73,6 +73,7 @@ export default defineNuxtConfig({
 
   // ===== SEO: Sitemap =====
   sitemap: {
+    exclude: ['/404'],
     defaults: {
       changefreq: 'weekly',
       priority: 1.0,
