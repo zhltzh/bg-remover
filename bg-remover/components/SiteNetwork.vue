@@ -18,6 +18,14 @@
         </a>
       </li>
     </ul>
+    <p class="mt-3 text-center text-xs text-gray-400">
+      <a
+        href="https://github.com/zhltzh/bg-remover/issues/new"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="underline-offset-2 hover:text-gray-700 hover:underline"
+      >意见反馈</a>
+    </p>
   </nav>
 </template>
 
