@@ -1,6 +1,8 @@
 # AI 抠图工具 - 站点概览
 > 免费在线 AI 抠图工具，所有处理在浏览器本地运行。
 
+> Full text of every page (20 pages): https://bg.aixuno.com/llms-full.txt
+
 ## 品牌
 - 名称: AI 抠图
 - 描述: 免费在线 AI 抠图工具，批量去除图片背景，支持高清 PNG 下载。完全在浏览器本地运行，图片不上传服务器，保护隐私。

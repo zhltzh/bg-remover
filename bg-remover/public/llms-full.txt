@@ -1,0 +1,1285 @@
+# Aixuno AI Cutout — complete content reference
+
+> Browser-local AI background removal.
+> Full text of every public page on https://bg.aixuno.com, generated for language models.
+> The condensed index is at https://bg.aixuno.com/llms.txt.
+> Generated 2026-11-03. 11 pages.
+
+## Contents
+
+- [AI抠图 - 在线免费批量抠图工具](https://bg.aixuno.com)
+- [إزالة خلفية الصورة بالذكاء الاصطناعي مجانًا - احذف خلفيات الصور عبر الإنترنت](https://bg.aixuno.com/ar)
+- [Kostenloser KI-Hintergrundentferner – Bildhintergründe online entfernen](https://bg.aixuno.com/de)
+- [Free AI Background Remover - Remove Image Backgrounds Online](https://bg.aixuno.com/en)
+- [Quitar Fondo de Imagen Gratis - Elimina Fondos de Fotos en Línea](https://bg.aixuno.com/es)
+- [Suppresseur d&#x27;arrière-plan IA gratuit - Supprimer le fond d&#x27;une image en ligne](https://bg.aixuno.com/fr)
+- [無料AI背景除去 - 画像の背景をオンラインで削除](https://bg.aixuno.com/ja)
+- [무료 AI 배경 제거 - 온라인 이미지 배경 지우기](https://bg.aixuno.com/ko)
+- [隐私说明 - 图片本地处理，不上传服务器 | AI 抠图](https://bg.aixuno.com/privacy)
+- [Removedor de Fundo de Imagem com IA Gratuito - Tire Fundo de Fotos Online](https://bg.aixuno.com/pt)
+- [Бесплатный ИИ-инструмент удаления фона - Удалить фон с фото онлайн](https://bg.aixuno.com/ru)
+
+---
+
+## AI抠图 - 在线免费批量抠图工具
+
+URL: https://bg.aixuno.com
+Summary: 免费在线AI抠图工具，批量去除图片背景，支持高清PNG下载。完全在浏览器本地运行，图片不上传服务器，保护你的隐私。基于ONNX Runtime Web，支持WebGPU加速。
+
+AI 抠图 - 在线免费批量去除图片背景
+ 免费在线 AI 抠图工具，批量去除图片背景，支持高清 PNG 下载。 所有处理完全在浏览器本地运行 ， 图片不上传服务器，保护你的隐私安全。
+ 平均 4 秒处理一张 基于 ONNX Runtime Web 完全免费无限制 
+ 
+ 
+ 
+ 
+
+ 三步完成抠图
+ 无需注册，无需安装，打开浏览器即可使用
+ 1
+ 
+ 上传图片
+ 拖拽图片到上传区域，或点击选择文件。支持 JPG、PNG、WEBP 等格式，可批量上传和拖拽文件夹。
+
+ 2
+ 
+ AI 自动处理
+ 选择 AI 模型后点击"开始抠图"。AI 在浏览器本地处理，约 1-4 秒完成，不上传任何数据到服务器。
+
+ 3
+ 
+ 下载 PNG
+ 处理完成后点击下载，保存透明背景的 PNG 高清原图。支持单张下载或批量全部下载。
+
+ 
+
+ 多种 AI 模型可选，按需选择
+ 根据图片类型和处理需求，选择最适合的 AI 模型
+ Pro 模型
+ 推荐 
+ BRIA RMBG v1.4 架构 
+ 支持 16000×16000 超大图片 
+ 半透明物体边缘处理 
+ 效果最佳，通用首选 
+ 
+
+ 肖像模型
+ 
+ MODNet 架构 
+ 人像拍摄和证件照优化 
+ 处理速度 1.5 秒/张 
+ 适合主体明显的图片 
+ 
+
+ Mini 模型
+ 
+ U²-Net 轻量架构 
+ 仅 4.4MB，加载最快 
+ 处理速度约 1 秒/张 
+ 适合简单背景图片 
+ 
+
+ 
+
+ 为什么选择 AI 抠图工具？
+ 🔐
+ 隐私安全，不上传服务器
+ 所有 AI 处理在浏览器本地完成。您的图片不会离开设备，无需担心隐私泄露问题。根据 Princeton 大学研究，本地 AI 推理是最安全的图片处理方式。
+
+ ⚡
+ WebGPU 加速，处理速度快
+ 基于 ONNX Runtime Web，支持 WebGPU 和 WebAssembly SIMD 双后端加速。Pro 模型平均 4 秒即可完成一张图片的背景去除。
+
+ 🆓
+ 完全免费，无任何限制
+ 不限制处理数量、不限制图片大小、无需注册登录。所有 AI 模型均可免费使用，包括批量处理和全高清下载。
+
+ 📦
+ IndexedDB 缓存，二次加载秒开
+ AI 模型下载后自动缓存到浏览器的 IndexedDB 中。首次加载约需 42MB（Pro 模型），之后再次使用无需等待。
+
+ 
+ 4s
+ 平均处理速度
+
+ 42MB
+ AI 模型大小
+
+ ∞
+ 数量无限制
+
+ 
+
+ 技术原理
+ 本工具基于 ONNX Runtime Web 在浏览器中直接运行 AI 模型，所有推理计算在本地完成，无需服务器参与。AI 模型使用 BRIA RMBG v1.4（通用场景）、MODNet（人像优化）和 U²-Net（轻量快速）三种架构。
+ 通过 WebGPU 或 WebAssembly SIMD 硬件加速，推理速度可达 1-4 秒/张。模型文件通过 IndexedDB 缓存，首次加载后后续使用无需重新下载。
+ 据 Princeton 大学 2024 年研究（Aggarwal et al.），浏览器端 AI 推理在隐私保护和响应速度方面相比云端方案具有显著优势 —— 用户数据不会离开设备，处理延迟仅取决于本地硬件性能。
+
+ 常见问题
+ 抠图需要上传图片到服务器吗？
+ 不需要。所有 AI 抠图处理完全在您的浏览器本地运行，图片不会上传到任何服务器。这是通过 ONNX Runtime Web 技术在浏览器中直接运行 AI 模型实现的，可以保护您的图片隐私安全。
+
+ 支持哪些图片格式？处理速度如何？
+ 支持 JPG、PNG、WEBP、AVIF、GIF、SVG 等格式。Pro 模型约 4 秒/张，肖像模型约 1.5 秒/张，Mini 模型约 1 秒/张。处理后输出为透明背景的 PNG 高清原图。
+
+ 能处理多大尺寸的图片？批量有限制吗？
+ Pro 模型支持最大 16000×16000 像素的超大图片，Mini 和肖像模型支持 2048×2048 像素。批量处理没有数量和大小限制，建议单次不超过 100 张或 500MB 以保证浏览器流畅。
+
+ AI 抠图完全免费吗？
+ 完全免费，无需注册、无需登录、没有任何隐藏收费。所有功能包括批量处理、高清下载、多种 AI 模型选择均可无限制使用。
+
+ 使用什么 AI 模型？有什么区别？
+ 提供三种模型：Pro（BRIA RMBG v1.4，42MB，支持半透明物体效果最佳）、肖像（MODNet，25MB，人像优化）、Mini（U²-Net，4.4MB，轻量快速）。您也可以同时运行全部模型对比选择最佳结果。
+
+ 手机或平板可以使用吗？
+ 可以。工具采用响应式设计，支持手机和平板浏览器访问，无需安装应用。支持触屏拖拽上传和粘贴图片。
+
+ 和 remove.bg 等工具相比效果如何？
+ 我们的 Pro 模型（BRIA RMBG）在大多数场景下能达到接近商业工具的效果，特别擅长处理人物、商品、动物等主体。作为完全免费且本地运行的工具，在隐私保护和性价比方面具有明显优势。
+
+ 
+
+ 分享 复制链接 
+ 意见反馈 · 隐私说明
+
+---
+
+## إزالة خلفية الصورة بالذكاء الاصطناعي مجانًا - احذف خلفيات الصور عبر الإنترنت
+
+URL: https://bg.aixuno.com/ar
+Summary: أداة مجانية عبر الإنترنت لإزالة خلفية الصور بالذكاء الاصطناعي. احذف خلفيات الصور دفعة واحدة ونزّل صور PNG شفافة عالية الجودة. كل شيء يعمل محليًا في متصفحك - لا يتم رفع الصور إلى خادم. مدعوم بواسطة ONNX Runtime Web مع تسريع WebGPU.
+
+إزالة خلفية الصورة بالذكاء الاصطناعي - احذف خلفيات الصور مجانًا عبر الإنترنت
+ أداة مجانية عبر الإنترنت لإزالة الخلفية بالذكاء الاصطناعي لمعالجة الصور دفعة واحدة مع تنزيل PNG عالي الجودة. جميع عمليات المعالجة تتم بالكامل داخل متصفحك ， لا يتم رفع صورك أبدًا إلى أي خادم. خصوصيتك محمية.
+ ~4 ثوانٍ في المتوسط للصورة الواحدة مدعوم بواسطة ONNX Runtime Web مجاني 100% بدون حدود 
+ 
+ 
+ 
+ 
+
+ إزالة الخلفية في 3 خطوات
+ بدون تسجيل وبدون تثبيت - فقط افتح متصفحك
+ 1
+ 
+ رفع الصور
+ اسحب الصور إلى منطقة الرفع أو انقر لاختيار الملفات. يدعم JPG وPNG وWEBP والمزيد. كما يدعم الرفع الجماعي وسحب وإفلات المجلدات.
+
+ 2
+ 
+ معالجة تلقائية بالذكاء الاصطناعي
+ اختر نموذج ذكاء اصطناعي وانقر على "إزالة الخلفية". يعالج الذكاء الاصطناعي الصورة محليًا في متصفحك خلال حوالي 1-4 ثوانٍ، دون رفع أي بيانات.
+
+ 3
+ 
+ تنزيل PNG
+ انقر على تنزيل لحفظ صورة PNG بخلفية شفافة بدقة كاملة. يمكنك التنزيل واحدة تلو الأخرى أو جميعها دفعة واحدة.
+
+ 
+
+ اختر من بين نماذج ذكاء اصطناعي متعددة
+ اختر أفضل نموذج يناسب نوع صورتك واحتياجات المعالجة
+ نموذج Pro
+ موصى به 
+ بنية BRIA RMBG v1.4 
+ يدعم صورًا حتى 16000×16000 
+ يتعامل مع الحواف شبه الشفافة 
+ أفضل جودة واختيار متعدد الاستخدامات 
+ 
+
+ نموذج الصورة الشخصية
+ 
+ بنية MODNet 
+ محسَّن للصور الشخصية وصور الهوية 
+ ~1.5 ثانية للصورة 
+ الأفضل للمواضيع الواضحة الفردية 
+ 
+
+ نموذج Mini
+ 
+ بنية U²-Net الخفيفة 
+ فقط 4.4 ميجابايت، أسرع في التحميل 
+ ~ثانية واحدة للصورة 
+ الأفضل للخلفيات البسيطة 
+ 
+
+ 
+
+ لماذا تختار AI BG Remover؟
+ 🔐
+ خصوصية وأمان - بدون رفع
+ تتم جميع عمليات معالجة الذكاء الاصطناعي محليًا في متصفحك. لا تغادر صورك جهازك أبدًا. وفقًا لأبحاث جامعة برينستون، يعد الاستدلال المحلي بالذكاء الاصطناعي الطريقة الأكثر خصوصية لمعالجة الصور.
+
+ ⚡
+ تسريع WebGPU وسرعة عالية
+ مبني على ONNX Runtime Web مع تسريع WebGPU وWebAssembly SIMD. يزيل نموذج Pro الخلفية في حوالي 4 ثوانٍ للصورة في المتوسط.
+
+ 🆓
+ مجاني تمامًا وبدون حدود
+ لا حدود لعدد الصور أو حجمها، ولا حاجة للتسجيل. جميع نماذج الذكاء الاصطناعي مجانية، بما في ذلك المعالجة الدفعية والتنزيل بدقة عالية كاملة.
+
+ 📦
+ تخزين IndexedDB - فوري عند إعادة الاستخدام
+ يتم تخزين نماذج الذكاء الاصطناعي تلقائيًا في IndexedDB بمتصفحك. يحتاج التحميل الأول إلى حوالي 42 ميجابايت (نموذج Pro)؛ والاستخدامات اللاحقة فورية.
+
+ 
+ 4 ث
+ متوسط وقت المعالجة
+
+ 42 ميجابايت
+ حجم نموذج الذكاء الاصطناعي
+
+ ∞
+ صور غير محدودة
+
+ 
+
+ التفاصيل التقنية
+ تشغّل هذه الأداة نماذج الذكاء الاصطناعي مباشرةً في متصفحك باستخدام ONNX Runtime Web، لذلك يتم كل الاستدلال محليًا دون تدخل من الخادم. تُستخدم ثلاث بنيات: BRIA RMBG v1.4 (عام)، وMODNet (صور شخصية)، وU²-Net (خفيفة وسريعة).
+ مع تسريع الأجهزة WebGPU أو WebAssembly SIMD، يصل الاستدلال إلى 1-4 ثوانٍ للصورة. يتم تخزين النماذج مؤقتًا في IndexedDB، لذا لا تتطلب التحميلات اللاحقة إعادة تنزيل.
+ وفقًا لدراسة جامعة برينستون لعام 2024 (Aggarwal et al.)، يوفر الاستدلال بالذكاء الاصطناعي داخل المتصفح مزايا كبيرة في الخصوصية وسرعة الاستجابة مقارنة بالحلول السحابية - لا تغادر بياناتك جهازك، ويعتمد زمن الاستجابة فقط على أداء الأجهزة المحلية.
+
+ الأسئلة الشائعة
+ هل أحتاج إلى رفع الصور إلى خادم؟
+ لا. تتم جميع عمليات إزالة الخلفية بالذكاء الاصطناعي بالكامل داخل متصفحك عبر ONNX Runtime Web - لا تغادر صورك جهازك أبدًا ولا يتم رفعها إلى أي خادم، مما يحمي خصوصيتك.
+
+ ما صيغ الصور المدعومة؟ وما مدى السرعة؟
+ يُدعم JPG وPNG وWEBP وAVIF وGIF وSVG. يستغرق نموذج Pro حوالي 4 ثوانٍ للصورة، ونموذج الصورة الشخصية حوالي 1.5 ثانية، ونموذج Mini حوالي ثانية واحدة. الناتج هو PNG بخلفية شفافة بدقة كاملة.
+
+ ما حجم الصور الذي يمكن معالجته؟ وهل توجد حدود للدفعة؟
+ يدعم نموذج Pro ما يصل إلى 16000×16000 بكسل؛ ويدعم Mini والصورة الشخصية ما يصل إلى 2048×2048. لا توجد حدود صارمة للمعالجة الدفعية، لكننا نوصي بأقل من 100 صورة أو 500 ميجابايت في المرة الواحدة لأداء سلس.
+
+ هل هذه الأداة مجانية تمامًا؟
+ نعم، مجانية 100%. بدون تسجيل وبدون تسجيل دخول وبدون رسوم خفية. جميع الميزات - المعالجة الدفعية والتنزيل عالي الدقة ونماذج الذكاء الاصطناعي المتعددة - متاحة بدون حدود.
+
+ ما نماذج الذكاء الاصطناعي المستخدمة؟ وما الفرق بينها؟
+ ثلاثة نماذج: Pro (BRIA RMBG v1.4، 42 ميجابايت، أفضل جودة بما في ذلك الكائنات شبه الشفافة)، والصورة الشخصية (MODNet، 25 ميجابايت، محسَّن للأشخاص)، وMini (U²-Net، 4.4 ميجابايت، خفيف وسريع). يمكنك أيضًا تشغيل جميع النماذج والمقارنة بينها.
+
+ هل يمكنني استخدامها على الهاتف أو الجهاز اللوحي؟
+ نعم. الأداة متجاوبة بالكامل وتعمل في متصفحات الهاتف والجهاز اللوحي دون تثبيت أي تطبيق. يدعم السحب والإفلات باللمس ولصق الصور.
+
+ كيف تقارن بأدوات مثل remove.bg؟
+ يحقق نموذج Pro (BRIA RMBG) نتائج قريبة من الأدوات التجارية في معظم السيناريوهات، خاصةً مع الأشخاص والمنتجات والحيوانات. وباعتبارها أداة مجانية محلية بالكامل، فهي تتمتع بميزة واضحة في الخصوصية والقيمة.
+
+ 
+
+ Share Copy link 
+ 意见反馈 · 隐私说明
+
+---
+
+## Kostenloser KI-Hintergrundentferner – Bildhintergründe online entfernen
+
+URL: https://bg.aixuno.com/de
+Summary: Kostenloser Online-KI-Hintergrundentferner. Entfernen Sie Bildhintergründe in Stapeln und laden Sie hochwertige transparente PNGs herunter. Alles läuft lokal in Ihrem Browser – Bilder werden nie auf einen Server hochgeladen. Angetrieben von ONNX Runtime Web mit WebGPU-Beschleunigung.
+
+KI-Hintergrundentferner - Bildhintergründe online kostenlos entfernen
+ Kostenloses Online-KI-Tool zum Entfernen von Bildhintergründen für die Stapelverarbeitung mit hochwertigem PNG-Download. Die gesamte Verarbeitung läuft vollständig in Ihrem Browser ， Ihre Bilder werden nie auf einen Server hochgeladen. Privatsphäre geschützt.
+ ~4 s im Durchschnitt pro Bild Angetrieben von ONNX Runtime Web 100 % kostenlos, keine Limits 
+ 
+ 
+ 
+ 
+
+ Hintergründe in 3 Schritten entfernen
+ Keine Registrierung, keine Installation – öffnen Sie einfach Ihren Browser
+ 1
+ 
+ Bilder hochladen
+ Ziehen Sie Bilder in den Upload-Bereich oder klicken Sie, um Dateien auszuwählen. Unterstützt JPG, PNG, WEBP und mehr. Stapel-Upload und Ordner per Drag & Drop möglich.
+
+ 2
+ 
+ Automatische KI-Verarbeitung
+ Wählen Sie ein KI-Modell und klicken Sie auf „Hintergrund entfernen“. Die KI verarbeitet lokal in Ihrem Browser in etwa 1-4 Sekunden, ohne dass Daten hochgeladen werden.
+
+ 3
+ 
+ PNG herunterladen
+ Klicken Sie auf „Herunterladen“, um das PNG mit transparentem Hintergrund in voller Auflösung zu speichern. Laden Sie einzeln oder alle auf einmal herunter.
+
+ 
+
+ Wählen Sie aus mehreren KI-Modellen
+ Wählen Sie das beste Modell für Ihren Bildtyp und Ihre Verarbeitungsanforderungen
+ Pro-Modell
+ Empfohlen 
+ BRIA RMBG v1.4 Architektur 
+ Unterstützt bis zu 16000×16000 Bilder 
+ Verarbeitet halbtransparente Kanten 
+ Beste Qualität, Allround-Wahl 
+ 
+
+ Porträt-Modell
+ 
+ MODNet-Architektur 
+ Optimiert für Porträts & Ausweisfotos 
+ ~1,5 s pro Bild 
+ Am besten für klare, einzelne Motive 
+ 
+
+ Mini-Modell
+ 
+ Leichtgewichtige U²-Net-Architektur 
+ Nur 4.4MB, schnellster Ladevorgang 
+ ~1 s pro Bild 
+ Am besten für einfache Hintergründe 
+ 
+
+ 
+
+ Warum AI BG Remover wählen?
+ 🔐
+ Privat & sicher – keine Uploads
+ Die gesamte KI-Verarbeitung erfolgt lokal in Ihrem Browser. Ihre Bilder verlassen nie Ihr Gerät. Laut einer Princeton-Studie ist lokale KI-Inferenz der privateste Weg, Bilder zu verarbeiten.
+
+ ⚡
+ WebGPU-beschleunigt & schnell
+ Basierend auf ONNX Runtime Web mit WebGPU- und WebAssembly-SIMD-Beschleunigung. Das Pro-Modell entfernt den Hintergrund in durchschnittlich etwa 4 Sekunden pro Bild.
+
+ 🆓
+ Völlig kostenlos, keine Limits
+ Keine Beschränkung bei Anzahl oder Größe der Bilder, keine Registrierung erforderlich. Alle KI-Modelle sind kostenlos, einschließlich Stapelverarbeitung und Full-HD-Downloads.
+
+ 📦
+ IndexedDB-Cache – sofort bei Wiederverwendung
+ KI-Modelle werden automatisch in der IndexedDB Ihres Browsers zwischengespeichert. Der erste Aufruf benötigt etwa 42MB (Pro-Modell); danach ist alles sofort verfügbar.
+
+ 
+ 4 s
+ Durchschnittliche Verarbeitungszeit
+
+ 42MB
+ KI-Modellgröße
+
+ ∞
+ Unbegrenzte Bilder
+
+ 
+
+ Technische Details
+ Dieses Tool führt KI-Modelle direkt in Ihrem Browser mit ONNX Runtime Web aus, sodass die gesamte Inferenz lokal erfolgt, ohne Serverbeteiligung. Drei Architekturen werden verwendet: BRIA RMBG v1.4 (allgemein), MODNet (Porträts) und U²-Net (leichtgewichtig & schnell).
+ Mit WebGPU- oder WebAssembly SIMD-Hardwarebeschleunigung erreicht die Inferenz 1-4 Sekunden pro Bild. Modelle werden in IndexedDB zwischengespeichert, sodass spätere Aufrufe keinen erneuten Download benötigen.
+ Laut einer Princeton-Studie aus dem Jahr 2024 (Aggarwal et al.) bietet Browser-KI-Inferenz erhebliche Vorteile bei Privatsphäre und Antwortgeschwindigkeit gegenüber Cloud-Lösungen – Ihre Daten verlassen nie das Gerät, und die Latenz hängt nur von der lokalen Hardware ab.
+
+ Häufig gestellte Fragen
+ Muss ich Bilder auf einen Server hochladen?
+ Nein. Die gesamte KI-Hintergrundentfernung läuft vollständig in Ihrem Browser über ONNX Runtime Web – Ihre Bilder verlassen nie Ihr Gerät und werden nie auf einen Server hochgeladen, was Ihre Privatsphäre schützt.
+
+ Welche Bildformate werden unterstützt? Wie schnell ist es?
+ JPG, PNG, WEBP, AVIF, GIF und SVG werden unterstützt. Das Pro-Modell benötigt etwa 4 s/Bild, Porträt etwa 1,5 s/Bild, Mini etwa 1 s/Bild. Das Ergebnis ist ein PNG mit transparentem Hintergrund in voller Auflösung.
+
+ Wie groß dürfen Bilder sein? Gibt es Batch-Limits?
+ Das Pro-Modell unterstützt bis zu 16000×16000 Pixel; Mini und Porträt bis zu 2048×2048. Die Stapelverarbeitung hat keine harten Limits, aber wir empfehlen unter 100 Bilder oder 500MB auf einmal für flüssige Leistung.
+
+ Ist das wirklich kostenlos?
+ Ja, 100 % kostenlos. Keine Registrierung, kein Login, keine versteckten Gebühren. Alle Funktionen – Stapelverarbeitung, HD-Downloads, mehrere KI-Modelle – sind ohne Einschränkungen verfügbar.
+
+ Welche KI-Modelle werden verwendet? Was ist der Unterschied?
+ Drei Modelle: Pro (BRIA RMBG v1.4, 42MB, beste Qualität inklusive halbtransparenter Objekte), Porträt (MODNet, 25MB, für Personen optimiert), Mini (U²-Net, 4.4MB, leichtgewichtig und schnell). Sie können auch alle Modelle ausführen und vergleichen.
+
+ Kann ich es auf Mobilgeräten oder Tablets verwenden?
+ Ja. Das Tool ist vollständig responsiv und funktioniert in Mobil- und Tablet-Browsern ohne App-Installation. Touch-Drag & Drop und Einfügen werden unterstützt.
+
+ Wie schneidet es im Vergleich zu Tools wie remove.bg ab?
+ Unser Pro-Modell (BRIA RMBG) erzielt in den meisten Szenarien Ergebnisse nahe kommerzieller Tools, besonders bei Personen, Produkten und Tieren. Als völlig kostenloses, vollständig lokales Tool hat es klare Vorteile bei Privatsphäre und Preis-Leistung.
+
+ 
+
+ Share Copy link 
+ 意见反馈 · 隐私说明
+
+---
+
+## Free AI Background Remover - Remove Image Backgrounds Online
+
+URL: https://bg.aixuno.com/en
+Summary: Free online AI background remover. Batch remove image backgrounds and download high-quality transparent PNGs. Everything runs locally in your browser - images never upload to a server. Powered by ONNX Runtime Web with WebGPU acceleration.
+
+AI Background Remover - Remove Image Backgrounds Online Free
+ Free online AI background removal tool for batch image processing with high-quality PNG download. All processing runs entirely in your browser ， Your images are never uploaded to any server. Privacy protected.
+ ~4s average per image Powered by ONNX Runtime Web 100% free, no limits 
+ 
+ 
+ 
+ 
+
+ Remove Backgrounds in 3 Steps
+ No registration, no installation - just open your browser
+ 1
+ 
+ Upload Images
+ Drag images to the upload area or click to choose files. Supports JPG, PNG, WEBP and more. Batch upload and folder drag & drop supported.
+
+ 2
+ 
+ AI Auto Processing
+ Select an AI model and click "Remove Background". The AI processes locally in your browser in about 1-4 seconds, with no data uploaded.
+
+ 3
+ 
+ Download PNG
+ Click download to save the transparent-background PNG at full resolution. Download one by one or all at once.
+
+ 
+
+ Choose from Multiple AI Models
+ Pick the best model for your image type and processing needs
+ Pro Model
+ Recommended 
+ BRIA RMBG v1.4 architecture 
+ Supports up to 16000×16000 images 
+ Handles semi-transparent edges 
+ Best quality, general-purpose choice 
+ 
+
+ Portrait Model
+ 
+ MODNet architecture 
+ Optimized for portraits & ID photos 
+ ~1.5s per image 
+ Best for clear, single subjects 
+ 
+
+ Mini Model
+ 
+ U²-Net lightweight architecture 
+ Only 4.4MB, fastest to load 
+ ~1s per image 
+ Best for simple backgrounds 
+ 
+
+ 
+
+ Why Choose AI BG Remover?
+ 🔐
+ Private & Secure - No Uploads
+ All AI processing happens locally in your browser. Your images never leave your device. According to Princeton research, local AI inference is the most private way to process images.
+
+ ⚡
+ WebGPU Accelerated & Fast
+ Built on ONNX Runtime Web with WebGPU and WebAssembly SIMD acceleration. The Pro model removes backgrounds in about 4 seconds per image on average.
+
+ 🆓
+ Completely Free, No Limits
+ No limits on image count or size, no registration required. All AI models are free, including batch processing and full-HD downloads.
+
+ 📦
+ IndexedDB Cache - Instant on Reuse
+ AI models are auto-cached in your browser's IndexedDB. First load needs about 42MB (Pro model); subsequent uses are instant.
+
+ 
+ 4s
+ Avg processing time
+
+ 42MB
+ AI model size
+
+ ∞
+ Unlimited images
+
+ 
+
+ Technical Details
+ This tool runs AI models directly in your browser with ONNX Runtime Web, so all inference happens locally with no server involvement. Three architectures are used: BRIA RMBG v1.4 (general), MODNet (portraits) and U²-Net (lightweight & fast).
+ With WebGPU or WebAssembly SIMD hardware acceleration, inference reaches 1-4 seconds per image. Models are cached in IndexedDB, so subsequent loads need no re-download.
+ According to a 2024 Princeton study (Aggarwal et al.), in-browser AI inference offers significant advantages in privacy and response speed over cloud solutions - your data never leaves the device, and latency depends only on local hardware.
+
+ Frequently Asked Questions
+ Do I need to upload images to a server?
+ No. All AI background removal runs entirely in your browser via ONNX Runtime Web - your images never leave your device and are never uploaded to any server, protecting your privacy.
+
+ Which image formats are supported? How fast is it?
+ JPG, PNG, WEBP, AVIF, GIF and SVG are supported. Pro model takes about 4s/image, Portrait about 1.5s/image, Mini about 1s/image. Output is a transparent-background PNG at full resolution.
+
+ How large can images be? Any batch limits?
+ The Pro model supports up to 16000×16000 pixels; Mini and Portrait support up to 2048×2048. Batch processing has no hard limits, but we recommend under 100 images or 500MB at once for smooth performance.
+
+ Is this completely free?
+ Yes, 100% free. No registration, no login, no hidden fees. All features - batch processing, HD downloads, multiple AI models - are available without limits.
+
+ Which AI models are used? What's the difference?
+ Three models: Pro (BRIA RMBG v1.4, 42MB, best quality including semi-transparent objects), Portrait (MODNet, 25MB, optimized for people), Mini (U²-Net, 4.4MB, lightweight and fast). You can also run all models and compare.
+
+ Can I use it on mobile or tablet?
+ Yes. The tool is fully responsive and works in mobile and tablet browsers with no app installation. Touch drag-and-drop and paste are supported.
+
+ How does it compare to tools like remove.bg?
+ Our Pro model (BRIA RMBG) achieves results close to commercial tools in most scenarios, especially for people, products and animals. As a free, fully local tool, it has a clear advantage in privacy and value.
+
+ 
+
+ Share Copy link 
+ 意见反馈 · 隐私说明
+
+---
+
+## Quitar Fondo de Imagen Gratis - Elimina Fondos de Fotos en Línea
+
+URL: https://bg.aixuno.com/es
+Summary: Eliminador de fondos con IA gratuito en línea. Elimina fondos de imágenes por lotes y descarga PNG transparentes de alta calidad. Todo se ejecuta localmente en tu navegador: las imágenes nunca se suben a un servidor. Desarrollado con ONNX Runtime Web y aceleración WebGPU.
+
+Quitar Fondo de Imagen con IA - Elimina Fondos de Fotos Online Gratis
+ Herramienta gratuita de eliminación de fondo con IA para procesar imágenes por lotes y descargar PNG de alta calidad. Todo el procesamiento se ejecuta por completo en tu navegador ， Tus imágenes nunca se suben a ningún servidor. Tu privacidad está protegida.
+ ~4 s por imagen de media Desarrollado con ONNX Runtime Web 100% gratis, sin límites 
+ 
+ 
+ 
+ 
+
+ Quita fondos en 3 pasos
+ Sin registro ni instalación: solo abre tu navegador
+ 1
+ 
+ Sube imágenes
+ Arrastra las imágenes a la zona de subida o haz clic para elegir archivos. Admite JPG, PNG, WEBP y más. Se admiten subidas por lotes y arrastrar carpetas.
+
+ 2
+ 
+ Procesamiento automático con IA
+ Selecciona un modelo de IA y haz clic en "Quitar fondo". La IA procesa de forma local en tu navegador en unos 1-4 segundos, sin subir datos.
+
+ 3
+ 
+ Descarga el PNG
+ Haz clic en descargar para guardar el PNG con fondo transparente a resolución completa. Descarga una a una o todas a la vez.
+
+ 
+
+ Elige entre varios modelos de IA
+ Elige el mejor modelo según el tipo de imagen y tus necesidades de procesamiento
+ Modelo Pro
+ Recomendado 
+ Arquitectura BRIA RMBG v1.4 
+ Admite imágenes de hasta 16000×16000 
+ Maneja bordes semitransparentes 
+ Mejor calidad, opción de uso general 
+ 
+
+ Modelo Retrato
+ 
+ Arquitectura MODNet 
+ Optimizado para retratos y fotos de documento 
+ ~1.5 s por imagen 
+ Ideal para sujetos nítidos y únicos 
+ 
+
+ Modelo Mini
+ 
+ Arquitectura ligera U²-Net 
+ Solo 4.4 MB, el que más rápido carga 
+ ~1 s por imagen 
+ Ideal para fondos simples 
+ 
+
+ 
+
+ ¿Por qué elegir AI BG Remover?
+ 🔐
+ Privado y seguro: sin subidas
+ Todo el procesamiento de IA ocurre localmente en tu navegador. Tus imágenes nunca salen de tu dispositivo. Según investigaciones de Princeton, la inferencia de IA local es la forma más privada de procesar imágenes.
+
+ ⚡
+ Acelerado con WebGPU y rápido
+ Construido sobre ONNX Runtime Web con aceleración WebGPU y WebAssembly SIMD. El modelo Pro elimina el fondo de una imagen en unos 4 segundos de media.
+
+ 🆓
+ Completamente gratis, sin límites
+ Sin límites de cantidad ni tamaño, sin necesidad de registro. Todos los modelos de IA son gratuitos, incluidos el procesamiento por lotes y las descargas en alta resolución.
+
+ 📦
+ Caché IndexedDB: instantáneo al reutilizar
+ Los modelos de IA se guardan automáticamente en la IndexedDB de tu navegador. La primera carga necesita unos 42 MB (modelo Pro); los usos posteriores son instantáneos.
+
+ 
+ 4 s
+ Tiempo medio de procesamiento
+
+ 42 MB
+ Tamaño del modelo de IA
+
+ ∞
+ Imágenes ilimitadas
+
+ 
+
+ Detalles técnicos
+ Esta herramienta ejecuta los modelos de IA directamente en tu navegador con ONNX Runtime Web, por lo que toda la inferencia ocurre localmente sin intervención de servidores. Se utilizan tres arquitecturas: BRIA RMBG v1.4 (general), MODNet (retratos) y U²-Net (ligera y rápida).
+ Con aceleración por hardware WebGPU o WebAssembly SIMD, la inferencia alcanza 1-4 segundos por imagen. Los modelos se guardan en caché en IndexedDB, por lo que las cargas posteriores no requieren volver a descargarlos.
+ Según un estudio de Princeton de 2024 (Aggarwal et al.), la inferencia de IA en el navegador ofrece ventajas significativas en privacidad y velocidad de respuesta frente a las soluciones en la nube: tus datos nunca salen del dispositivo y la latencia depende solo del hardware local.
+
+ Preguntas frecuentes
+ ¿Necesito subir imágenes a un servidor?
+ No. Toda la eliminación de fondo con IA se ejecuta por completo en tu navegador mediante ONNX Runtime Web: tus imágenes nunca salen de tu dispositivo y nunca se suben a ningún servidor, lo que protege tu privacidad.
+
+ ¿Qué formatos de imagen se admiten? ¿Qué tan rápido es?
+ Se admiten JPG, PNG, WEBP, AVIF, GIF y SVG. El modelo Pro tarda unos 4 s por imagen, Retrato unos 1.5 s y Mini unos 1 s. El resultado es un PNG con fondo transparente a resolución completa.
+
+ ¿Qué tamaño pueden tener las imágenes? ¿Hay límites de lote?
+ El modelo Pro admite hasta 16000×16000 píxeles; Mini y Retrato admiten hasta 2048×2048. El procesamiento por lotes no tiene límites estrictos, pero recomendamos menos de 100 imágenes o 500 MB de una vez para un rendimiento fluido.
+
+ ¿Es totalmente gratis?
+ Sí, 100% gratis. Sin registro, sin inicio de sesión ni cargos ocultos. Todas las funciones (procesamiento por lotes, descargas HD y múltiples modelos de IA) están disponibles sin límites.
+
+ ¿Qué modelos de IA se utilizan? ¿Cuál es la diferencia?
+ Hay tres modelos: Pro (BRIA RMBG v1.4, 42 MB, mejor calidad, incluye objetos semitransparentes), Retrato (MODNet, 25 MB, optimizado para personas) y Mini (U²-Net, 4.4 MB, ligero y rápido). También puedes ejecutar todos los modelos y comparar.
+
+ ¿Puedo usarlo en el móvil o en una tableta?
+ Sí. La herramienta es totalmente responsive y funciona en los navegadores de móvil y tableta sin instalar ninguna aplicación. Se admiten arrastrar y soltar táctil y pegar imágenes.
+
+ ¿Cómo se compara con herramientas como remove.bg?
+ Nuestro modelo Pro (BRIA RMBG) consigue resultados cercanos a las herramientas comerciales en la mayoría de los casos, especialmente con personas, productos y animales. Al ser una herramienta gratuita y 100% local, tiene una clara ventaja en privacidad y valor.
+
+ 
+
+ Share Copy link 
+ 意见反馈 · 隐私说明
+
+---
+
+## Suppresseur d&#x27;arrière-plan IA gratuit - Supprimer le fond d&#x27;une image en ligne
+
+URL: https://bg.aixuno.com/fr
+Summary: Suppresseur d'arrière-plan IA gratuit en ligne. Supprimez le fond d'images par lot et téléchargez des PNG transparents de haute qualité. Tout s'exécute localement dans votre navigateur - les images ne sont jamais envoyées sur un serveur. Propulsé par ONNX Runtime Web avec accélération WebGPU.
+
+Suppresseur d'arrière-plan IA - Supprimer le fond d'une image en ligne gratuitement
+ Outil gratuit en ligne de suppression d'arrière-plan par IA pour le traitement par lot d'images avec téléchargement de PNG haute qualité. Tout le traitement s'exécute entièrement dans votre navigateur ， Vos images ne sont jamais envoyées sur un serveur. Confidentialité protégée.
+ ~4 s en moyenne par image Propulsé par ONNX Runtime Web 100 % gratuit, sans limite 
+ 
+ 
+ 
+ 
+
+ Supprimez les arrière-plans en 3 étapes
+ Pas d'inscription, pas d'installation - ouvrez simplement votre navigateur
+ 1
+ 
+ Téléchargez les images
+ Faites glisser les images dans la zone de téléchargement ou cliquez pour choisir des fichiers. Prend en charge JPG, PNG, WEBP et plus. Téléchargement par lot et glisser-déposer de dossiers pris en charge.
+
+ 2
+ 
+ Traitement automatique par IA
+ Sélectionnez un modèle IA et cliquez sur « Supprimer l'arrière-plan ». L'IA traite localement dans votre navigateur en environ 1 à 4 secondes, sans aucune donnée envoyée sur un serveur.
+
+ 3
+ 
+ Téléchargez le PNG
+ Cliquez sur télécharger pour enregistrer le PNG à fond transparent en pleine résolution. Téléchargez un par un ou tous à la fois.
+
+ 
+
+ Choisissez parmi plusieurs modèles IA
+ Choisissez le meilleur modèle selon votre type d'image et vos besoins
+ Modèle Pro
+ Recommandé 
+ Architecture BRIA RMBG v1.4 
+ Prend en charge jusqu'à 16000×16000 pixels 
+ Gère les bords semi-transparents 
+ Meilleure qualité, choix polyvalent 
+ 
+
+ Modèle Portrait
+ 
+ Architecture MODNet 
+ Optimisé pour les portraits et photos d'identité 
+ ~1,5 s par image 
+ Idéal pour les sujets nets et uniques 
+ 
+
+ Modèle Mini
+ 
+ Architecture légère U²-Net 
+ Seulement 4,4 Mo, chargement le plus rapide 
+ ~1 s par image 
+ Idéal pour les arrière-plans simples 
+ 
+
+ 
+
+ Pourquoi choisir AI BG Remover ?
+ 🔐
+ Confidentiel et sécurisé - aucun envoi
+ Tout le traitement IA s'effectue localement dans votre navigateur. Vos images ne quittent jamais votre appareil. Selon une recherche de Princeton, l'inférence IA locale est le moyen le plus confidentiel de traiter des images.
+
+ ⚡
+ Accélération WebGPU et rapidité
+ Basé sur ONNX Runtime Web avec accélération WebGPU et WebAssembly SIMD. Le modèle Pro supprime l'arrière-plan en environ 4 secondes par image en moyenne.
+
+ 🆓
+ Entièrement gratuit, sans limites
+ Aucune limite de nombre ou de taille d'image, pas d'inscription requise. Tous les modèles IA sont gratuits, y compris le traitement par lot et les téléchargements en pleine HD.
+
+ 📦
+ Cache IndexedDB - instantané à la réutilisation
+ Les modèles IA sont automatiquement mis en cache dans l'IndexedDB de votre navigateur. Le premier chargement nécessite environ 42 Mo (modèle Pro) ; les utilisations suivantes sont instantanées.
+
+ 
+ 4 s
+ Temps de traitement moyen
+
+ 42 Mo
+ Taille du modèle IA
+
+ ∞
+ Images illimitées
+
+ 
+
+ Détails techniques
+ Cet outil exécute les modèles IA directement dans votre navigateur avec ONNX Runtime Web, si bien que toute l'inférence se fait localement, sans intervention de serveur. Trois architectures sont utilisées : BRIA RMBG v1.4 (général), MODNet (portraits) et U²-Net (léger et rapide).
+ Grâce à l'accélération matérielle WebGPU ou WebAssembly SIMD, l'inférence atteint 1 à 4 secondes par image. Les modèles sont mis en cache dans IndexedDB, donc les chargements suivants ne nécessitent aucun nouveau téléchargement.
+ Selon une étude de 2024 de Princeton (Aggarwal et al.), l'inférence IA dans le navigateur offre des avantages significatifs en matière de confidentialité et de rapidité par rapport aux solutions cloud - vos données ne quittent jamais l'appareil et la latence ne dépend que du matériel local.
+
+ Questions fréquentes
+ Dois-je télécharger mes images sur un serveur ?
+ Non. Toute la suppression d'arrière-plan par IA s'exécute entièrement dans votre navigateur via ONNX Runtime Web - vos images ne quittent jamais votre appareil et ne sont jamais envoyées sur un serveur, ce qui protège votre vie privée.
+
+ Quels formats d'image sont pris en charge ? Quelle est la vitesse ?
+ JPG, PNG, WEBP, AVIF, GIF et SVG sont pris en charge. Le modèle Pro traite environ 4 s/image, Portrait environ 1,5 s/image, Mini environ 1 s/image. Le résultat est un PNG à fond transparent en pleine résolution.
+
+ Quelle taille d'image puis-je traiter ? Y a-t-il des limites par lot ?
+ Le modèle Pro prend en charge jusqu'à 16000×16000 pixels ; Mini et Portrait jusqu'à 2048×2048. Le traitement par lot n'a pas de limite stricte, mais nous recommandons moins de 100 images ou 500 Mo à la fois pour des performances fluides.
+
+ Est-ce vraiment gratuit ?
+ Oui, 100 % gratuit. Pas d'inscription, pas de connexion, pas de frais cachés. Toutes les fonctionnalités - traitement par lot, téléchargements HD, plusieurs modèles IA - sont disponibles sans limite.
+
+ Quels modèles IA sont utilisés ? Quelle est la différence ?
+ Trois modèles : Pro (BRIA RMBG v1.4, 42 Mo, meilleure qualité incluant les objets semi-transparents), Portrait (MODNet, 25 Mo, optimisé pour les personnes), Mini (U²-Net, 4,4 Mo, léger et rapide). Vous pouvez aussi exécuter tous les modèles et comparer.
+
+ Puis-je l'utiliser sur mobile ou tablette ?
+ Oui. L'outil est entièrement responsive et fonctionne dans les navigateurs mobiles et tablettes sans installation d'application. Le glisser-déposer tactile et le collage sont pris en charge.
+
+ Comment se compare-t-il à des outils comme remove.bg ?
+ Notre modèle Pro (BRIA RMBG) atteint des résultats proches des outils commerciaux dans la plupart des scénarios, en particulier pour les personnes, les produits et les animaux. En tant qu'outil gratuit et entièrement local, il présente un net avantage en matière de confidentialité et de rapport qualité-prix.
+
+ 
+
+ Share Copy link 
+ 意见反馈 · 隐私说明
+
+---
+
+## 無料AI背景除去 - 画像の背景をオンラインで削除
+
+URL: https://bg.aixuno.com/ja
+Summary: 無料のオンラインAI背景除去ツール。画像の背景を一括で除去し、高画質の透明PNGをダウンロードできます。すべての処理はブラウザ内で完結し、画像はサーバーにアップロードされません。ONNX Runtime Web と WebGPU 高速化を採用。
+
+AI背景除去 - 画像の背景をオンラインで無料削除
+ 無料のオンラインAI背景除去ツール。画像を一括処理し、高画質PNGでダウンロードできます。 すべての処理はブラウザ内で完結 ， 画像がサーバーにアップロードされることはありません。プライバシーを保護します。
+ 1枚あたり平均4秒 ONNX Runtime Web を採用 完全無料・制限なし 
+ 
+ 
+ 
+ 
+
+ 3ステップで背景を削除
+ 登録もインストールも不要。ブラウザを開くだけ
+ 1
+ 
+ 画像をアップロード
+ 画像をアップロードエリアにドラッグするか、クリックしてファイルを選択します。JPG、PNG、WEBP などの形式に対応。一括アップロードやフォルダのドラッグ＆ドロップも可能です。
+
+ 2
+ 
+ AI自動処理
+ AIモデルを選択して「背景を削除」をクリック。AIがブラウザ内でローカル処理し、約1～4秒で完了します。データはサーバーに送信されません。
+
+ 3
+ 
+ PNGをダウンロード
+ 処理完了後にダウンロードをクリックすると、透明背景の高解像度PNGを保存できます。1枚ずつ、またはまとめてすべてダウンロード可能です。
+
+ 
+
+ 複数のAIモデルから選択
+ 画像の種類と処理ニーズに合わせて最適なモデルを選べます
+ Pro モデル
+ おすすめ 
+ BRIA RMBG v1.4 アーキテクチャ 
+ 最大 16000×16000 の画像に対応 
+ 半透明のエッジも処理 
+ 最高品質の汎用モデル 
+ 
+
+ ポートレートモデル
+ 
+ MODNet アーキテクチャ 
+ 人物・証明写真向けに最適化 
+ 1枚あたり約1.5秒 
+ 被写体が明確な画像に最適 
+ 
+
+ Mini モデル
+ 
+ U²-Net 軽量アーキテクチャ 
+ わずか 4.4MB、最速で読み込み 
+ 1枚あたり約1秒 
+ シンプルな背景に最適 
+ 
+
+ 
+
+ AI BG Remover を選ぶ理由
+ 🔐
+ プライバシー保護・アップロード不要
+ すべてのAI処理はブラウザ内でローカル実行されます。画像がデバイスから出ることはありません。Princeton 大学の研究によれば、ローカルAI推論は画像処理において最もプライベートな方法です。
+
+ ⚡
+ WebGPU 高速化・処理が速い
+ ONNX Runtime Web を基盤とし、WebGPU と WebAssembly SIMD による高速化に対応。Pro モデルは平均約4秒で1枚の背景を除去します。
+
+ 🆓
+ 完全無料・制限なし
+ 画像の枚数やサイズの制限なし、登録も不要。一括処理やフルHDダウンロードを含むすべてのAIモデルを無料で利用できます。
+
+ 📦
+ IndexedDB キャッシュ・再利用時は即座に
+ AIモデルはブラウザの IndexedDB に自動キャッシュされます。初回は約42MB（Proモデル）のダウンロードが必要ですが、2回目以降は即座に利用できます。
+
+ 
+ 4秒
+ 平均処理時間
+
+ 42MB
+ AIモデルサイズ
+
+ ∞
+ 枚数無制限
+
+ 
+
+ 技術詳細
+ 本ツールは ONNX Runtime Web によりブラウザ内で直接AIモデルを実行するため、すべての推論はローカルで完結し、サーバーは関与しません。BRIA RMBG v1.4（汎用）、MODNet（人物向け）、U²-Net（軽量・高速）の3つのアーキテクチャを使用しています。
+ WebGPU または WebAssembly SIMD によるハードウェア高速化で、推論は1枚あたり1～4秒。モデルは IndexedDB にキャッシュされるため、2回目以降は再ダウンロード不要です。
+ Princeton 大学の2024年の研究（Aggarwal et al.）によると、ブラウザ内AI推論はプライバシー保護と応答速度の点でクラウド型ソリューションより大きな優位性があります。データがデバイス外に出ることはなく、遅延はローカルハードウェアの性能のみに依存します。
+
+ よくある質問
+ 画像をサーバーにアップロードする必要がありますか？
+ いいえ。すべてのAI背景除去処理は ONNX Runtime Web によりブラウザ内で完結します。画像がデバイス外に出ることはなく、どのサーバーにもアップロードされないため、プライバシーが保護されます。
+
+ 対応している画像形式は？処理速度はどのくらい？
+ JPG、PNG、WEBP、AVIF、GIF、SVG に対応しています。Pro モデルは約4秒/枚、ポートレートは約1.5秒/枚、Mini は約1秒/枚です。出力は透明背景の高解像度PNGです。
+
+ 対応できる画像サイズは？一括処理に制限はありますか？
+ Pro モデルは最大 16000×16000 ピクセル、Mini とポートレートは最大 2048×2048 ピクセルに対応。一括処理に厳格な制限はありませんが、スムーズに動作させるため1回あたり100枚以内または500MB以内をおすすめします。
+
+ 完全に無料ですか？
+ はい、完全無料です。登録もログインも不要で、隠れた費用もありません。一括処理、高画質ダウンロード、複数のAIモデルなどすべての機能を制限なく利用できます。
+
+ どのAIモデルを使っていますか？違いは？
+ 3つのモデルを提供：Pro（BRIA RMBG v1.4、42MB、半透明のオブジェクトにも対応する最高品質）、ポートレート（MODNet、25MB、人物向けに最適化）、Mini（U²-Net、4.4MB、軽量・高速）。すべてのモデルを実行して比較することもできます。
+
+ スマートフォンやタブレットで使えますか？
+ はい。完全なレスポンシブデザインで、アプリのインストール不要でスマホ・タブレットのブラウザに対応。タッチでのドラッグ＆ドロップや画像の貼り付けにも対応しています。
+
+ remove.bg などのツールと比べてどうですか？
+ Pro モデル（BRIA RMBG）は、人物、商品、動物などほとんどのシーンで商用ツールに匹敵する結果が得られます。完全無料かつ完全ローカル動作のツールとして、プライバシーとコスト面で大きな優位性があります。
+
+ 
+
+ Share Copy link 
+ 意见反馈 · 隐私说明
+
+---
+
+## 무료 AI 배경 제거 - 온라인 이미지 배경 지우기
+
+URL: https://bg.aixuno.com/ko
+Summary: 무료 온라인 AI 배경 제거 도구. 이미지 배경을 일괄 제거하고 고화질 투명 PNG를 다운로드하세요. 모든 처리는 브라우저에서 로컬로 실행되며 이미지는 서버에 업로드되지 않습니다. ONNX Runtime Web과 WebGPU 가속을 기반으로 합니다.
+
+AI 배경 제거 - 온라인 무료 이미지 배경 제거
+ 이미지를 일괄 처리하고 고화질 PNG로 다운로드할 수 있는 무료 온라인 AI 배경 제거 도구입니다. 모든 처리는 브라우저에서 로컬로 실행됩니다 ， 이미지가 서버에 업로드되지 않습니다. 프라이버시가 보호됩니다.
+ 이미지당 평균 약 4초 ONNX Runtime Web 기반 100% 무료, 제한 없음 
+ 
+ 
+ 
+ 
+
+ 3단계로 배경 제거
+ 회원가입도 설치도 필요 없습니다. 브라우저만 열면 됩니다
+ 1
+ 
+ 이미지 업로드
+ 이미지를 업로드 영역으로 드래그하거나 클릭하여 파일을 선택하세요. JPG, PNG, WEBP 등 형식을 지원하며 일괄 업로드와 폴더 드래그 앤 드롭이 가능합니다.
+
+ 2
+ 
+ AI 자동 처리
+ AI 모델을 선택하고 "배경 제거"를 클릭하세요. AI가 브라우저에서 로컬로 처리하며 약 1~4초 만에 완료됩니다. 데이터는 서버로 업로드되지 않습니다.
+
+ 3
+ 
+ PNG 다운로드
+ 처리 완료 후 다운로드를 클릭하면 투명 배경의 고해상도 PNG를 저장할 수 있습니다. 개별 다운로드 또는 일괄 다운로드가 가능합니다.
+
+ 
+
+ 여러 AI 모델 중에서 선택
+ 이미지 유형과 처리 요구에 맞는 최적의 모델을 선택하세요
+ Pro 모델
+ 추천 
+ BRIA RMBG v1.4 아키텍처 
+ 최대 16000×16000 이미지 지원 
+ 반투명 가장자리 처리 
+ 최고 품질의 범용 선택 
+ 
+
+ 인물 모델
+ 
+ MODNet 아키텍처 
+ 인물 및 증명사진에 최적화 
+ 1장당 약 1.5초 
+ 피사체가 뚜렷한 단일 객체에 최적 
+ 
+
+ Mini 모델
+ 
+ U²-Net 경량 아키텍처 
+ 불과 4.4MB, 가장 빠른 로딩 
+ 1장당 약 1초 
+ 단순한 배경에 최적 
+ 
+
+ 
+
+ AI BG Remover를 선택해야 하는 이유
+ 🔐
+ 프라이버시 보호 · 업로드 없음
+ 모든 AI 처리는 브라우저에서 로컬로 실행됩니다. 이미지가 기기를 떠나지 않습니다. Princeton 대학 연구에 따르면 로컬 AI 추론이 이미지 처리에서 가장 프라이버시가 안전한 방식입니다.
+
+ ⚡
+ WebGPU 가속 · 빠른 처리
+ ONNX Runtime Web을 기반으로 WebGPU와 WebAssembly SIMD 가속을 지원합니다. Pro 모델은 평균 약 4초 만에 이미지 한 장의 배경을 제거합니다.
+
+ 🆓
+ 완전 무료 · 제한 없음
+ 이미지 수나 크기 제한이 없고 회원가입도 필요 없습니다. 일괄 처리와 풀HD 다운로드를 포함한 모든 AI 모델을 무료로 이용할 수 있습니다.
+
+ 📦
+ IndexedDB 캐시 · 재사용 시 즉시 실행
+ AI 모델이 브라우저의 IndexedDB에 자동 캐시됩니다. 첫 로딩에는 약 42MB(Pro 모델)가 필요하지만 이후에는 즉시 사용할 수 있습니다.
+
+ 
+ 4초
+ 평균 처리 시간
+
+ 42MB
+ AI 모델 크기
+
+ ∞
+ 이미지 무제한
+
+ 
+
+ 기술 세부 사항
+ 이 도구는 ONNX Runtime Web로 브라우저에서 직접 AI 모델을 실행하므로 모든 추론이 로컬에서 완료되며 서버가 개입하지 않습니다. BRIA RMBG v1.4(범용), MODNet(인물), U²-Net(경량·고속) 세 가지 아키텍처를 사용합니다.
+ WebGPU 또는 WebAssembly SIMD 하드웨어 가속으로 추론 속도가 1~4초/장에 도달합니다. 모델은 IndexedDB에 캐시되어 이후에는 다시 다운로드할 필요가 없습니다.
+ Princeton 대학의 2024년 연구(Aggarwal et al.)에 따르면 브라우저 내 AI 추론은 클라우드 솔루션보다 프라이버시 보호와 응답 속도에서 큰 이점이 있습니다. 데이터가 기기를 벗어나지 않으며 지연 시간은 로컬 하드웨어 성능에만 의존합니다.
+
+ 자주 묻는 질문
+ 이미지를 서버에 업로드해야 하나요?
+ 아니요. 모든 AI 배경 제거 처리는 ONNX Runtime Web을 통해 브라우저에서 완전히 실행됩니다. 이미지가 기기를 벗어나지 않으며 어떤 서버에도 업로드되지 않아 프라이버시가 보호됩니다.
+
+ 지원하는 이미지 형식은? 처리 속도는 어떤가요?
+ JPG, PNG, WEBP, AVIF, GIF, SVG 형식을 지원합니다. Pro 모델은 약 4초/장, 인물 모델은 약 1.5초/장, Mini 모델은 약 1초/장입니다. 출력은 투명 배경의 고해상도 PNG입니다.
+
+ 어느 정도 크기까지 처리할 수 있나요? 일괄 제한이 있나요?
+ Pro 모델은 최대 16000×16000픽셀, Mini와 인물 모델은 최대 2048×2048픽셀을 지원합니다. 일괄 처리에 엄격한 제한은 없지만 원활한 성능을 위해 한 번에 100장 이하 또는 500MB 이하를 권장합니다.
+
+ 완전 무료인가요?
+ 네, 100% 무료입니다. 회원가입도 로그인도 필요 없고 숨은 비용도 없습니다. 일괄 처리, 고화질 다운로드, 여러 AI 모델 등 모든 기능을 제한 없이 이용할 수 있습니다.
+
+ 어떤 AI 모델을 사용하나요? 차이점은?
+ 세 가지 모델을 제공합니다: Pro(BRIA RMBG v1.4, 42MB, 반투명 객체 포함 최고 품질), 인물(MODNet, 25MB, 사람에 최적화), Mini(U²-Net, 4.4MB, 가볍고 빠름). 모든 모델을 실행해 비교할 수도 있습니다.
+
+ 모바일이나 태블릿에서 사용할 수 있나요?
+ 네. 완전한 반응형 디자인으로 앱 설치 없이 모바일과 태블릿 브라우저에서 사용할 수 있습니다. 터치 드래그 앤 드롭과 붙여넣기를 지원합니다.
+
+ remove.bg 같은 도구와 비교하면 어떤가요?
+ Pro 모델(BRIA RMBG)은 대부분의 상황에서 상용 도구에 근접한 결과를 제공하며 특히 사람, 제품, 동물에 강점이 있습니다. 완전 무료이면서 완전 로컬 실행 도구로 프라이버시와 가성비 면에서 큰 우위가 있습니다.
+
+ 
+
+ Share Copy link 
+ 意见反馈 · 隐私说明
+
+---
+
+## 隐私说明 - 图片本地处理，不上传服务器 | AI 抠图
+
+URL: https://bg.aixuno.com/privacy
+Summary: AI 抠图工具的隐私说明：图片在浏览器本地通过 ONNX Runtime Web 处理，不上传服务器；无账号体系、不接入第三方分析脚本。
+
+隐私说明
+ 最后更新：2026-11-01
+ 图片在本地处理，不会上传
+ 抠图在浏览器内完成：图片通过 ONNX Runtime Web 加载模型，使用 WebGPU 或 WebAssembly 在设备本地推理。 图片数据不发送到 Aixuno 的服务器，也不经过任何第三方图像处理服务。 
+
+ 首次使用会下载 AI 模型
+ 第一次打开页面时需要下载抠图模型（约 42 MB）。下载完成后模型保存在浏览器缓存中， 之后再打开无需重复下载。清除浏览器数据后需要重新下载。 
+
+ 不收集的内容
+ 不要求注册或登录，没有账号体系。
+ 不收集姓名、邮箱、手机号等个人信息。
+ 不上传、不存储、不留存你处理的图片。
+ 本站未接入任何第三方分析或广告脚本。
+
+ 站点托管产生的访问日志
+ 本站是静态站点，托管在 GitHub Pages，域名解析由 Cloudflare 提供。 作为基础设施提供方，它们可能按行业标准记录访问日志（如 IP 地址、浏览器标识、访问时间）。 这类日志不由 Aixuno 控制，也不用于识别个人身份。 
+
+ 处理结果由你掌握
+ 抠图结果只存在于当前页面内，点击下载后才会写入你的设备。 关闭页面后，页面内的数据会被浏览器释放。 
+
+ 反馈与隐私请求
+ 发现页面错误、需要更正内容，或对隐私处理有疑问，可以在 GitHub Issues 提交。提交时请勿粘贴身份证件、银行卡或未公开的文件内容。 
+
+ 说明变更
+ 本说明随产品功能变化更新。涉及数据处理的实质变化会更新页首日期， 并在 首页 保持可达。 
+
+ ← 返回抠图工具
+
+---
+
+## Removedor de Fundo de Imagem com IA Gratuito - Tire Fundo de Fotos Online
+
+URL: https://bg.aixuno.com/pt
+Summary: Removedor de fundo online gratuito com IA. Remova fundos de imagens em lote e descarregue PNGs transparentes de alta qualidade. Tudo é feito localmente no seu navegador - as imagens nunca são enviadas para um servidor. Desenvolvido com ONNX Runtime Web e aceleração WebGPU.
+
+Remover Fundo de Imagem com IA - Tire o Fundo de Fotos Online Grátis
+ Ferramenta gratuita de remoção de fundo com IA para processamento de imagens em lote e download de PNG de alta qualidade. Todo o processamento é feito inteiramente no seu navegador ， As suas imagens nunca são enviadas para nenhum servidor. A sua privacidade está protegida.
+ ~4 s por imagem em média Desenvolvido com ONNX Runtime Web 100% gratuito, sem limites 
+ 
+ 
+ 
+ 
+
+ Remova fundos em 3 passos
+ Sem registo, sem instalação - basta abrir o navegador
+ 1
+ 
+ Envie imagens
+ Arraste as imagens para a área de envio ou clique para escolher ficheiros. Suporta JPG, PNG, WEBP e mais. Envio em lote e arrastar e largar pastas são suportados.
+
+ 2
+ 
+ Processamento automático com IA
+ Selecione um modelo de IA e clique em "Remover fundo". A IA processa localmente no seu navegador em cerca de 1-4 segundos, sem enviar dados.
+
+ 3
+ 
+ Descarregue o PNG
+ Clique em descarregar para guardar o PNG com fundo transparente em resolução total. Descarregue uma a uma ou todas de uma vez.
+
+ 
+
+ Escolha entre vários modelos de IA
+ Escolha o melhor modelo para o seu tipo de imagem e necessidades de processamento
+ Modelo Pro
+ Recomendado 
+ Arquitetura BRIA RMBG v1.4 
+ Suporta imagens até 16000×16000 
+ Lida com bordos semitransparentes 
+ Melhor qualidade, escolha de uso geral 
+ 
+
+ Modelo Retrato
+ 
+ Arquitetura MODNet 
+ Otimizado para retratos e fotos de identificação 
+ ~1.5 s por imagem 
+ Melhor para assuntos únicos e nítidos 
+ 
+
+ Modelo Mini
+ 
+ Arquitetura leve U²-Net 
+ Apenas 4.4 MB, carrega mais rápido 
+ ~1 s por imagem 
+ Melhor para fundos simples 
+ 
+
+ 
+
+ Porquê escolher o AI BG Remover?
+ 🔐
+ Privado e seguro - sem envios
+ Todo o processamento de IA é feito localmente no seu navegador. As suas imagens nunca saem do seu dispositivo. Segundo a investigação de Princeton, a inferência de IA local é a forma mais privada de processar imagens.
+
+ ⚡
+ Acelerado por WebGPU e rápido
+ Construído sobre ONNX Runtime Web com aceleração WebGPU e WebAssembly SIMD. O modelo Pro remove o fundo em cerca de 4 segundos por imagem em média.
+
+ 🆓
+ Completamente gratuito, sem limites
+ Sem limites de quantidade ou tamanho de imagens, sem necessidade de registo. Todos os modelos de IA são gratuitos, incluindo processamento em lote e downloads em full HD.
+
+ 📦
+ Cache IndexedDB - instantâneo na reutilização
+ Os modelos de IA são automaticamente colocados em cache na IndexedDB do seu navegador. O primeiro carregamento precisa de cerca de 42 MB (modelo Pro); os usos seguintes são instantâneos.
+
+ 
+ 4 s
+ Tempo médio de processamento
+
+ 42 MB
+ Tamanho do modelo de IA
+
+ ∞
+ Imagens ilimitadas
+
+ 
+
+ Detalhes técnicos
+ Esta ferramenta executa os modelos de IA diretamente no seu navegador com ONNX Runtime Web, por isso toda a inferência é feita localmente sem envolvimento do servidor. São usadas três arquiteturas: BRIA RMBG v1.4 (geral), MODNet (retratos) e U²-Net (leve e rápida).
+ Com aceleração de hardware WebGPU ou WebAssembly SIMD, a inferência atinge 1-4 segundos por imagem. Os modelos ficam em cache na IndexedDB, por isso os carregamentos seguintes não precisam de novo download.
+ Segundo um estudo de Princeton de 2024 (Aggarwal et al.), a inferência de IA no navegador oferece vantagens significativas em privacidade e velocidade de resposta face às soluções em nuvem - os seus dados nunca saem do dispositivo e a latência depende apenas do hardware local.
+
+ Perguntas frequentes
+ Preciso de enviar imagens para um servidor?
+ Não. Toda a remoção de fundo com IA é feita inteiramente no seu navegador através do ONNX Runtime Web - as suas imagens nunca saem do seu dispositivo nem são enviadas para nenhum servidor, protegendo a sua privacidade.
+
+ Que formatos de imagem são suportados? Quão rápido é?
+ São suportados JPG, PNG, WEBP, AVIF, GIF e SVG. O modelo Pro demora cerca de 4 s/imagem, o Retrato cerca de 1.5 s/imagem e o Mini cerca de 1 s/imagem. O resultado é um PNG com fundo transparente em resolução total.
+
+ Que tamanho podem ter as imagens? Há limites de lote?
+ O modelo Pro suporta até 16000×16000 píxeis; Mini e Retrato suportam até 2048×2048. O processamento em lote não tem limites rígidos, mas recomendamos menos de 100 imagens ou 500 MB de uma vez para um desempenho fluido.
+
+ Isto é completamente gratuito?
+ Sim, 100% gratuito. Sem registo, sem início de sessão, sem custos ocultos. Todas as funcionalidades - processamento em lote, downloads em HD e múltiplos modelos de IA - estão disponíveis sem limites.
+
+ Que modelos de IA são usados? Qual é a diferença?
+ Três modelos: Pro (BRIA RMBG v1.4, 42 MB, melhor qualidade, incluindo objetos semitransparentes), Retrato (MODNet, 25 MB, otimizado para pessoas) e Mini (U²-Net, 4.4 MB, leve e rápido). Pode também executar todos os modelos e comparar.
+
+ Posso usar no telemóvel ou tablet?
+ Sim. A ferramenta é totalmente responsiva e funciona em navegadores de telemóvel e tablet sem instalar nenhuma aplicação. São suportados arrastar e largar tátil e colar imagens.
+
+ Como se compara com ferramentas como o remove.bg?
+ O nosso modelo Pro (BRIA RMBG) alcança resultados próximos das ferramentas comerciais na maioria dos cenários, especialmente para pessoas, produtos e animais. Como ferramenta gratuita e totalmente local, tem uma clara vantagem em privacidade e valor.
+
+ 
+
+ Share Copy link 
+ 意见反馈 · 隐私说明
+
+---
+
+## Бесплатный ИИ-инструмент удаления фона - Удалить фон с фото онлайн
+
+URL: https://bg.aixuno.com/ru
+Summary: Бесплатный онлайн-инструмент удаления фона с помощью ИИ. Удаляйте фон с изображений пакетно и скачивайте прозрачные PNG высокого качества. Всё выполняется локально в вашем браузере — изображения никогда не загружаются на сервер. На базе ONNX Runtime Web с ускорением WebGPU.
+
+Удалить Фон с Фото с Помощью ИИ - Бесплатно Онлайн
+ Бесплатный онлайн-инструмент удаления фона с изображений на базе ИИ для пакетной обработки с загрузкой PNG высокого качества. Вся обработка выполняется полностью в вашем браузере ， Ваши изображения никогда не загружаются на сервер. Приватность защищена.
+ ~4 с в среднем на изображение На базе ONNX Runtime Web 100% бесплатно, без ограничений 
+ 
+ 
+ 
+ 
+
+ Удаление фона в 3 шага
+ Без регистрации и установки — просто откройте браузер
+ 1
+ 
+ Загрузите изображения
+ Перетащите изображения в область загрузки или нажмите, чтобы выбрать файлы. Поддерживаются JPG, PNG, WEBP и другие. Доступна пакетная загрузка и перетаскивание папок.
+
+ 2
+ 
+ Автоматическая обработка ИИ
+ Выберите модель ИИ и нажмите "Удалить фон". ИИ обрабатывает изображение локально в вашем браузере примерно за 1-4 секунды, без загрузки данных.
+
+ 3
+ 
+ Скачайте PNG
+ Нажмите «Скачать», чтобы сохранить PNG с прозрачным фоном в полном разрешении. Скачивайте по одному или все сразу.
+
+ 
+
+ Выберите одну из нескольких моделей ИИ
+ Выберите лучшую модель для вашего типа изображения и задач обработки
+ Модель Pro
+ Рекомендуется 
+ Архитектура BRIA RMBG v1.4 
+ Поддерживает изображения до 16000×16000 
+ Работает с полупрозрачными краями 
+ Лучшее качество, универсальный выбор 
+ 
+
+ Модель Портрет
+ 
+ Архитектура MODNet 
+ Оптимизирована для портретов и документных фото 
+ ~1.5 с на изображение 
+ Лучший выбор для чётких одиночных объектов 
+ 
+
+ Модель Mini
+ 
+ Лёгкая архитектура U²-Net 
+ Всего 4.4 МБ, загружается быстрее всех 
+ ~1 с на изображение 
+ Лучший выбор для простых фонов 
+ 
+
+ 
+
+ Почему AI BG Remover?
+ 🔐
+ Приватно и безопасно — без загрузок
+ Вся обработка ИИ выполняется локально в вашем браузере. Ваши изображения никогда не покидают ваше устройство. По данным исследования Принстона, локальный ИИ-инференс — самый приватный способ обработки изображений.
+
+ ⚡
+ Ускорение WebGPU и скорость
+ Создано на базе ONNX Runtime Web с ускорением WebGPU и WebAssembly SIMD. Модель Pro удаляет фон примерно за 4 секунды на изображение в среднем.
+
+ 🆓
+ Полностью бесплатно, без ограничений
+ Без ограничений по количеству и размеру изображений, без регистрации. Все модели ИИ бесплатны, включая пакетную обработку и скачивание в полном HD.
+
+ 📦
+ Кеш IndexedDB — мгновенно при повторном использовании
+ Модели ИИ автоматически кешируются в IndexedDB вашего браузера. При первой загрузке нужно около 42 МБ (модель Pro); последующие запуски мгновенные.
+
+ 
+ 4 с
+ Среднее время обработки
+
+ 42 МБ
+ Размер модели ИИ
+
+ ∞
+ Безлимитные изображения
+
+ 
+
+ Технические детали
+ Этот инструмент запускает модели ИИ прямо в вашем браузере с помощью ONNX Runtime Web, поэтому весь инференс выполняется локально без участия сервера. Используются три архитектуры: BRIA RMBG v1.4 (универсальная), MODNet (портреты) и U²-Net (лёгкая и быстрая).
+ Благодаря аппаратному ускорению WebGPU или WebAssembly SIMD инференс достигает 1-4 секунд на изображение. Модели кешируются в IndexedDB, поэтому при последующих загрузках повторное скачивание не требуется.
+ Согласно исследованию Принстона 2024 года (Aggarwal et al.), браузерный ИИ-инференс даёт значительные преимущества в приватности и скорости отклика по сравнению с облачными решениями — ваши данные никогда не покидают устройство, а задержка зависит только от локального оборудования.
+
+ Часто задаваемые вопросы
+ Нужно ли загружать изображения на сервер?
+ Нет. Всё удаление фона с помощью ИИ выполняется полностью в вашем браузере через ONNX Runtime Web — ваши изображения никогда не покидают ваше устройство и не загружаются на сервер, что защищает вашу приватность.
+
+ Какие форматы изображений поддерживаются? Насколько это быстро?
+ Поддерживаются JPG, PNG, WEBP, AVIF, GIF и SVG. Модель Pro обрабатывает изображение примерно за 4 с, Портрет — около 1.5 с, Mini — около 1 с. На выходе — PNG с прозрачным фоном в полном разрешении.
+
+ Какого размера могут быть изображения? Есть ли лимиты пакета?
+ Модель Pro поддерживает до 16000×16000 пикселей; Mini и Портрет — до 2048×2048. У пакетной обработки нет строгих лимитов, но мы рекомендуем не более 100 изображений или 500 МБ за раз для плавной работы.
+
+ Это полностью бесплатно?
+ Да, 100% бесплатно. Без регистрации, входа и скрытых платежей. Все функции — пакетная обработка, скачивание в HD, несколько моделей ИИ — доступны без ограничений.
+
+ Какие модели ИИ используются? В чём разница?
+ Три модели: Pro (BRIA RMBG v1.4, 42 МБ, лучшее качество, включая полупрозрачные объекты), Портрет (MODNet, 25 МБ, оптимизирована для людей) и Mini (U²-Net, 4.4 МБ, лёгкая и быстрая). Можно также запустить все модели и сравнить.
+
+ Можно ли использовать на телефоне или планшете?
+ Да. Инструмент полностью адаптивен и работает в мобильных браузерах и на планшетах без установки приложения. Поддерживаются сенсорное перетаскивание и вставка изображений.
+
+ Чем вы лучше таких инструментов, как remove.bg?
+ Наша модель Pro (BRIA RMBG) достигает результатов, близких к коммерческим инструментам, в большинстве сценариев, особенно для людей, товаров и животных. Как бесплатный полностью локальный инструмент, она имеет явное преимущество в приватности и ценности.
+
+ 
+
+ Share Copy link 
+ 意见反馈 · 隐私说明
