@@ -1,5 +1,6 @@
 <template>
   <div class="min-h-screen bg-grid">
+    <SiteNetwork />
     <AppHeader :show-cache-info="isModelLoading || processError !== null" @clear-cache="handleClearCache" />
 
     <!-- 全屏加载闪屏（仅首次模型下载时展示） -->
@@ -383,8 +384,8 @@
       <!-- ===== FAQ（H2）- GEO 关键 ===== -->
       <FaqSection />
 
-      <!-- ===== 跨站入口 ===== -->
-      <SiteNetwork />
+      <!-- ===== 分享与反馈 ===== -->
+      <SiteUtilityLinks />
     </main>
   </div>
 </template>

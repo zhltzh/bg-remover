@@ -1,5 +1,6 @@
 <template>
   <div class="min-h-screen bg-grid">
+    <SiteNetwork />
     <AppHeader />
     <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
       <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">隐私说明</h1>
