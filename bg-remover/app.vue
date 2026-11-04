@@ -11,6 +11,37 @@ const config = useRuntimeConfig()
 const siteUrl = config.public.siteUrl || 'https://bg.aixuno.com'
 const i18nHead = useLocaleHead()
 
+// ===== 全站 Organization（每页都有，与 Aixuno 主实体关联） =====
+useHead(() => ({
+  script: [
+    {
+      type: 'application/ld+json',
+      key: 'org-schema',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        '@id': `${siteUrl}/#organization`,
+        name: t('seo.orgName'),
+        url: siteUrl,
+        description: t('seo.orgDesc'),
+        logo: {
+          '@type': 'ImageObject',
+          url: `${siteUrl}/icons/icon-512.png`,
+          width: 512,
+          height: 512,
+        },
+        sameAs: ['https://github.com/zhltzh/bg-remover'],
+        parentOrganization: {
+          '@type': 'Organization',
+          '@id': 'https://aixuno.com/#organization',
+          name: 'Aixuno',
+          url: 'https://aixuno.com/',
+        },
+      }),
+    },
+  ],
+}))
+
 useHead(() => {
   const head = i18nHead.value
   return {

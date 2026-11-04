@@ -11,7 +11,6 @@ export function useStructuredData() {
   function injectSchemas() {
     const schemas = [
       webApplicationSchema(),
-      organizationSchema(),
       faqPageSchema(),
       howToSchema(),
       breadcrumbSchema(),
@@ -43,9 +42,23 @@ export function useStructuredData() {
         price: '0',
         priceCurrency: 'CNY',
       },
+      featureList: [
+        'AI 一键去除图片背景',
+        '浏览器本地处理，图片不上传',
+        '支持 JPG / PNG / WebP 输入',
+        '输出透明背景 PNG',
+        '无需注册，无水印',
+      ],
+      isAccessibleForFree: true,
+      screenshot: {
+        '@type': 'ImageObject',
+        url: `${siteUrl}/screenshot.png`,
+        width: 1280,
+        height: 800,
+      },
       author: {
         '@type': 'Organization',
-        name: 'ImagesTool',
+        '@id': `${siteUrl}/#organization`,
       },
     }
   }
@@ -55,9 +68,23 @@ export function useStructuredData() {
     return {
       '@context': 'https://schema.org',
       '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
       name: t('seo.orgName'),
       url: siteUrl,
       description: t('seo.orgDesc'),
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteUrl}/icons/icon-512.png`,
+        width: 512,
+        height: 512,
+      },
+      sameAs: ['https://github.com/zhltzh/bg-remover'],
+      parentOrganization: {
+        '@type': 'Organization',
+        '@id': 'https://aixuno.com/#organization',
+        name: 'Aixuno',
+        url: 'https://aixuno.com/',
+      },
     }
   }
 
