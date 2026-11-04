@@ -302,6 +302,24 @@
       <HowItWorks />
 
       <!-- ===== 模型对比（H2） ===== -->
+      <!-- 抠图效果对比 -->
+      <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-4" aria-label="抠图效果对比">
+        <figure class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+          <img
+            src="/bg-cutout.webp"
+            alt="AI 抠图效果对比：左侧为带渐变背景的原始人像照片，右侧为去除背景后的透明 PNG 结果，主体边缘完整保留"
+            width="2400"
+            height="1280"
+            loading="lazy"
+            decoding="async"
+            class="h-auto w-full"
+          />
+        </figure>
+        <p class="mt-4 text-center text-sm text-gray-500">
+          左侧为原始照片，右侧为抠图结果——背景完全去除，主体边缘保留，可直接使用透明 PNG。
+        </p>
+      </section>
+
       <section class="max-w-4xl mx-auto py-16 px-4" :aria-label="$t('section.modelCompare.ariaLabel')">
         <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-4">
           {{ $t('section.modelCompare.title') }}
