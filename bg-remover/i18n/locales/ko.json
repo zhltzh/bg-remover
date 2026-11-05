@@ -20,6 +20,8 @@
     "uploadedCount": "이미지 {count}개 업로드됨",
     "totalSize": "(총 {size}MB)",
     "addMore": "+ 더 추가",
+    "dropZoneTitle": "새 이미지를 드롭하여 계속하기",
+    "dropZoneHint": "여러 장을 한 번에 드롭할 수 있으며, 여기를 클릭해도 추가할 수 있습니다",
     "downloadAll": "모두 다운로드 ({count}개 이미지)",
     "downloadAllPartial": "성공한 항목 다운로드 ({count}개 이미지)",
     "stopProcessing": "처리 중지",

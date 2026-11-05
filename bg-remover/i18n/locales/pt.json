@@ -20,6 +20,8 @@
     "uploadedCount": "{count} imagens enviadas",
     "totalSize": "({size} MB no total)",
     "addMore": "+ Adicionar mais",
+    "dropZoneTitle": "Solte novas imagens para continuar",
+    "dropZoneHint": "Arraste vários de uma vez, ou clique aqui para adicionar",
     "downloadAll": "Descarregar tudo ({count} imagens)",
     "downloadAllPartial": "Descarregar as concluídas ({count} imagens)",
     "stopProcessing": "Parar",

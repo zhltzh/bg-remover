@@ -20,6 +20,8 @@
     "uploadedCount": "تم رفع {count} صورة",
     "totalSize": "(إجمالي {size} ميجابايت)",
     "addMore": "+ إضافة المزيد",
+    "dropZoneTitle": "أفلت صورًا جديدة للمتابعة",
+    "dropZoneHint": "يدعم الإفلات المتعدد، أو انقر هنا للإضافة",
     "downloadAll": "تنزيل الكل ({count} صور)",
     "downloadAllPartial": "تنزيل الناجحة ({count} صور)",
     "stopProcessing": "إيقاف",

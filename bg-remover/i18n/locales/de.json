@@ -20,6 +20,8 @@
     "uploadedCount": "{count} Bilder hochgeladen",
     "totalSize": "({size}MB gesamt)",
     "addMore": "+ Weitere hinzufügen",
+    "dropZoneTitle": "Neue Bilder hier ablegen, um fortzufahren",
+    "dropZoneHint": "Mehrfach-Ablegen möglich, oder hier klicken zum Hinzufügen",
     "downloadAll": "Alle herunterladen ({count} Bilder)",
     "downloadAllPartial": "Erfolgreiche herunterladen ({count} Bilder)",
     "stopProcessing": "Stoppen",

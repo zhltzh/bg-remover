@@ -20,6 +20,8 @@
     "uploadedCount": "{count} images uploaded",
     "totalSize": "({size}MB total)",
     "addMore": "+ Add more",
+    "dropZoneTitle": "Drop new images to continue",
+    "dropZoneHint": "Batch drop supported, or click here to add",
     "downloadAll": "Download all ({count} images)",
     "downloadAllPartial": "Download successful ({count} images)",
     "stopProcessing": "Stop",

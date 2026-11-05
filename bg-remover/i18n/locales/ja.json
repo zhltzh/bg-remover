@@ -20,6 +20,8 @@
     "uploadedCount": "{count} 枚の画像をアップロード",
     "totalSize": "（合計 {size}MB）",
     "addMore": "+ さらに追加",
+    "dropZoneTitle": "新しい画像をドロップして続ける",
+    "dropZoneHint": "複数まとめてドロップ可能。ここをクリックしても追加できます",
     "downloadAll": "すべてダウンロード（{count} 枚）",
     "downloadAllPartial": "成功分をダウンロード（{count} 枚）",
     "stopProcessing": "処理を停止",

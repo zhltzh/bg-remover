@@ -20,6 +20,8 @@
     "uploadedCount": "已上传 {count} 张",
     "totalSize": "（共 {size}MB）",
     "addMore": "+ 添加更多",
+    "dropZoneTitle": "拖入新图片继续抠图",
+    "dropZoneHint": "支持批量拖入，也可点击此处添加",
     "downloadAll": "全部下载 ({count} 张)",
     "downloadAllPartial": "下载成功图片 ({count} 张)",
     "stopProcessing": "停止处理",

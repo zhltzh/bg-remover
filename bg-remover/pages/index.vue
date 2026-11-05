@@ -82,7 +82,7 @@
                     <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
                   </svg>
                   {{ $t('tool.addMore') }}
-                  <input type="file" multiple accept="image/*" class="hidden" @change="onAddMoreFiles" />
+                  <input ref="addMoreInput" type="file" multiple accept="image/*" class="hidden" @change="onAddMoreFiles" />
                 </label>
               </div>
 
@@ -137,6 +137,23 @@
               >
                 ⬇ {{ allDone ? $t('tool.downloadAll', { count: doneCount }) : $t('tool.downloadAllPartial', { count: doneCount }) }}
               </button>
+
+              <!-- 常驻拖拽区：抠完一张后可直接拖入新图继续，无需先清空 -->
+              <div
+                role="button"
+                tabindex="0"
+                class="rounded-xl border-2 border-dashed px-4 py-5 text-center transition-colors cursor-pointer"
+                :class="isDropZoneActive ? 'border-indigo-400 bg-indigo-100/70' : 'border-indigo-200 bg-indigo-50/40 hover:border-indigo-300 hover:bg-indigo-50'"
+                @click="addMoreInput?.click()"
+                @keydown.enter.prevent="addMoreInput?.click()"
+                @keydown.space.prevent="addMoreInput?.click()"
+                @dragover.prevent="isDropZoneActive = true"
+                @dragleave="onDropZoneDragLeave"
+                @drop.prevent="onDropFiles"
+              >
+                <p class="text-sm font-medium text-indigo-600">{{ $t('tool.dropZoneTitle') }}</p>
+                <p class="text-xs text-gray-400 mt-1">{{ $t('tool.dropZoneHint') }}</p>
+              </div>
             </div>
 
             <!-- ===== 右栏：操作面板（占 2/5） ===== -->
@@ -505,6 +522,10 @@ const editOpen = ref(false)
 const editTool = ref<'eraser' | 'restore'>('eraser')
 // 画笔大小（工具条与浮层双向同步）
 const editBrushSize = ref(30)
+// 常驻拖拽区高亮态（拖拽悬停时切换边框/背景）
+const isDropZoneActive = ref(false)
+// "添加更多"隐藏 input（常驻拖拽区点击时复用）
+const addMoreInput = ref<HTMLInputElement | null>(null)
 // 收藏提示（每下载 5 次弹一次）
 import BookmarkHint from '~/components/BookmarkHint.vue'
 
@@ -628,19 +649,38 @@ function addFiles(files: File[]) {
 function onAddMoreFiles(e: Event) {
   const input = e.target as HTMLInputElement
   if (input.files && input.files.length > 0) {
-    const files = Array.from(input.files)
-    // 过滤：只取支持格式（与上传区规则一致）
-    const validFiles = files.filter(f => isImageFile(f))
-
-    // 数量/总大小限制
-    const currentSize = imageItems.value.reduce((acc, item) => acc + item.file.size, 0)
-    const { allowed } = applyLimits(validFiles, imageItems.value.length, currentSize)
-
-    if (allowed.length > 0) {
-      addFiles(allowed)
-    }
+    addValidatedFiles(Array.from(input.files))
   }
   input.value = ''
+}
+
+// 共享校验 + 添加：拖拽区与文件选择框走同一条路径
+function addValidatedFiles(files: File[]) {
+  // 过滤：只取支持格式（与上传区规则一致）
+  const validFiles = files.filter(f => isImageFile(f))
+
+  // 数量/总大小限制
+  const currentSize = imageItems.value.reduce((acc, item) => acc + item.file.size, 0)
+  const { allowed } = applyLimits(validFiles, imageItems.value.length, currentSize)
+
+  if (allowed.length > 0) {
+    addFiles(allowed)
+  }
+}
+
+// 常驻拖拽区：拖入文件后继续抠图
+function onDropFiles(e: DragEvent) {
+  isDropZoneActive.value = false
+  const files = e.dataTransfer?.files
+  if (!files || files.length === 0) return
+  addValidatedFiles(Array.from(files))
+}
+
+// 拖拽离开：指针仍在拖拽区内的子元素上时不取消高亮，避免闪烁
+function onDropZoneDragLeave(e: DragEvent) {
+  const el = e.currentTarget as HTMLElement | null
+  if (el && e.relatedTarget && el.contains(e.relatedTarget as Node)) return
+  isDropZoneActive.value = false
 }
 
 // 全局粘贴：页面任意位置 Ctrl+V 上传图片（守卫：输入框内不拦截、不双触发、浮层打开时跳过）
