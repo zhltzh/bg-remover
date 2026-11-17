@@ -37,7 +37,8 @@ const SITES = [
   { id: 'pdf', href: 'https://pdf.aixuno.com/', mark: 'PDF', label: 'PDF 工具', tone: 'from-rose-500 to-red-500' },
   { id: 'bg', href: 'https://bg.aixuno.com/', mark: 'BG', label: 'AI 抠图', tone: 'from-violet-500 to-indigo-500' },
   { id: 'scan', href: 'https://scan.aixuno.com/', mark: 'DOC', label: '文档扫描', tone: 'from-blue-500 to-blue-700' },
-  { id: 'tools', href: 'https://tools.aixuno.com/', mark: 'AI', label: 'AI 工具箱', tone: 'from-teal-500 to-cyan-500' },
+  { id: 'restore', href: 'https://restore.aixuno.com/', mark: 'FIX', label: '老照片修复', tone: 'from-indigo-500 to-indigo-700' },
+  { id: 'watermark', href: 'https://watermark.aixuno.com/', mark: 'WM', label: '视频去水印', tone: 'from-cyan-500 to-blue-600' },
 ]
 
 const CURRENT = 'bg'
