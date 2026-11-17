@@ -36,6 +36,7 @@ const SITES = [
   { id: 'compress', href: 'https://compress.aixuno.com/', mark: 'ZIP', label: '文件压缩', tone: 'from-sky-500 to-emerald-500' },
   { id: 'pdf', href: 'https://pdf.aixuno.com/', mark: 'PDF', label: 'PDF 工具', tone: 'from-rose-500 to-red-500' },
   { id: 'bg', href: 'https://bg.aixuno.com/', mark: 'BG', label: 'AI 抠图', tone: 'from-violet-500 to-indigo-500' },
+  { id: 'scan', href: 'https://scan.aixuno.com/', mark: 'DOC', label: '文档扫描', tone: 'from-blue-500 to-blue-700' },
   { id: 'tools', href: 'https://tools.aixuno.com/', mark: 'AI', label: 'AI 工具箱', tone: 'from-teal-500 to-cyan-500' },
 ]
 
