@@ -26,9 +26,7 @@ useHead(() => ({
         description: t('seo.orgDesc'),
         logo: {
           '@type': 'ImageObject',
-          url: `${siteUrl}/icons/icon-512.png`,
-          width: 512,
-          height: 512,
+          url: `${siteUrl}/icons/favicon.svg`,
         },
         sameAs: ['https://github.com/zhltzh/bg-remover'],
         parentOrganization: {
