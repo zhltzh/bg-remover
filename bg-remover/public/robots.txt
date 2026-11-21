@@ -188,6 +188,6 @@ Disallow: /*?*utm_
 Disallow: /*?*from=
 
 # 不设置 Crawl-delay：静态站由搜索引擎自行决定抓取频率，避免拖慢收录。
-Sitemap: https://bg.aixuno.com/sitemap.xml
+Sitemap: https://bg.aixuno.com/sitemap_index.xml
 
 # 本文件仅适用于 bg.aixuno.com。

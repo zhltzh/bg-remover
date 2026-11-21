@@ -84,6 +84,8 @@
 
 <script setup lang="ts">
 const { t } = useI18n()
+const localePath = useLocalePath()
+const siteUrl = useRuntimeConfig().public.siteUrl || 'https://bg.aixuno.com'
 
 useSeoMeta({
   title: '隐私说明 - 图片本地处理，不上传服务器 | AI 抠图',
@@ -95,7 +97,7 @@ useSeoMeta({
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://bg.aixuno.com/privacy' }],
+  link: [{ rel: 'canonical', href: `${siteUrl}${localePath('/privacy')}` }],
   htmlAttrs: { lang: t('seo.lang') || 'zh-CN' },
 })
 </script>
