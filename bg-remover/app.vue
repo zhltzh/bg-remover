@@ -37,6 +37,12 @@ useHead(() => ({
         },
       }),
     },
+    {
+      // 百度统计
+      key: 'baidu-tongji',
+      children:
+        'var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?ef887868142b18a0c32bd9e20da7d91f";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();',
+    },
   ],
 }))
 
