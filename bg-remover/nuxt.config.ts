@@ -91,6 +91,9 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/icons/favicon.svg' },
+        // 性能：提前建立百度统计连接，缩短首屏第三方请求延迟
+        { rel: 'preconnect', href: 'https://hm.baidu.com' },
+        { rel: 'dns-prefetch', href: 'https://hm.baidu.com' },
       ],
     },
   },
