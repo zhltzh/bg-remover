@@ -18,6 +18,13 @@
 
         <!-- 右侧操作 -->
         <div class="flex items-center gap-3">
+          <!-- 教程入口 -->
+          <NuxtLink
+            :to="localePath('/guides')"
+            class="text-xs text-gray-500 transition-colors hover:text-indigo-600"
+          >
+            {{ $t('header.guides') }}
+          </NuxtLink>
           <!-- 语言切换器（多语言下拉） -->
           <div class="relative" ref="langRef">
             <button

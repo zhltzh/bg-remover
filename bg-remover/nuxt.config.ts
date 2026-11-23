@@ -1,4 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { GUIDES, GUIDE_LIST_PATH } from './data/guides'
+
+// 教程详情是动态路由，静态生成时需要显式列出（含语言前缀）
+const NON_DEFAULT_LOCALES = ['en', 'ja', 'ko', 'fr', 'de', 'es', 'ru', 'pt', 'ar']
+const guidePaths = [GUIDE_LIST_PATH, ...GUIDES.map((guide) => `${GUIDE_LIST_PATH}/${guide.slug}`)]
+const guidePrerenderRoutes = NON_DEFAULT_LOCALES.flatMap((code) => guidePaths.map((path) => `/${code}${path}`))
+
 export default defineNuxtConfig({
   // ===== SEO / 渲染模式 =====
   // 启用 SSR 确保搜索引擎和 AI 爬虫能抓取内容
@@ -13,6 +20,10 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static',
     serveStatic: true,
+    prerender: {
+      // 教程页（中文默认无前缀 + 9 个语言前缀）
+      routes: [...guidePaths, ...guidePrerenderRoutes],
+    },
   },
 
   routeRules: {

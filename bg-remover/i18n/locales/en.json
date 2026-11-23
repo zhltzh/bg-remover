@@ -3,7 +3,8 @@
     "brand": "AI BG Remover",
     "tagline": "Free online · Runs locally · Private",
     "clearCache": "Clear cache",
-    "clearCacheTitle": "Clear model cache"
+    "clearCacheTitle": "Clear model cache",
+    "guides": "Guides"
   },
   "hero": {
     "title": "AI Background Remover - Remove Image Backgrounds Online Free",

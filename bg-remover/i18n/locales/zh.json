@@ -3,7 +3,8 @@
     "brand": "AI抠图",
     "tagline": "在线免费 · 本地运行 · 保护隐私",
     "clearCache": "清除缓存",
-    "clearCacheTitle": "清除模型缓存"
+    "clearCacheTitle": "清除模型缓存",
+    "guides": "教程"
   },
   "hero": {
     "title": "AI 抠图 - 在线免费批量去除图片背景",

@@ -3,7 +3,8 @@
     "brand": "AI BG Remover",
     "tagline": "無料オンライン · ブラウザ内で処理 · プライバシー保護",
     "clearCache": "キャッシュをクリア",
-    "clearCacheTitle": "モデルキャッシュをクリア"
+    "clearCacheTitle": "モデルキャッシュをクリア",
+    "guides": "ガイド"
   },
   "hero": {
     "title": "AI背景除去 - 画像の背景をオンラインで無料削除",

@@ -31,6 +31,10 @@
         >GitHub</a
       >
       <span class="mx-1.5">·</span>
+      <NuxtLink :to="localePath('/guides')" class="underline-offset-2 hover:text-gray-700 hover:underline"
+        >{{ $t('header.guides') }}</NuxtLink
+      >
+      <span class="mx-1.5">·</span>
       <NuxtLink to="/privacy" class="underline-offset-2 hover:text-gray-700 hover:underline"
         >隐私说明</NuxtLink
       >
@@ -40,6 +44,8 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
+
+const localePath = useLocalePath();
 
 // 跨站入口：与 SiteNetwork.vue 保持同一份数据
 const SITES = [

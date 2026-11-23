@@ -3,7 +3,8 @@
     "brand": "AI BG Remover",
     "tagline": "무료 온라인 · 브라우저에서 로컬 처리 · 프라이버시 보호",
     "clearCache": "캐시 지우기",
-    "clearCacheTitle": "모델 캐시 지우기"
+    "clearCacheTitle": "모델 캐시 지우기",
+    "guides": "가이드"
   },
   "hero": {
     "title": "AI 배경 제거 - 온라인 무료 이미지 배경 제거",

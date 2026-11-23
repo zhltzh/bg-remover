@@ -3,7 +3,8 @@
     "brand": "AI BG Remover",
     "tagline": "Gratuit en ligne · Traitement local · Confidentialité",
     "clearCache": "Vider le cache",
-    "clearCacheTitle": "Vider le cache du modèle"
+    "clearCacheTitle": "Vider le cache du modèle",
+    "guides": "Guides"
   },
   "hero": {
     "title": "Suppresseur d'arrière-plan IA - Supprimer le fond d'une image en ligne gratuitement",
