@@ -32,7 +32,7 @@
 // 跨站入口：五个站点互相跳转，当前站以静态标签呈现
 const SITES = [
   { id: 'markdown', href: 'https://aixuno.com/', mark: 'MD', label: 'Markdown 转换', tone: 'from-amber-400 to-orange-500' },
-  { id: 'image', href: 'https://image.aixuno.com/', mark: 'IMG', label: 'Pixkit 图片', tone: 'from-fuchsia-500 to-pink-500' },
+  { id: 'image', href: 'https://image.aixuno.com/', mark: 'IMG', label: 'Pixkit 图片批量处理', tone: 'from-fuchsia-500 to-pink-500' },
   { id: 'compress', href: 'https://compress.aixuno.com/', mark: 'ZIP', label: '文件压缩', tone: 'from-sky-500 to-emerald-500' },
   { id: 'pdf', href: 'https://pdf.aixuno.com/', mark: 'PDF', label: 'PDF 工具', tone: 'from-rose-500 to-red-500' },
   { id: 'bg', href: 'https://bg.aixuno.com/', mark: 'BG', label: 'AI 抠图', tone: 'from-violet-500 to-indigo-500' },
