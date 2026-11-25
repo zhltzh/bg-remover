@@ -55,6 +55,7 @@ const SITES = [
   { id: 'pdf', href: 'https://pdf.aixuno.com/', label: 'PDF 工具' },
   { id: 'bg', href: 'https://bg.aixuno.com/', label: 'AI 抠图' },
   { id: 'scan', href: 'https://scan.aixuno.com/', label: '文档扫描' },
+  { id: 'idphoto', href: 'https://idphoto.aixuno.com/', label: '证件照制作' },
   { id: 'restore', href: 'https://restore.aixuno.com/', label: '老照片修复' },
   { id: 'watermark', href: 'https://watermark.aixuno.com/', label: '视频去水印' },
 ]
