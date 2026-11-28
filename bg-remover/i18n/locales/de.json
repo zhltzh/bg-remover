@@ -1,7 +1,7 @@
 {
   "header": {
     "brand": "AI BG Remover",
-    "tagline": "Kostenlos online · Läuft lokal · Privatsphäre",
+    "tagline": "Kostenlos online · Läuft lokal · Datenschutz",
     "clearCache": "Cache leeren",
     "clearCacheTitle": "Modell-Cache leeren",
     "guides": "Anleitungen"
@@ -10,7 +10,7 @@
     "title": "KI-Hintergrundentferner - Bildhintergründe online kostenlos entfernen",
     "sub1": "Kostenloses Online-KI-Tool zum Entfernen von Bildhintergründen für die Stapelverarbeitung mit hochwertigem PNG-Download.",
     "sub2Strong": "Die gesamte Verarbeitung läuft vollständig in Ihrem Browser",
-    "sub2": "Ihre Bilder werden nie auf einen Server hochgeladen. Privatsphäre geschützt.",
+    "sub2": "Ihre Bilder verlassen Ihr Gerät nicht – kein Upload, keine Cookies, DSGVO-freundlich.",
     "stat1": "~4 s im Durchschnitt pro Bild",
     "stat2": "Angetrieben von ONNX Runtime Web",
     "stat3": "100 % kostenlos, keine Limits"
@@ -178,7 +178,7 @@
     "items": [
       {
         "q": "Muss ich Bilder auf einen Server hochladen?",
-        "a": "Nein. Die gesamte KI-Hintergrundentfernung läuft vollständig in Ihrem Browser über ONNX Runtime Web – Ihre Bilder verlassen nie Ihr Gerät und werden nie auf einen Server hochgeladen, was Ihre Privatsphäre schützt."
+        "a": "Nein. Die gesamte KI-Hintergrundentfernung läuft vollständig in Ihrem Browser über ONNX Runtime Web – Ihre Bilder verlassen nie Ihr Gerät. Kein Upload, keine Cookies: DSGVO-freundlich."
       },
       {
         "q": "Welche Bildformate werden unterstützt? Wie schnell ist es?",
@@ -202,7 +202,7 @@
       },
       {
         "q": "Wie schneidet es im Vergleich zu Tools wie remove.bg ab?",
-        "a": "Unser Pro-Modell (BRIA RMBG) erzielt in den meisten Szenarien Ergebnisse nahe kommerzieller Tools, besonders bei Personen, Produkten und Tieren. Als völlig kostenloses, vollständig lokales Tool hat es klare Vorteile bei Privatsphäre und Preis-Leistung."
+        "a": "Unser Pro-Modell (BRIA RMBG) erzielt in den meisten Szenarien Ergebnisse nahe kommerzieller Tools, besonders bei Personen, Produkten und Tieren. Als völlig kostenloses, vollständig lokales Tool hat es klare Vorteile bei Datenschutz und Preis-Leistung – und im Gegensatz zu Cloud-Tools bleiben Ihre Bilder komplett auf Ihrem Gerät."
       }
     ]
   },
@@ -273,19 +273,19 @@
   },
   "seo": {
     "titleSuffix": "KI-Hintergrundentferner – Kostenloses Online-Tool",
-    "title": "Kostenloser KI-Hintergrundentferner – Bildhintergründe online entfernen | Läuft lokal für Privatsphäre",
+    "title": "Kostenloser KI-Hintergrundentferner – Bildhintergründe online entfernen | Läuft lokal, DSGVO-freundlich",
     "description": "Kostenloser Online-KI-Hintergrundentferner. Entfernen Sie Bildhintergründe in Stapeln und laden Sie hochwertige transparente PNGs herunter. Alles läuft lokal in Ihrem Browser – Bilder werden nie auf einen Server hochgeladen. Angetrieben von ONNX Runtime Web mit WebGPU-Beschleunigung.",
     "keywords": "hintergrund entfernen, bild freistellen online, KI hintergrund entfernen, hintergrund transparent, bild hintergrund löschen, kostenloser hintergrundentferner, stapelweise hintergrund entfernen, transparentes PNG, remove.bg alternative",
     "ogTitle": "Kostenloser KI-Hintergrundentferner – Bildhintergründe online entfernen",
-    "ogDesc": "Kostenloses Online-KI-Tool zum Entfernen von Bildhintergründen in Stapeln. Die gesamte Verarbeitung erfolgt in Ihrem Browser – keine Uploads, Privatsphäre geschützt.",
+    "ogDesc": "Kostenloses Online-KI-Tool zum Entfernen von Bildhintergründen in Stapeln. Die gesamte Verarbeitung erfolgt in Ihrem Browser – keine Uploads, keine Cookies, DSGVO-freundlich.",
     "twitterTitle": "Kostenloser KI-Hintergrundentferner – Bildhintergründe online entfernen",
-    "twitterDesc": "Kostenloses Online-KI-Tool zum Entfernen von Bildhintergründen in Stapeln. Läuft lokal in Ihrem Browser, Privatsphäre geschützt.",
+    "twitterDesc": "Kostenloses Online-KI-Tool zum Entfernen von Bildhintergründen in Stapeln. Läuft lokal in Ihrem Browser – ohne Upload, DSGVO-freundlich.",
     "webAppName": "KI-Hintergrundentferner – Kostenloses Online-Tool",
     "webAppDesc": "Kostenloser Online-KI-Hintergrundentferner für die Stapelverarbeitung von Bildern mit hochwertigem PNG-Download. Die gesamte Verarbeitung läuft lokal im Browser, keine Uploads.",
     "orgName": "AI BG Remover",
     "orgDesc": "Kostenloses Online-KI-Tool zum Entfernen von Bildhintergründen, angetrieben von ONNX Runtime Web, vollständig im Browser laufend.",
     "faqQ1": "Muss ich Bilder auf einen Server hochladen?",
-    "faqA1": "Nein. Die gesamte KI-Hintergrundentfernung läuft vollständig in Ihrem Browser über ONNX Runtime Web. Bilder werden nie auf einen Server hochgeladen, sodass Ihre Fotos privat bleiben.",
+    "faqA1": "Nein. Die gesamte KI-Hintergrundentfernung läuft vollständig in Ihrem Browser über ONNX Runtime Web. Bilder werden nie auf einen Server hochgeladen – DSGVO-freundlich, denn Ihre Fotos bleiben auf Ihrem Gerät.",
     "faqQ2": "Welche Bildformate werden unterstützt?",
     "faqA2": "JPG, PNG, WEBP, AVIF, GIF, SVG und andere gängige Formate werden unterstützt. Das Ergebnis ist ein PNG mit transparentem Hintergrund in voller Auflösung.",
     "faqQ3": "Wie lange dauert die Verarbeitung eines Bildes?",
